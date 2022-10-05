@@ -1,6 +1,6 @@
 ---
 name: 'Epic: <Title>'
-about: 'Epic''s Large Overview of App . '
+about: Ambrosia Greek Recipe's Epics Template
 title: 'EPIC: <Title>'
 labels: ''
 assignees: ''
