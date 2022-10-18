@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import recipe, Comment
+from .models import Recipe, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
-@admin.register(recipe)
-class recipeAdmin(SummernoteModelAdmin):
+@admin.register(Recipe)
+class RecipeAdmin(SummernoteModelAdmin):
     """
     Admin management from Admin Panel
     Used & Modified from I think therefore I blog
@@ -12,9 +12,9 @@ class recipeAdmin(SummernoteModelAdmin):
     """
     prepopulated_fields = {'slug': ('title',)}
     search_fields = ['title', 'ingredients', 'description']
-    list_display = ('title', 'slug', 'status', 'create_on')
-    list_filter = ('status', 'create_on')
-    summernote_fields = ('description', 'prep_time', 'cooking_time',
+    list_display = ('title', 'slug', 'status', 'created_on')
+    list_filter = ('status', 'created_on')
+    summernote_fields = ('description', 'serves', 'prep_time', 'cooking_time',
                          'ingredients', 'method')
 
 
