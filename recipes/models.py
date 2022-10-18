@@ -6,7 +6,7 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
-class recipe(models.Model):
+class Recipe(models.Model):
     """
     Model for the Post Recipe
     Used & Modified from I think therefore I blog
@@ -15,11 +15,11 @@ class recipe(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE,
-                               related_name="recipe")
+                               related_name="recipe_posts")
     update_on = models.DateTimeField(auto_now=True)
-    create_on = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    created_on = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     description = models.TextField(blank=True, help_text="Describe The Recipe")
-    serves = models.PositiveIntegerField(blank=True)
+    serves = models.CharField(blank=True, max_length=20)
     prep_time = models.CharField(blank=True, max_length=20)
     cooking_time = models.CharField(blank=True, max_length=20)
     ingredients = models.TextField()
@@ -57,7 +57,7 @@ class Comment(models.Model):
     Used from I think therefore I blog
     Credit to Code Institute
     """
-    recipe = models.ForeignKey(recipe, on_delete=models.CASCADE,
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE,
                                related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField()
