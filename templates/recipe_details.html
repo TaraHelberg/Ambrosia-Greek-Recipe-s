@@ -63,8 +63,22 @@
             </div>
             <div class="row">    
                 <div class="col-1">
-                    <!-- The number of likes goes before the closing strong tag -->
-                    <strong class="text-secondary"><i class="far fa-heart"></i> {{ recipe.number_of_likes }} </strong>
+                    <strong>
+                        {% if user.is.authenticated %}
+                        <form class="d-inline" action="{% url 'recipe_likes' post.slug %}"> method="POST">
+                            {% csrf_token %}
+                            {% if liked %}
+                            <button type="submit" name="recipe_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                            {% else %}
+                            <button type="submit" name="recipe_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                            {% endif %}
+                        </form>
+                        {% else %}
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                        {% endif %}
+                        <!-- The number of likes goes before the closing strong tag -->
+                        <span class="text-secondary">{{ recipe.number_of_likes }} </span> 
+                    </strong>
                 </div>
                 <div class="col-1">
                     {% with comments.count as total_comments %}
