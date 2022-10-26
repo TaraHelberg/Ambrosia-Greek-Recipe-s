@@ -60,9 +60,21 @@
       </nav>
       <!--Nav Bar--> 
     </header>
-    <!-- Header:App Title & Navigation -->      
+    <!-- Header:App Title & Navigation --> 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          {% for message in messages %}
+          <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+          {{ message | safe }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>     
     <!--Content for All Pages-->
-    <main>
+    <main class="flex-shrink-0 main-bg">
       {% block content %}        
       <!-- Content Gose here -->               
       {% endblock content %}            
@@ -121,6 +133,13 @@
       </div>
       <!-- Grid container -->    
     </footer>
+    <script>
+      setTimeout(function () {
+          let messages = document.getElementById('msg');
+          let alert = new bootstrap.Alert(messages);
+          alert.close();
+      }, 2500);
+  </script>
     <!--Bootstrap JS Script Link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
