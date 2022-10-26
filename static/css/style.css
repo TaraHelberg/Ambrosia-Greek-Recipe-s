@@ -35,16 +35,6 @@ body
     margin-right: 0.5em; 
 }
 
-/* Footer */
-footer .a {    
-    padding: .5em;
-    transition: transform .5s linear;
-}
-
-a :hover
-{
-    transform: scale(2);
-} 
 
 h1 
 {
@@ -55,3 +45,4 @@ h1
     text-align: center;
     margin: 2em;
 }
+
