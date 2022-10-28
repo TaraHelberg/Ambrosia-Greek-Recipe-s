@@ -1,8 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.views.generic import CreateView, UpdateView
+from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 from .models import Recipe
-from .forms import CommentForm
+from .forms import CommentForm, RecipeForm
 
 
 class Home(generic.TemplateView):
@@ -92,3 +94,17 @@ class RecipeLike(View):
             recipe.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
+
+
+class AddRecipe(CreateView):
+    """
+    Recipe Add View
+    """
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'add_recipe.html'
+    success_url = reverse_lazy('browse')
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super(CreateView, self).form_valid(form)

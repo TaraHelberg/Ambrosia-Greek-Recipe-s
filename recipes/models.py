@@ -1,4 +1,6 @@
 from django.db import models
+from django.template.defaultfilters import slugify
+from django_unique_slugify import unique_slugify
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
@@ -29,26 +31,31 @@ class Recipe(models.Model):
     likes = models.ManyToManyField(User, related_name='recipe_likes',
                                    blank=True)
 
+    class Meta:
+        """
+        Orders the recipes in Descending order.
+        """
+        ordering = ['-created_on']
 
-class Meta:
-    """
-    Orders the recipes in Descending order.
-    """
-    ordering = ['-created_on']
+    def __str__(self):
+        """
+        Returns a string method "AKA :The Magic method""
+        """
+        return str(self.title)
 
+    def amount_of_likes(self):
+        """
+        Shows the number of likes on a recipe.
+        """
+        return self.likes.count()
 
-def __str__(self):
-    """
-    Returns a string method "AKA :The Magic method""
-    """
-    return str(self.title)
-
-
-def amount_of_likes(self):
-    """
-    Shows the number of likes on a recipe.
-    """
-    return self.likes.count()
+    def save(self, *args, **kwargs):
+        """
+        Generate unique slug
+        """
+        if not self.slug:
+            self.slug = slugify(self.title)
+        return super().save(*args, **kwargs)
 
 
 class Comment(models.Model):
@@ -71,5 +78,5 @@ class Comment(models.Model):
         """
         ordering = ['created_on']
 
-    def __str__(self):
-        return f"Comment {self.body} by {self.name}"
+        def __str__(self):
+            return f"Comment {self.body} by {self.name}"
