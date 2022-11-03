@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.views.generic import CreateView, UpdateView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 from .models import Recipe
@@ -96,7 +97,7 @@ class RecipeLike(View):
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
-class AddRecipe(CreateView):
+class AddRecipe(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     """
     Recipe Add View
     """
@@ -108,3 +109,22 @@ class AddRecipe(CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super(CreateView, self).form_valid(form)
+
+
+class UpdateRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    Recipe Update View
+    """
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'update_recipe.html'
+    pk_url_kwarg = 'pk'
+    success_url = reverse_lazy('browse')
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super(UpdateView, self).form_valid(form)
+
+    def test_func(self):
+        recipe = self.get_object()
+        return recipe.author == self.request.user

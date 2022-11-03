@@ -23,10 +23,10 @@
                                     <p class="author">Author: {{ recipe.author }}</p>
                                 </div>
                             </div>
-                            <a href="{% url 'recipe_detail' recipe.slug %}" class="post-link">
-                                <h2 class="card-title">{{ recipe.title }}</h2>
-                                <p class="card-text">{{ recipe.description }}</p>
-                            </a>
+                            <div class="btn-group">                                                            
+                                <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">View</a>
+                                <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>                                                                                   
+                            </div>                            
                             <hr />
                             <p class="card-text text-muted h6">{{ recipe.created_on}} <i class="far fa-heart"></i>
                                 {{ recipe.number_of_likes }}</p>

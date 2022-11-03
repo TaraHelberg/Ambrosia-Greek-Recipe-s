@@ -55,6 +55,9 @@
                     </p>                 
                     
                 </div>
+                <div class="btn-group">                                                        
+                    <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>                                                                                   
+                </div>                
             </div>
         </div>
         <div class="row">
@@ -77,7 +80,7 @@
                         <span class="text-secondary"><i class="far fa-heart"></i></span>
                         {% endif %}
                     <!-- The number of likes goes before the closing strong tag -->
-                    <span class="text-secondary">{{ recipe.number_of_likes }} </span>
+                    <span class="text-secondary">{{ recipe.number_of_likes }}</span>
                     </strong>
                 </div>
                 <div class="col-1">
