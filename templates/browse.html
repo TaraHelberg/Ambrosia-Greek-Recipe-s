@@ -22,18 +22,38 @@
                                 <div class="image-flash">
                                     <p class="author">Author: {{ recipe.author }}</p>
                                 </div>
+                                <div>
+                                    <p class="card-text ">
+                                        {{ recipe.title | safe }}
+                                    </p>
+                                    <p class="card-text ">
+                                        {{ recipe.description | safe }}
+                                    </p>
+                                    <p>
+                                        <span><i class="far fa-clock pr-2"> </i></span>
+                                        <span>Serves: {{ recipe.serves }}</span>
+                                    </p>              
+                                    <p>
+                                        <span><i class="far fa-clock pr-2"> </i></span>
+                                        <span>Prep Time: {{ recipe.prep_time }}</span>
+                                    </p>
+                                    <p>
+                                        <span><i class="far fa-clock pr-2"></i></span>
+                                        <span>Cooking Time: {{ recipe.cooking_time}}</span>
+                                    </p>
+                                </div>
                             </div>
                             <div class="btn-group">                                                            
                                 <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">View</a>
-                                <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>                                                                                   
+                                <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>
+                                <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>                                                                                    
                             </div>                            
                             <hr />
                             <p class="card-text text-muted h6">{{ recipe.created_on}} <i class="far fa-heart"></i>
                                 {{ recipe.number_of_likes }}</p>
                         </div>
                     </div>
-                </div>
-                                  
+                </div>                                  
                 {% if forloop.counter|divisibleby:3 %}
             </div>  
             <div class="row">
@@ -50,7 +70,6 @@
             {% endif %}
             {% if page_obj.has_next %}
             <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-
             {% endif %}
         </ul>
     </nav>

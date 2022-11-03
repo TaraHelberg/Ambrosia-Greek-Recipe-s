@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Delete Recipe</h1>    
+    <br>
+    <div class="row justify-content-center ">
+        {% if user.is_authenticated %}        
+        <div class="col-11 col-md-8 col-lg-6 mt-3">
+            <!--  Update Recipe Form -->
+            <form method="post" class="mb-5">                
+                {% csrf_token %}
+                <p>Are You Sure You Want to Delete This Recipe "{{ recipe.title }}"?!?</p>                
+                <button type="submit" class="btn btn-outline-dark">Delete</button>
+                <a class="btn btn btn-outline-dark m-2" href="{% url 'browse' %}">Cancel</a>
+            </form>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{%endblock%}

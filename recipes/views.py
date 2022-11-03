@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.views.generic import CreateView, UpdateView
+from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
@@ -25,7 +25,7 @@ class RecipeList(generic.ListView):
     paginate_by = 6
 
 
-class RecipeDetail(View):
+class RecipeDetail(DetailView):
     """
     Recipe see all Details View
     """
@@ -97,7 +97,7 @@ class RecipeLike(View):
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
-class AddRecipe(LoginRequiredMixin, UserPassesTestMixin, CreateView):
+class AddRecipe(CreateView):
     """
     Recipe Add View
     """
@@ -124,6 +124,20 @@ class UpdateRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super(UpdateView, self).form_valid(form)
+
+    def test_func(self):
+        recipe = self.get_object()
+        return recipe.author == self.request.user
+
+
+class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    Recipe Delete View
+    """
+    model = Recipe
+    template_name = 'delete_recipe.html'
+    pk_url_kwarg = 'pk'
+    success_url = reverse_lazy('browse')
 
     def test_func(self):
         recipe = self.get_object()
