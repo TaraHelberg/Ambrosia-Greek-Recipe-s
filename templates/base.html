@@ -8,62 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Recipe Greek food,Join and share">
     <meta name="keywords" content="Recipes, Greek, Food, Browse Recipes, Register & Login, Post Recipes, Comment">
-    <!--Bootstrap Link-->
+    <!-- Bootstrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!--Google Fonts Link-->
+    <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <!--Font Awesome Link-->
+    <!-- Font Awesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <!--CSS Style Link-->
+    <!-- CSS Style Link -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
      
     <title>Ambrosia Greek Recipe's</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <!-- Header:App Title & Navigation -->
-    <header>
-      <!--Nav Bar-->              
-      <nav class="navbar navbar-expand-lg">
-        <!-- App Title -->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}">Ambrosia Greek Recipe's</a>
-          <!-- Toggler/collapsible Button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="Home" href="{% url 'home' %}">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="Browse Recipe's" href="{% url 'browse' %}">Browse Recipe's</a>
-              </li>
-              {% if user.is_authenticated %}
-              <li class="nav-item">
-                <a class="nav-link" aria-current="Add Recipe" href="{% url 'add_recipe' %}">Add Recipe</a>
-              </li>              
-              <li class="nav-item">
-                <a class="nav-link" aria-current="Logout" href="{% url 'account_logout' %}">Logout</a>
-              </li>              
-              {% else %}
-              <li class="nav-item">
-                <a class="nav-link" aria-current="Register" href="{% url 'account_signup' %}">Register</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="Login" href="{% url 'account_login' %}">Login</a>
-              </li>
-              {% endif %}
-            </ul>
+  <!--Navbar with Navbar-brand App Title Header-->    
+    <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container-fluid">
+        <!--App Title-->
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="https://res.cloudinary.com/drf6jhefj/image/upload/v1667576176/europe-2028128_640_zfzgov.png" alt="anchient greek urn" width="30" height="24" class="d-inline-block align-text-top">
+          Ambrosia Greek Recipe's
+        </a>
+      </div>
+      <div class="container-fluid">
+        <!--Navbar Links-->      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <!--Navbar Links shown if to all Users-->
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
+            <a class="nav-link" href="{% url 'browse' %}">Browse Recipe's</a>
+            <!--Navbar Links only shown If user Authenticated-->
+            {% if user.is_authenticated %}
+            <a class="nav-link" href="{% url 'add_recipe' %}">Add Recipe</a>
+            <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+            {% else %}
+            <!--Navbar Links shown if to all Users-->
+            <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+            <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+            {% endif %}
           </div>
-        </div>        
-      </nav>
-      <!--Nav Bar--> 
-    </header>
-    <!-- Header:App Title & Navigation --> 
+        </div>
+      </div>
+    </nav>
+    <!--Message code credit Code Institute: I think therefor I blog-->  
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -75,67 +66,73 @@
           {% endfor %}
         </div>
       </div>
-    </div>     
-    <!--Content for All Pages-->
-    <main class="flex-shrink-0 main-bg">
+    </div>       
+    <!-- Content for All Pages -->
+    <main class="flex-shrink-0">
       {% block content %}        
       <!-- Content Gose here -->               
       {% endblock content %}            
-    </main>   
-     <footer class="mt-auto text-center">
+    </main>
+    <footer class="text-center text-white">
       <!-- Grid container -->
-      <div class="container pt-4">
-        <!-- Section: Footer/Social media links-->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-link btn-floating btn-lg text-blue m-1"
-          href="http://facebook.com" target="_blank" rel="nooperner"
-          aria-label="Visit our Facebook page (opens in a new tab)"
-          role="button"
-          data-mdb-ripple-color="dark">
-          <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- Twitter -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-blue m-1"
-            href="http://twitter.com" target="_blank" rel="nooperner"
-            aria-label="Visit our Twitter page (opens in a new tab)"
-            role="button"
-            data-mdb-ripple-color="dark">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!-- Instagram -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-blue m-1"
-            href="http://instagram.com" target="_blank" rel="nooperner"
-            aria-label="Visit our Instagram page (opens in a new tab)"
-            role="button"
-            data-mdb-ripple-color="dark">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <!-- Linkedin -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-blue m-1"
-            href="http://Linkedin.com" target="_blank" rel="nooperner"
-            aria-label="Visit our Linkedin page (opens in a new tab)"
-            role="button"
-            data-mdb-ripple-color="dark">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <!-- Github -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-blue m-1"
-            href="http://Github.com" target="_blank" rel="nooperner"
-            aria-label="Visit our GitHub page (opens in a new tab)"
-            role="button"
-            data-mdb-ripple-color="dark">
-            <i class="fab fa-github"></i>
-          </a>
-        </section>
-        <!-- Section: Footer/Social media links -->
-      </div>
-      <!-- Grid container -->    
-    </footer>
+      <div class="container pt-4 mb-4">
+        <!-- Social media -->
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg m-1"
+           href="http://facebook.com" target="_blank" rel="nooperner"
+           aria-label="Visit our Facebook page (opens in a new tab)"
+           role="button"
+           data-mdb-ripple-color="dark">
+           <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg m-1"
+           href="http://twitter.com" target="_blank" rel="nooperner"
+           aria-label="Visit our Twitter page (opens in a new tab)"
+           role="button"
+           data-mdb-ripple-color="dark">
+           <i class="fab fa-twitter"></i>
+        </a>    
+        <!-- Youtube -->
+        <a class="btn btn-link btn-floating btn-lg m-1"
+           href="http://youtube.com" target="_blank" rel="nooperner"
+           aria-label="Visit our Youtube page (opens in a new tab)"
+           role="button"
+           data-mdb-ripple-color="dark">
+           <i class="fab fa-youtube"></i>
+        </a>    
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg m-1"
+           href="http://instagram.com" target="_blank" rel="nooperner"
+           aria-label="Visit our Instagram page (opens in a new tab)"
+           role="button"
+           data-mdb-ripple-color="dark">
+           <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg m-1"
+           href="http://Linkedin.com" target="_blank" rel="nooperner"
+           aria-label="Visit our Linkedin page (opens in a new tab)"
+           role="button"
+           data-mdb-ripple-color="dark">
+           <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg m-1"
+           href="http://Github.com" target="_blank" rel="nooperner"
+           aria-label="Visit our GitHub page (opens in a new tab)"
+           role="button"
+           data-mdb-ripple-color="dark">
+           <i class="fab fa-github"></i>
+        </a>        
+      </div>         
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3">
+        © 2022 Copyright:
+        <p class="text-dark">Ambrosia Greek Recipe's</p>
+      </div>      
+    </footer> 
+   <!--JS for messages Credit Code Institute: I think therefor I blog-->
     <script>
       setTimeout(function () {
           let messages = document.getElementById('msg');
@@ -143,7 +140,7 @@
           alert.close();
       }, 2500);
   </script>
-    <!--Bootstrap JS Script Link-->
+    <!-- Bootstrap JS Script Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
