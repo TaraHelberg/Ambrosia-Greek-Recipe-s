@@ -2,5 +2,30 @@
 
 {% block content %}
 <!-- Hero Image -->
-
+<section>
+    <div class="container-fluid img-fluid" id="hero-image">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <h1 class="text-center text-primary logo-hero">Ambrosia Greek Recipe's</h1>
+                    <h2 class="display-6 text-primary">Home to The Food of the Gods</h2>
+                    <p class="text-dark">A place to Share your most loved Greek Recipe's</p>                    
+                    {% if user.is_authenticated %}
+                    <p class="lead text-dark"> Welcome</p>
+                    <form action="{% url 'recipes' %}" method="get">
+                        <button class="btn btn-dark">View Recipes</button>
+                    </form>
+                    {% else %}
+                    <p class="text-dark">Sign up today to start sharing your Greek Recipe's with the world!</p>
+                    <form action="{% url 'account_signup' %}" method="get">
+                        <button class="btn btn-primary">Sign
+                            up!</button>
+                    </form>
+                    <p class="text-muted"><small>By signing up you agree to our terms and service.</small></p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
