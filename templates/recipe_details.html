@@ -1,73 +1,54 @@
 {% extends "base.html" %} {% block content %}
 
 {% load crispy_forms_tags %}
-
-<section>
-    <div class="masthead">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 masthead-text">
-                    <!-- Post title goes in these h1 tags -->
-                    <h1 class="post-title">{{ recipe.title }}</h1>
-                    <!-- Post author goes before the | the post's created date goes after -->
-                    <p class="post-subtitle">{{ recipe.author }} | {{ recipe.created_on }}</p>
-                </div>
-                <div class="d-none d-md-block col-md-6 masthead-image">
-                    <!-- The featured image URL goes in the src attribute -->
-                    {% if "placeholder" in recipe.featured_image.url %}
-                    <img src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" alt="Glass Olive Oil Bottle with Olives" class="img-responsive">
-                    {% else %}
-                    <img src=" {{ recipe.featured_image.url }}" width="100%">
-                    {% endif %}
-                </div>
+<div class="container-fluid">
+    <div class="card" style="max-width: 540px;">
+        <div class="row">
+          <div class="col-lg-6">            
+            {% if "placeholder" in recipe.featured_image.url %}
+            <img src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" alt="Glass Olive Oil Bottle with Olives" alt="Glass Olive Oil Bottle with Olives"  class="img-fluid rounded-start" alt="...">
+            {% else %}
+            <img src=" {{ recipe.featured_image.url }}" width="100%">
+            {% endif %}
+            <p>{{ recipe.author }} | {{ recipe.created_on }}</p>
+        </div>
+          <div class="col-lg-6">
+            <div class="card-body">
+              <h5 class="card-title text-primary">{{ recipe.title }}</h5>
+              <p class="card-text">{{ recipe.description}}</p>
+              <ul>
+                <li>Serves: {{ recipe.serves }}</li>
+                <li>Prep Time: {{ recipe.prep_time }}</li>
+                <li>Cooking Time: {{ recipe.cooking_time}}</li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="card-title text-primary">Ingredients</h5>
+                {{ recipe.ingredients }}
+            </div>
+            <div class="col-lg-6">
+                <h5 class="card-title text-primary">Method</h5>
+                {{ recipe.method }}
             </div>
         </div>
     </div>
-    
-    <div class="container">
+    <div class="btn-group">                                                        
+        <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>   
+        <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>
+        <a href="{% url 'browse' %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Browse</a>                                                                                   
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <hr>        
         <div class="row">
-            <div class="col card mb-4  mt-3 left  top">
-                <div class="card-body">
-                    <!-- The post content goes inside the card-text. -->
-                    <!-- Use the | safe filter inside the template tags -->
-                    <p class="card-text ">
-                        {{ recipe.description | safe }}
-                    </p>
-                    <p>
-                        <span><i class="far fa-clock pr-2"> </i></span>
-                        <span>Serves: {{ recipe.serves }}</span>
-                    </p>              
-                    <p>
-                        <span><i class="far fa-clock pr-2"> </i></span>
-                        <span>Prep Time: {{ recipe.prep_time }}</span>
-                    </p>
-                    <p>
-                        <span><i class="far fa-clock pr-2"></i></span>
-                        <span>Cooking Time: {{ recipe.cooking_time}}</span>
-                    </p>
-                    <p>
-                        <span><i class="far fa-clock pr-2"></i></span>
-                        <span>Ingredients: {{ recipe.ingredients}}</span>
-                    </p>
-                    <p>
-                        <span><i class="far fa-clock pr-2"></i></span>
-                        <span>Method: {{ recipe.method}}</span>
-                    </p>                 
-                    
-                </div>
-                <div class="btn-group">                                                        
-                    <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>
-                    <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>                                                                                   
-                </div>                
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-            <div class="row">    
-                <div class="col-1">
-                    <strong>
+            <div class="col-1">
+                <strong>
                         {% if user.is_authenticated %}
                         <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
                             {% csrf_token %}
@@ -82,20 +63,20 @@
                         {% endif %}
                     <!-- The number of likes goes before the closing strong tag -->
                     <span class="text-secondary">{{ recipe.number_of_likes }}</span>
-                    </strong>
-                </div>
-                <div class="col-1">
-                    {% with comments.count as total_comments %}
-                    <strong class="text-secondary"><i class="far fa-comments"></i>
-                        <!-- Our total_comments variable goes before the closing strong tag -->
-                        {{ total_comments }}</strong>
-                    {% endwith %}
-                </div>
-            </div>       
+                </strong>
+            </div>
+            <div class="col-1">
+                {% with comments.count as total_comments %}
+                <strong class="text-secondary"><i class="far fa-comments"></i>
+                    <!-- Our total_comments variable goes before the closing strong tag -->
+                     {{ total_comments }}
+                </strong>
+                {% endwith %}
+            </div>
         </div>
         <div class="row">
-            <div class="col-md-8 card mb-4  mt-3 ">
-                <h3>Comments:</h3>
+            <div class="col-md-8 card mb-4 mt-3 ">
+                <h3 class="text-primary">Comments:</h3>
                 <div class="card-body">
                     <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                     {% for comment in comments %}
@@ -124,20 +105,19 @@
                 </div>
                 {% else %}
                 {% if user.is_authenticated %}
-
-                <h3>Leave a comment:</h3>
+                <h3 class="text-primary">Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <button class="btn btn-primary">Submit</button>
                 </form>
                 {% endif %}
                 {% endif %}
                 </div>
             </div>
-        </div>
+        </div>    
     </div>
-</section>
+</div>
 
 {% endblock %}
