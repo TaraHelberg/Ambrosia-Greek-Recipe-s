@@ -10,22 +10,21 @@ body {
     font-weight: 300;  
 }
 
+/*Navbar App Title & Link style*/
 .navbar {
     height: 6em;    
     background-color: white;
 }
 
 .navbar-brand {
-    color: blue;
-    letter-spacing: 0.1em;
+    color: #0d6efd;    
 }
 
 .nav-link {
-    color: blue;
-    letter-spacing: 0.1em;
+    color: #0d6efd;
 }
 
-
+/*Hero Image style*/
 .logo-hero {    
     margin-top: 1.5em;
 }
@@ -53,4 +52,9 @@ body {
     to{
         transform: scale(1.1);
     }
+}
+
+/*Recipe Card style*/
+.card {
+    border: none;
 }
