@@ -3,47 +3,40 @@
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row">
-        <div>
-            <h1 class="text-primary text-center">Recipe's</h1>
-        </div>
-        <div class="col-md-12">          
+    <div class="row">       
+        <div class="col-m-t-md-12">          
             <div class="row justify-content-center p-3">
                 {% for recipe in recipe_list %}
-                <div class="col-md-3 rounded">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in recipe.featured_image.url %}
-                                <img class="card-img-top" src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" height="300" alt="Glass Olive Oil Bottle with Olives" class="img-responsive">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ recipe.featured_image.url }}" height="300" alt="{{ recipe.title }}">
-                                {% endif %}                                
-                                <p class="card-title">Author: {{ recipe.author }}</p>
-                                <h5 class="text-center text-primary">{{ recipe.title }}</h5>                     
-                                <p><i class="fa-solid fa-utensils text-primary"></i> Serves: {{ recipe.serves }}</p>
-                                <p><i class="fa-solid fa-kitchen-set text-primary"></i> Prep Time: {{ recipe.prep_time }}</p>
-                                <p><i class="fa-solid fa-fire-burner text-primary"></i> Cooking Time: {{ recipe.cooking_time}}</p>            
-                            </div>
-                            <hr/>
-                            <div class="btn-group">                                                            
-                                <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">View</a>
-                                <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>
-                                <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>                                                                                    
-                            </div>                            
-                            <hr/>
-                            <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>
-                                {{ recipe.number_of_likes }}</p>
+                <div class="col-xs-12 col-md-3">
+                    <!-- Card -->
+                    <div class="card shadow p-3 mb-5 bg-white rounded" id="browse">
+                        {% if "placeholder" in recipe.featured_image.url %}
+                        <img class="card-img-top img-responsive" src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" height="300" alt="Glass Olive Oil Bottle with Olives">
+                        {% else %}
+                        <img class="card-img-top img-responsive" src=" {{ recipe.featured_image.url }}" height="300" alt="{{ recipe.title }}">
+                        {% endif %}
+                        <br>                              
+                        <div class="card-block">
+                            <h4 class="card-title text-primary text-center">{{ recipe.title }}</h4>
+                            <h6 class="text-muted">Author: {{ recipe.author }}</h6>
+                            <p><i class="fa-solid fa-utensils text-primary"></i> Serves: {{ recipe.serves }}</p>
+                            <p><i class="fa-solid fa-kitchen-set text-primary"></i> Prep Time: {{ recipe.prep_time }}</p>
+                            <p><i class="fa-solid fa-fire-burner text-primary"></i> Cooking Time: {{ recipe.cooking_time}}</p>
+                            <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">View</a>
+                            <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>
+                            <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a> 
                         </div>
                     </div>
-                </div>                                  
-                {% if forloop.counter|divisibleby:3 %}
-            </div>  
+                    <hr/>
+                    <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>{{ recipe.number_of_likes }}</p>
+                </div>
+                {% if forloop.counter|divisibleby:3 %}                                                                         
+            </div>
             <div class="row">
                 {% endif %}                       
                 {% endfor %}
-            </div>   
-        </div>    
+            </div>                                                                    
+        </div>                                   
     </div>
     {% if is_paginated %}
     <nav aria-label="Page navigation">
@@ -57,5 +50,16 @@
         </ul>
     </nav>
     {% endif %}    
-</div>
+</div>                          
+                                                       
+                            
+                            
+                     
+                    
+                                                 
+                
+              
+            
+            
+    
 {%endblock%}

@@ -52,10 +52,16 @@ body {
     }
 }
 
-/*Recipe Card style*/
-.card {
-    border: none;
+/* Card Hover */
+#browse{   
+    background: #fff;  
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
 }
+
+#browse:hover{
+  transform: scale(1.05);
+} 
 
 /*Account Sign Up/In & Logout style*/ 
 input {
