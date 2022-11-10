@@ -57,6 +57,7 @@ body {
     border: none;
 }
 
+/*Account Sign Up/In & Logout style*/ 
 input {
     border: 0.1em solid black;
     border-radius: 0.2em;

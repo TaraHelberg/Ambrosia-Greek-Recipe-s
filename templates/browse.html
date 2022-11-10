@@ -12,7 +12,7 @@
                 {% for recipe in recipe_list %}
                 <div class="col-md-3 rounded">
                     <div class="card mb-3">
-                        <div class="card-body text-primary">
+                        <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in recipe.featured_image.url %}
                                 <img class="card-img-top" src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" height="300" alt="Glass Olive Oil Bottle with Olives" class="img-responsive">
@@ -20,10 +20,10 @@
                                 <img class="card-img-top" src=" {{ recipe.featured_image.url }}" height="300" alt="{{ recipe.title }}">
                                 {% endif %}                                
                                 <p class="card-title">Author: {{ recipe.author }}</p>
-                                <h5 class="text-center">{{ recipe.title }}</h5>                     
-                                <p>Serves: {{ recipe.serves }}</p>
-                                <p>Prep Time: {{ recipe.prep_time }}</p>
-                                <p>Cooking Time: {{ recipe.cooking_time}}</p>            
+                                <h5 class="text-center text-primary">{{ recipe.title }}</h5>                     
+                                <p><i class="fa-solid fa-utensils text-primary"></i> Serves: {{ recipe.serves }}</p>
+                                <p><i class="fa-solid fa-kitchen-set text-primary"></i> Prep Time: {{ recipe.prep_time }}</p>
+                                <p><i class="fa-solid fa-fire-burner text-primary"></i> Cooking Time: {{ recipe.cooking_time}}</p>            
                             </div>
                             <hr/>
                             <div class="btn-group">                                                            
@@ -32,7 +32,7 @@
                                 <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>                                                                                    
                             </div>                            
                             <hr/>
-                            <p class="card-text text-primary h6">{{ recipe.created_on}} <i class="far fa-heart"></i>
+                            <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>
                                 {{ recipe.number_of_likes }}</p>
                         </div>
                     </div>
