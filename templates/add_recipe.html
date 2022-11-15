@@ -14,8 +14,8 @@
             <form method="post" class="mb-5 text-primary">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-primary">Submit</button>
-                <a class="btn btn btn-outline-primary m-2" href="{% url 'browse' %}">Cancel</a>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn btn-primary m-2" href="{% url 'browse' %}">Cancel</a>
             </form>
         </div>
         {% endif %}

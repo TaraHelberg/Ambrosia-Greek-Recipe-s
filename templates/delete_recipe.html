@@ -2,17 +2,35 @@
 
 {% block content %}
 <div class="container">
-    <h1>Delete Recipe</h1>    
+    <h1 class="text-primary text-center">Delete Recipe</h1>    
     <br>
-    <div class="row justify-content-center ">
+    <div class="row justify-content-center">
         {% if user.is_authenticated %}        
-        <div class="col-11 col-md-8 col-lg-6 mt-3">
-            <!--  Update Recipe Form -->
+        <div class="col-xs-12 col-md-4">            
             <form method="post" class="mb-5">                
                 {% csrf_token %}
-                <p>Are You Sure You Want to Delete This Recipe "{{ recipe.title }}"?!?</p>                
-                <button type="submit" class="btn btn-outline-dark">Delete</button>
-                <a class="btn btn btn-outline-dark m-2" href="{% url 'browse' %}">Cancel</a>
+                <div class="card shadow p-3 mb-5 bg-white rounded" id="browse">
+                    {% if "placeholder" in recipe.featured_image.url %}
+                    <img class="card-img-top img-responsive" src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" height="300" alt="Glass Olive Oil Bottle with Olives">
+                    {% else %}
+                    <img class="card-img-top img-responsive" src=" {{ recipe.featured_image.url }}" height="300" alt="{{ recipe.title }}">
+                    {% endif %}
+                    <br>                              
+                    <div class="card-block">
+                        <h4 class="card-title text-primary text-center">{{ recipe.title }}</h4>
+                        <h6 class="text-muted">Author: {{ recipe.author }}</h6>
+                        <p><i class="fa-solid fa-utensils text-primary"></i> Serves: {{ recipe.serves }}</p>
+                        <p><i class="fa-solid fa-kitchen-set text-primary"></i> Prep Time: {{ recipe.prep_time }}</p>
+                        <p><i class="fa-solid fa-fire-burner text-primary"></i> Cooking Time: {{ recipe.cooking_time}}</p>
+                        <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">View</a>
+                        <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>                        
+                    </div>
+                </div>
+                <h5 class="text-danger text text-center">Are You Sure You Want to Delete Your Recipe ?!?</h5>
+                <div class="text-center">                
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                    <a class="btn btn-primary" href="{% url 'browse' %}">Cancel</a>
+                </div>
             </form>
         </div>
         {% endif %}
