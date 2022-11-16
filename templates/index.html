@@ -8,14 +8,22 @@
             <div class="col-12">
                 <div class="text-center text-primary">
                     <h1 class="logo-hero">Ambrosia Greek Recipe's</h1>
-                    <h2>Home Of</h2>
-                    <h2> The Food of The Gods</h2>
-                    <h3>A place to Share your most loved Greek Recipe's</h3>            
-                    <h4>Welcome</h4>                  
+                    <h3>Home Of</h3>
+                    <h3>The Food of The Gods</h3>
+                    <h4>A place to Share your most loved Greek Recipe's</h4>            
+                    <h4>Welcome</h4>
+                    {% if user.is_authenticated %}
+                    <P>{{ user.username }}</p>
+                    {% else %}                   
                     <h4>Sign up Today</h4>
+                    {% endif %}
                     <h4>To start sharing your Greek Recipe's with the world!</h4>
                     <form action="{% url 'account_signup' %}" method="get">
+                        {% if user.is_authenticated %}   
+        	            <p><a class="btn btn-primary" href="{% url 'account_logout' %}">Logout</a></p>
+                        {% else %}                       
                         <button class="btn btn-primary">Sign up!</button>
+                        {% endif %}                        
                     </form>
                     <p><small>By signing up you agree to our terms and service.</small></p>
                 </div>
