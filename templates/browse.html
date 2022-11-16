@@ -7,9 +7,8 @@
         <div class="col-m-t-md-12">          
             <div class="row justify-content-center p-3">
                 {% for recipe in recipe_list %}
-                <div class="col-xs-12 col-md-3">
-                    <!-- Card -->
-                    <div class="card shadow p-3 mb-5 bg-white rounded" id="browse">
+                <div class="col-xs-12 col-md-3">                    
+                    <div class="card shadow p-3 mb-5 bg-white rounded browse">
                         {% if "placeholder" in recipe.featured_image.url %}
                         <img class="card-img-top img-responsive" src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" height="300" alt="Glass Olive Oil Bottle with Olives">
                         {% else %}
@@ -26,8 +25,7 @@
                             <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>
                             <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a> 
                         </div>
-                    </div>
-                    <hr/>
+                    </div>                    
                     <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>{{ recipe.number_of_likes }}</p>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}                                                                         

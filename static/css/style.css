@@ -53,13 +53,13 @@ body {
 }
 
 /* Card Hover */
-#browse{   
+.browse{   
     background: #fff;  
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12);
     cursor: pointer;
 }
 
-#browse:hover{
+.browse:hover{
   transform: scale(1.05);
 } 
 
