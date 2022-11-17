@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!-- Hero Image -->
+<!-- Hero Image , Welcome & Sign Up Encourgament-->
 <section>
     <div class="container-fluid img-fluid" id="hero-image">
         <div class="row">
@@ -12,16 +12,22 @@
                     <h3>The Food of The Gods</h3>
                     <h4>A place to Share your most loved Greek Recipe's</h4>            
                     <h4>Welcome</h4>
+                    <!--Displays Loged In User Else Sign up Message -->
                     {% if user.is_authenticated %}
+                    <!--Displays Loged In User-->
                     <P>{{ user.username }}</p>
-                    {% else %}                   
+                    {% else %}
+                    <!--Displays Sign Up Message-->                   
                     <h4>Sign up Today</h4>
                     {% endif %}
                     <h4>To start sharing your Greek Recipe's with the world!</h4>
                     <form action="{% url 'account_signup' %}" method="get">
-                        {% if user.is_authenticated %}   
+                        <!--Displays Log Out if User Loged In Else Sign Up-->
+                        {% if user.is_authenticated %}
+                        <!--Displays Log Out for Loged In User-->   
         	            <p><a class="btn btn-primary" href="{% url 'account_logout' %}">Logout</a></p>
-                        {% else %}                       
+                        {% else %}
+                        <!--Displays Sign Up to New User or User not Loged in-->                       
                         <button class="btn btn-primary">Sign up!</button>
                         {% endif %}                        
                     </form>

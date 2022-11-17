@@ -10,10 +10,11 @@
         {% if user.is_authenticated %}
         {% load cloudinary %}
         <div class="col-11 col-md-8 col-lg-6 mt-3">
-            <!--  Add Recipe Form -->
+            <!--Add Recipe Form-->
             <form method="post" class="mb-5 text-primary">
                 {{ form | crispy }}
                 {% csrf_token %}
+                <!--Page Links to Submit Recipe or Cancel to Leave page Redirect's to Browse-->
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <a class="btn btn-primary m-2" href="{% url 'browse' %}">Cancel</a>
             </form>

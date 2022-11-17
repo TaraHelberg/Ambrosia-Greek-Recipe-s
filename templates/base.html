@@ -25,20 +25,20 @@
   <!--Navbar with Navbar-brand App Title Header-->    
     <nav class="navbar navbar-expand-md sticky-top">
       <div class="container-fluid">
-        <!--App Title-->
+        <!--App Title & image logo-->
         <a class="navbar-brand" href="{% url 'home' %}">
-          <img src="https://res.cloudinary.com/drf6jhefj/image/upload/v1667576176/europe-2028128_640_zfzgov.png" alt="anchient greek urn" width="30" height="24" class="d-inline-block align-text-top">
+          <img src="https://res.cloudinary.com/drf6jhefj/image/upload/c_thumb,w_200,g_face/v1667576176/europe-2028128_640_zfzgov.png" alt="anchient greek urn" width="30" height="24" class="d-inline-block align-text-top">
           Ambrosia Greek Recipe's
         </a>
       </div>
       <div class="container-fluid">
-        <!--Navbar Links-->      
+        <!--Navbar Links collapse aka Hamburger menu-->      
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <!--Navbar Links shown if to all Users-->
+            <!--Navbar Links shown to all Users-->
             <a class="nav-link" href="{% url 'home' %}">Home</a>
             <a class="nav-link" href="{% url 'browse' %}">Browse Recipe's</a>
             <!--Navbar Links only shown If user Authenticated-->
@@ -46,7 +46,7 @@
             <a class="nav-link" href="{% url 'add_recipe' %}">Add Recipe</a>
             <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
             {% else %}
-            <!--Navbar Links shown if to all Users-->
+            <!--Navbar Links shown to all Users-->
             <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
             <a class="nav-link" href="{% url 'account_login' %}">Login</a>
             {% endif %}
@@ -73,10 +73,10 @@
       <!-- Content Gose here -->               
       {% endblock content %}            
     </main>
-    <footer class="text-center text-white">
-      <!-- Grid container -->
+    <!--Footer with social media links & copyright-->
+    <footer class="text-center text-white">      
       <div class="container pt-4 mb-4">
-        <!-- Social media -->
+        <!-- Social media links -->
         <!-- Facebook -->
         <a class="btn btn-link btn-floating btn-lg m-1"
            href="http://facebook.com" target="_blank" rel="nooperner"
