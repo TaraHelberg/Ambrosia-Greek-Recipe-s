@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container-fluid bgimage1">
+    <!--Title-->
+    <h1 class="text-primary text-center">Update Comment</h1>    
+    <br>
+    <div class="row justify-content-center">
+        {% if user.is_authenticated %}
+        <div class="col-xs-12 col-md-4">
+            <form method="post" class="text-primary mb-5">
+                {{ form | crispy }}
+                {% csrf_token %}                                
+                <!--Page Links to Submit Recipe Comment Update or Cancel to Browse pg-->
+                <button type="submit" class="btn btn-primary mt-2">Update</button>
+                <a class="btn btn-primary mt-2" href="{% url 'browse' %}">Cancel</a>        
+            </form> 
+        </div>
+        {% endif %}
+    </div>
+</div>
+{%endblock%}

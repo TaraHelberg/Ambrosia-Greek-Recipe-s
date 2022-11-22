@@ -45,10 +45,10 @@
             </div>       
         </div>
         <!--Url page navigation links -->
-        <div class="text-center">                                                                     
+        <div class="text-center">                                                                                            
             <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>   
-            <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>
-            <a href="{% url 'browse' %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Browse</a>                                                                                   
+            <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>            
+            <a href="{% url 'browse' %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Browse</a>                                                                                            
         </div>
     </div>
     <div class="row">
@@ -105,9 +105,17 @@
                                 <!-- The comment's created date goes here -->
                                 {{ comment.created_on }}
                             </span> wrote:
-                        </p>
+                        </p>                       
                         <!-- The body of the comment goes before the | -->
                         {{ comment.body | linebreaks }}
+                        <p class="font-weight-bold">
+                            {% if user.is_authenticated %}                                                      
+                            <span>
+                                <a href="{% url 'update_comment' comment.id %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>   
+                                <a href="{% url 'delete_comment' comment.id %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a>
+                            </span>
+                            {% endif %}                                                     
+                        </p>
                     </div>
                     <!-- Our for loop ends here -->
                     {% endfor %}
