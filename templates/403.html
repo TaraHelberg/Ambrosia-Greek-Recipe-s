@@ -3,9 +3,19 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row justify-content-md-center">
-        <div class="col-md-6 mt-5 text-center">
+        <div class="col-md-6 mt-2 text-center text-primary">
             <h1>403 Error</h1>
+            <h2 class="mt-3">Page Forbidden</h2>
+            <br>
+            <h3>Ambrosia Greek Recipes Applogise</h3>            
+            <p>Looks like you're trying to access forbidden content.</p>
+            <p>Please check that you are logged into the correct account</p>
+            <P>LogOut and LogIn with the Correct Account</P>
+            <div class="text-center">                     
+                <a class="btn btn-primary" href="{% url 'account_logout' %}" role="button">LogOut</a>  
+                <a class="btn btn-primary" href="{% url 'browse' %}" role="button">Browse</a>
+            </div>    
         </div>
     </div>
 </div>
-{% block end %}
+{%endblock%}

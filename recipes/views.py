@@ -93,7 +93,6 @@ class RecipeLike(View):
             recipe.likes.remove(request.user)
         else:
             recipe.likes.add(request.user)
-
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
@@ -173,3 +172,23 @@ class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def test_func(self):
         comment = self.get_object()
         return comment.name == self.request.user.username
+
+
+def error_400(request, exception):
+    """ 400 Error page """
+    return render(request, '400.html', status=400)
+
+
+def error_403(request, exception):
+    """ 403 Error page """
+    return render(request, '403.html', status=403)
+
+
+def error_404(request, exception):
+    """ 404 Error page """
+    return render(request, '404.html', status=404)
+
+
+def error_500(request):
+    """ 500 Error page """
+    return render(request, '500.html', status=500)
