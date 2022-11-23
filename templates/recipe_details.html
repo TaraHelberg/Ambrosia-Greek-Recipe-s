@@ -57,24 +57,21 @@
             <div class="row text-center">
                 <!--Recipe Like/Unlike & Likes Count-->
                 <div class="col-md-6">                    
-                    <strong>
-                        {% if user.is_authenticated %}
-                        <form class="d-inline" action="{% url 'recipe_like' recipe.slug %}" method="POST">
-                            {% csrf_token %}
-                            {% if liked %}
-                            <button type="submit" name="Recipes.id" value="{{recipe.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
-                            {% else %}
-                            <button type="submit" name="Recipes.id" value="{{recipe.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
-                            {% endif %}
-                        </form>
+                    {% if user.is_authenticated %}
+                    <form id="like_form" action="{% url 'recipe_like' recipe.slug %}"
+                        class="d-inline" method="POST">
+                        {% csrf_token %}
+                        {% if liked %}
+                        <button type="submit" name="recipe_id" value="{{ recipe.slug }}"
+                            class="btn btn-md"><i class="fas fa-heart"></i>
+                            {{ recipe.amount_of_likes }} </button>
                         {% else %}
-                        <span class="text-secondary"><i class="far fa-heart"></i></span>
+                        <button type="submit" name="recipe_id" value="{{ recipe.slug }}"
+                            class="btn btn-md"><i class="far fa-heart"></i>
+                            {{ recipe.amount_of_likes }}</button>
                         {% endif %}
-                        <!-- The number of likes goes before the closing strong tag -->
-                        {% with recipe_like.count as recipe.number_of_likes  %}
-                        <span class="text-secondary">{{ recipe.number_of_likes }}</span>
-                        {% endwith %}
-                    </strong>
+                        {% endif %}
+                    </form>
                 </div>
                 <!--Recipe Comments Count-->                
                 <div class="col-md-6">

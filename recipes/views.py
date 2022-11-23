@@ -85,8 +85,9 @@ class RecipeDetail(DetailView):
 class RecipeLike(View):
     """
     Recipe Like's View
+    Credit Code Institute I Think Therefore I Blog
     """
-    def post(self, request, slug):
+    def post(self, request, slug, *args, **kwargs):
         recipe = get_object_or_404(Recipe, slug=slug)
 
         if recipe.likes.filter(id=request.user.id).exists():

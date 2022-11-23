@@ -32,7 +32,7 @@
                             <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a> 
                         </div>
                     </div>                    
-                    <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>{{ recipe.number_of_likes }}</p>
+                    <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>{{ recipe.amount_of_likes }}</p>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}                                                                         
             </div>
