@@ -80,3 +80,19 @@ label { display: block;
     background-clip:content-box;    
 }    
 
+/*Like's Style*/
+.fa-heart {
+    color: red;    
+}
+
+/*Comment's Style*/
+.fa-comments {
+    color:#0d6efd;
+}
+
+/*Carousel style*/
+.carousel-item img {
+    width: 20em;
+    height: 25em;
+    border-radius: 0.5em;
+}

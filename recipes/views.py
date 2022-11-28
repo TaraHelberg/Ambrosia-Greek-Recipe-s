@@ -8,11 +8,16 @@ from .models import Recipe, Comment
 from .forms import CommentForm, RecipeForm
 
 
-class Home(generic.TemplateView):
+class HomeList(generic.ListView):
     """
     Home page view
     """
-    template_name = "index.html"
+    def get(self, request):
+        recipes = Recipe.objects.filter(status=1).order_by('-created_on')[:4]
+        context = {
+                "recipes": recipes,
+                }
+        return render(request, 'index.html', context)
 
 
 class RecipeList(generic.ListView):
