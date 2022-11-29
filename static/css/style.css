@@ -30,10 +30,10 @@ body {
 }
 
 #hero-image {
-    width: 100%;
+    width: 80%;
     height: 26em;
-    background: url("https://res.cloudinary.com/drf6jhefj/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1667821115/salad-5904093_1280_rjphtr.jpg") center center no-repeat; 
-    background-clip:content-box;    
+    background: url("../image/heroimage-greek-salad.jpg") center center no-repeat; 
+    background-clip:cover;    
     overflow: hidden;    
 
     /* animates zoom effect on loading page */
