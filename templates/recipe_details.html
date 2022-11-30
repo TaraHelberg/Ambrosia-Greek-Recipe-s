@@ -1,19 +1,23 @@
 {% extends "base.html" %}
+
 {% load crispy_forms_tags %}
 
 {% block content %}
+
+{% load static %}
+
 <div class="container-fluid">
     <div class="row justify-content-center">
         <!--Recipe Card with Image and main card body showing full recipe-->  
         <div class="card mb-3" style="max-width: 60em;">                 
             <div class="row no-gutters">
                 <div class="col-md-4"> 
-                    <!--Card image place holder -->                               
+                    <!--Card Recipe placeholder image -->                           
                     {% if "placeholder" in recipe.featured_image.url %}
-                    <img src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" alt="Glass Olive Oil Bottle with Olives" class="img-fluid rounded-start">
+                    <img src="{% static 'image/placeholder-olive-oil.jpg' %}" class="img-fluid rounded-start" alt="...">
                     {% else %}
-                    <!--Card image uploaded by user -->
-                    <img src=" {{ recipe.featured_image.url }}" alt="image of {{ recipe.title }}" class="img-fluid rounded-start">
+                    <!--Card Recipe image uploaded by user -->
+                    <img src=" {{ recipe.featured_image.url }}" alt="image of {{ recipe.title }}" class="img-fluid rounded-start" alt="{{ recipe.title }}">
                     {% endif %}
                     <p>{{ recipe.author }} | {{ recipe.created_on }}</p>
                 </div> 

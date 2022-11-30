@@ -5,8 +5,8 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row justify-content-center bgimage1">
+<div class="container-fluid bgimage">
+    <div class="row justify-content-center">
         <div class="col-md-8 mt-3 offset-md-6">
             <h3 class="text-primary">{% trans "Sign Out" %}</h3>           
         </div>       
@@ -20,7 +20,7 @@
                 <h4>We Hope you Enjoyed ! :D</h4>
                 <h4>Looking forward to seeing you Again{% endblocktrans %}</h4>                
                 <button class="btn btn-primary" type="submit">{% trans 'Sign Out' %}</button>
-                <p>To continue Browsing : <a href="{% url 'browse' %}"> Browse</a></p>
+                <p>To continue Browsing : <a href="{% url 'browse' %}" class="btn btn-primary" role="button" aria-pressed="true"> Browse</a></p>
             </form>
         </div>
     </div>

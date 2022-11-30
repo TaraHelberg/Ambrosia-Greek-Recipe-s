@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% load static %}
+
 <div class="container-fluid">
     <div class="row">       
         <div class="col-m-t-md-12">          
@@ -10,11 +12,11 @@
                 <div class="col-xs-12 col-md-3"> 
                     <!--Recipe Card with Image and main card body showing recipe preview Basics-->                   
                     <div class="card shadow p-3 mb-5 bg-white rounded browse">
-                        <!--Card image place holder -->
+                        <!--Card Recipe placeholder image -->
                         {% if "placeholder" in recipe.featured_image.url %}                        
-                        <img class="card-img-top img-responsive" src="https://res.cloudinary.com/drf6jhefj/image/upload/v1666771761/olive-oil-1867229_640_mgokn5.jpg" height="300" alt="Glass Olive Oil Bottle with Olives">
+                        <img class="card-img-top img-responsive" src="{% static 'image/placeholder-olive-oil.jpg '%}" height="300" alt="">
                         {% else %}
-                        <!--Card image uploaded by user -->
+                        <!--Card Recipe image uploaded by user -->
                         <img class="card-img-top img-responsive" src=" {{ recipe.featured_image.url }}" height="300" alt="image of {{ recipe.title }}">
                         {% endif %}
                         <br>
@@ -27,13 +29,16 @@
                             <p><i class="fa-solid fa-kitchen-set text-primary"></i> Prep Time: {{ recipe.prep_time }}</p>
                             <p><i class="fa-solid fa-fire-burner text-primary"></i> Cooking Time: {{ recipe.cooking_time}}</p>
                             <!--Url page navigation links -->
+                            <!--View Link avaiable to all users-->
                             <a href="{% url 'recipe_detail' recipe.slug %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">View</a>
+                            <!--Update and Delete Link registered Users Only - Redirect to Sing In Form-->
                             <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>
                             <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a> 
                         </div>
                     </div>                    
                     <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>{{ recipe.amount_of_likes }}</p>
                 </div>
+                <!--Ensure that only 3 Recipes in a Row-->
                 {% if forloop.counter|divisibleby:3 %}                                                                         
             </div>
             <div class="row justify-content-center p-3">

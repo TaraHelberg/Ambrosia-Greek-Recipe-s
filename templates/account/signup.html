@@ -5,8 +5,9 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row justify-content-center bgimage1">
+
+<div class="container-fluid bgimage">
+    <div class="row justify-content-center">
         <div class="col-md-8 mt-3 offset-md-6">
             <h3 class="text-primary">{% trans "Sign Up" %}</h3>           
         </div>        
@@ -18,8 +19,8 @@
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
                     <button class="btn btn-primary" type="submit">{% trans "Sign Up" %} &raquo;</button>
-                    <p class="mt-4">{% blocktrans %}Already have an account ? Then please : <a href="{{ login_url }}">Login</a>.{% endblocktrans %}</p>
-                    <p>To continue Browsing : <a href="{% url 'browse' %}"> Browse</a></p>
+                    <p class="mt-4">{% blocktrans %}Already have an account ? Then please : <a href="{{ login_url }}" class="btn btn-primary" role="button" aria-pressed="true">Login</a>.{% endblocktrans %}</p>
+                    <p>To continue Browsing : <a href="{% url 'browse' %}" class="btn btn-primary" role="button" aria-pressed="true"> Browse</a></p>
             </form>               
         </div>        
     </div>

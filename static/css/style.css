@@ -32,7 +32,7 @@ body {
 #hero-image {
     width: 80%;
     height: 26em;
-    background: url("../image/heroimage-greek-salad.jpg") center center no-repeat; 
+    background: url('/static/image/heroimage-greek-salad.jpg') center center no-repeat; 
     background-clip:cover;    
     overflow: hidden;    
 
@@ -73,11 +73,12 @@ label { display: block;
     text-align: left;
     }
 
-.bgimage1 {
-    width: 100%;
-    height: 26em;
-    background: url("https://res.cloudinary.com/drf6jhefj/image/upload/v1667997587/food-3425223_640_xudeoa.jpg") center center no-repeat; 
-    background-clip:content-box;    
+.bgimage {
+    width: 80%;
+    height: 32em;
+    background: url('/static/image/bgimage-meal-spices.jpg') center center no-repeat; 
+    background-clip:cover;    
+    overflow: hidden;
 }    
 
 /*Like's Style*/
