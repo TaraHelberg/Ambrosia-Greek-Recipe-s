@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib import messages
 from django.urls import reverse_lazy
 from django.http import HttpResponseRedirect
 from .models import Recipe, Comment
@@ -112,6 +113,8 @@ class AddRecipe(CreateView):
     success_url = reverse_lazy('browse')
 
     def form_valid(self, form):
+        messages.success(self.request,
+                         "Recipe Successfully Added & Awaiting Approval")
         form.instance.author = self.request.user
         return super(CreateView, self).form_valid(form)
 
@@ -127,6 +130,7 @@ class UpdateRecipe(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     success_url = reverse_lazy('browse')
 
     def form_valid(self, form):
+        messages.success(self.request, "Recipe Successfully Updated")
         form.instance.author = self.request.user
         return super(UpdateView, self).form_valid(form)
 
@@ -142,11 +146,21 @@ class DeleteRecipe(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Recipe
     template_name = 'delete_recipe.html'
     pk_url_kwarg = 'pk'
+    success_message = 'Recipe Successfully Deleted'
     success_url = reverse_lazy('browse')
 
     def test_func(self):
         recipe = self.get_object()
         return recipe.author == self.request.user
+
+    def delete(self, request, *args, **kwargs):
+        """
+        Function to get success message for Delete
+        Credit: https://stackoverflow.com/questions/24822509/
+        success-message-in-deleteview-not-shown
+        """
+        messages.success(self.request, self.success_message)
+        return super(DeleteRecipe, self).delete(request, *args, **kwargs)
 
 
 class UpdateComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
@@ -159,6 +173,7 @@ class UpdateComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     success_url = reverse_lazy('browse')
 
     def form_valid(self, form):
+        messages.success(self.request, "Comment Successfully Updated")
         form.instance.name = self.request.user.username
         return super().form_valid(form)
 
@@ -167,17 +182,27 @@ class UpdateComment(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return comment.name == self.request.user.username
 
 
-class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class DeleteComment(LoginRequiredMixin, UserPassesTestMixin, DeleteView,):
     """
     Commnet Delete View
     """
     model = Comment
     template_name = 'delete_comment.html'
+    success_message = 'Comment Successfully Deleted'
     success_url = reverse_lazy('browse')
 
     def test_func(self):
         comment = self.get_object()
         return comment.name == self.request.user.username
+
+    def delete(self, request, *args, **kwargs):
+        """
+        Function to get success message for Delete
+        Credit: https://stackoverflow.com/questions/24822509/
+        success-message-in-deleteview-not-shown
+        """
+        messages.success(self.request, self.success_message)
+        return super(DeleteComment, self).delete(request, *args, **kwargs)
 
 
 def error_400(request, exception):

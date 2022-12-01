@@ -54,7 +54,8 @@
         </div>
       </div>
     </nav>
-    <!--Message code credit Code Institute: I think therefor I blog-->  
+    <!--Message code credit Code Institute: I think therefor I blog-->
+    {% if messages %}  
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -67,6 +68,7 @@
         </div>
       </div>
     </div>       
+    {% endif %}
     <!-- Content for All Pages -->
     <main class="flex-shrink-0">
       {% block content %}        
