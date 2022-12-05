@@ -97,3 +97,9 @@ label { display: block;
     height: 25em;
     border-radius: 0.5em;
 }
+
+/*Playlist Button style*/
+.playlistbtn {
+    color: #1DB954;   
+    font-size: large;
+}
