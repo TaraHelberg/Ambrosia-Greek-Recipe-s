@@ -30,11 +30,6 @@ The site will allow a user to Register in order to add, update and delete their 
 ![Home Page]()
 
 
-# About page
-
-![About Page]()
- 
-
 # Browse Recipe's
 
 ![Browse Recipe's]()

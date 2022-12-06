@@ -14,10 +14,10 @@
                 <div class="col-md-4"> 
                     <!--Card Recipe placeholder image -->                           
                     {% if "placeholder" in recipe.featured_image.url %}
-                    <img src="{% static 'image/placeholder-olive-oil.jpg' %}" class="img-fluid rounded-start" alt="...">
+                    <img src="{% static 'image/placeholder-olive-oil.jpg' %}" class="img-fluid rounded-start" alt="olive's & Olive Oil">
                     {% else %}
                     <!--Card Recipe image uploaded by user -->
-                    <img src=" {{ recipe.featured_image.url }}" alt="image of {{ recipe.title }}" class="img-fluid rounded-start" alt="{{ recipe.title }}">
+                    <img src=" {{ recipe.featured_image.url }}" class="img-fluid rounded-start" alt="{{ recipe.title }}">
                     {% endif %}
                     <p>{{ recipe.author }} | {{ recipe.created_on }}</p>
                 </div> 
@@ -39,12 +39,12 @@
                 <!--Recipe Ingredients-->
                 <div class="col-md-6">
                     <h5 class="card-title text-primary">Ingredients</h5>
-                    <p>{{ recipe.ingredients | safe }}</p>
+                       {{ recipe.ingredients | safe }}
                 </div>
                 <!--Recipe Method-->
                 <div class="col-md-6">
                     <h5 class="card-title text-primary">Method</h5>
-                    <p>{{ recipe.method | safe}}</p>
+                        {{ recipe.method | safe}}
                 </div>
             </div>       
         </div>
@@ -73,9 +73,9 @@
                         <button type="submit" name="recipe_id" value="{{ recipe.slug }}"
                             class="btn btn-md"><i class="far fa-heart"></i>
                             {{ recipe.amount_of_likes }}</button>
-                        {% endif %}
-                    {% endif %}                            
+                        {% endif %}                                                
                     </form>
+                    {% endif %}
                 </div>
                 <!--Recipe Comments Count-->                
                 <div class="col-md-6">
