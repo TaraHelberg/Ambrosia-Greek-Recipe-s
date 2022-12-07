@@ -2,9 +2,12 @@
 
 ![amiresponsive]()
 
-Ambrosia Greek Recipe’s is a user-friendly app that is based on the Greek Food and culture but is open to everyone who enjoys cooking and wishes to explore Greek Food and add their own recipes.
-The site’s objective is to allow users to view / browser recipe’s weather they are a Register user or not . 
-The site will allow a user to Register in order to add, update and delete their own recipes to the site and leave comments should they wish to . 
+Live App link : 
+
+Ambrosia Greek Recipe’s is a user-friendly app that is base on the Greek Food and culture but is open to everyone who enjoys cooking and wishes to explore Greek Food and ad their own recipes.
+The site’s objective is to allow users to browse /view recipes weather they are a Registered user or not .
+The site will allow a user to Register in order to add , update and delete their won recipes onto the app and leave comments that the user can update or delete should they wish . Registered users can also like/unlike recipes.
+ 
 
 # UX 
 
@@ -13,12 +16,16 @@ The site will allow a user to Register in order to add, update and delete their 
 
 ## Balsamiq Wireframes
 
-![ Home Page ]()
-![ About Page ]()
-![ Browse Recipe's ]()
-![ Register ]()
-![ Login ]() 
-![ Add Recipe ]()
+![ Home Page ](assets/readme-images/Homepg.png)
+![ Register ](assets/readme-images/RegisterFrompg.png)
+![ Login ](assets/readme-images/LogInformpg.png)
+![ LogOut ](assets/readme-images/LogoutFrompg.png)
+![ Browse Recipe's ](assets/readme-images/BrowsePg.png)
+![ Recipe Details ](assets/readme-images/Recipedetailspg.png)
+![ Add Recipe ](assets/readme-images/Addrecipepg.png)
+![ Update Recipe ](assets/readme-images/Updaterecipepg.png)
+
+Wireframe's are extreamly basic and did not incorporate allApp pages. Wireframes where used as boiler plates to start the app design many updates and alterations made after the basic Wireframe was used to get started on the App.
 
 # Features
 * Navigation 
