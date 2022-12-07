@@ -156,15 +156,15 @@
      // Show and Hide playlist & localstorage so if will display on All pages when open 
       function myPlaylist() {
         var x = document.getElementById("spotify");
-        console.log(x.style.display)
+        console.log(x.style.display);
         if (x.style.display === "none") {
-          localStorage.setItem('display','block')
+          localStorage.setItem('display','block');
           x.style.display = "block";
         } else {
-          localStorage.setItem('display','none')
+          localStorage.setItem('display','none');
           x.style.display = "none";
         }
-        console.log(localStorage)
+        console.log(localStorage);
       }
 
       function checkDisplay(){
