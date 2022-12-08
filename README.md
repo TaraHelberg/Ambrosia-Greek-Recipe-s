@@ -1,33 +1,108 @@
 # Ambrosia Greek Recipe’s 
 
-![amiresponsive]()
+![amiresponsive](assets/readme-images/iamresponsive.png)
 
-Live App link : 
+Live App link : [Ambrosia Greek Recipe's](https://ambrosia-greek-recipes.herokuapp.com/)
 
-Ambrosia Greek Recipe’s is a user-friendly app that is base on the Greek Food and culture but is open to everyone who enjoys cooking and wishes to explore Greek Food and ad their own recipes.
-The site’s objective is to allow users to browse /view recipes weather they are a Registered user or not .
-The site will allow a user to Register in order to add , update and delete their won recipes onto the app and leave comments that the user can update or delete should they wish . Registered users can also like/unlike recipes.
- 
+Ambrosia Greek Recipe’s is a user-friendly app that is base on the Greek Food and culture but is open to everyone who enjoys cooking and wishes to explore Greek Food and add their own recipes.
+The site’s objective is to allow users to browse / view recipes weather they are a Registered user or not .
+The site will allow a user to Register in order to add , update and delete their won recipes on the app and leave comments that the user can update or delete should they wish . Registered users can also like/unlike recipes.
 
-# UX 
+# Contents
 
+- [User Experience(UX)](#user-experience-ux)
+   * [User Stories](#user-stories) 
 
+- [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
+
+## User Experience UX
+
+As a App Developer and Designer I have tried to incorporate the Needs of the User along with a User Friendly navigation and astheticly pleasing App. 
+
+## User Stories
+
+I have used the Agile method starting with the Epics from which the User Stories are propogated and Task required to complete the User Stories. 
+
+A full breakdonw of the [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
+
+### EPIC | Home/Landing Page
+- As a App Designer I require a Home/Landing Page so that the User can be introduced to the Recipes App and have a Definite place to Navigate and start using the app from.
+  * [USER STORY: Navigation](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/18)
+       * [Tasks: Header, Title & Navigation](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/22)
+  * [USER STORY: Social Media App Links](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/19)
+       * [Tasks: Footer & Social Media Links](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/23)
+  * [USER STORY: Engaged in the App from the Start](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/20)
+       * [Tasks: Home Page Body -Engage User](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/24)
+       * [Tasks: Promote Registration Link](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/25)
+
+### EPIC | Browse Recipe's Page
+- As a App Designer I require a Browse Recipe's Page so that App users can Browse the recipe's that they or others have added/posted even if the User is Registered user or not 
+   * [USER STORY: Browse Recipes](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/31)
+       * [Tasks: Browse Recipe ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/32)
+   * [USER STORY: Open a Recipe](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/33) 
+       * [Tasks: Open a Recipe to View entire recipe contents](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/34)   
+
+### EPIC | App Admin Manager
+- As a App Designer I require an App Admin Manager so that The Admin Manager in charge of the App can oversee the Registered Users Posts & comments in order to moderate the App if needed
+    * [USER STORY: App Admin Management](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/28)
+        * [Tasks: App Admin Management](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/29)
+
+### EPIC | User Profile 
+- As a App Designer I require User Profile so that Potential users will have the ability to Register & Login to the App
+    * [USER STORY: Account Registration & Login](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/37)
+        * [Tasks: Account Registration & Login/Log out ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/38)
+
+### EPIC | Recipe Management
+- As a App Designer I require a Registered User to be able to Add, Update & Delete Recipe as well as Comment on Recipes so that the Registered User can share Recipes to the Browse Recipe's page and Manage their Recipes for all Users to enjoy and add value to the App for All Users along with Registered users been able to add Comments for extra interaction with the App
+    * [USER STORY Recipe Managment](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/30)
+        * [Tasks: Create a Recipe Front end ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/40)
+        * [Tasks: Read Detail Recipe Front End](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/41)
+        * [Tasks: Update a Recipe Front End](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/42)
+        * [Tasks: Delete a Recipe Front End](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/43)
+        * [Tasks: Recipe Management - Comment On a Recipe](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/39)
+    * [USER STORY: Update & Delete Comments](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/44)
+        * [Tasks: Update & Delete Comments](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/45)
+
+### EPIC | Recipe Like's
+- As a App Designer I can give my Registered Users the ability to like Recipes so that they have extra interaction with the App and can show to all users which recipes are more popular adding Value to the App 
+    * [USER STORY: Likes ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/26)
+        * [Tasks: Likes](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/27)
+
+### EPIC | Error Pages
+- As a App Designer. I would require Error Handling pages so that any Errors that may occur due to either technical issues or access issues are handled, and that the user is informed and redirected accordingly if possible
+    * [USER STORY: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/47)
+        * [Tasks: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/48)
 
 
 ## Balsamiq Wireframes
 
-![ Home Page ](assets/readme-images/Homepg.png)
-![ Register ](assets/readme-images/RegisterFrompg.png)
-![ Login ](assets/readme-images/LogInformpg.png)
-![ LogOut ](assets/readme-images/LogoutFrompg.png)
-![ Browse Recipe's ](assets/readme-images/BrowsePg.png)
-![ Recipe Details ](assets/readme-images/Recipedetailspg.png)
-![ Add Recipe ](assets/readme-images/Addrecipepg.png)
-![ Update Recipe ](assets/readme-images/Updaterecipepg.png)
+Wireframe's are extreamly basic and did not incorporate all App pages. 
+Wireframes where used as boiler plates to start the app design many updates and alterations made after the basic Wireframes where used to get started on the App.
 
-Wireframe's are extreamly basic and did not incorporate allApp pages. Wireframes where used as boiler plates to start the app design many updates and alterations made after the basic Wireframe was used to get started on the App.
+<details><summary>Balsamiq Wireframes</summary>
+
+Home Page ![ Home Page ](assets/readme-images/Homepg.png)
+
+Register ![ Register ](assets/readme-images/RegisterFrompg.png)
+
+Login ![ Login ](assets/readme-images/LogInformpg.png)
+
+LogOut ![ LogOut ](assets/readme-images/LogoutFrompg.png)
+
+Browse ![ Browse ](assets/readme-images/BrowsePg.png)
+
+Recipe Details ![ Recipe Details ](assets/readme-images/Recipedetailspg.png)
+
+Add Recipe ![ Add Recipe ](assets/readme-images/Addrecipepg.png)
+
+Update Recipe ![ Update Recipe ](assets/readme-images/Updaterecipepg.png)
+
+
+</details>
+
 
 # Features
+
 * Navigation 
 
      
