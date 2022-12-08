@@ -12,6 +12,7 @@ The site will allow a user to Register in order to add , update and delete their
 
 - [User Experience(UX)](#user-experience-ux)
    * [User Stories](#user-stories) 
+   * [Design](#design)
 
 - [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
 
@@ -23,7 +24,7 @@ As a App Developer and Designer I have tried to incorporate the Needs of the Use
 
 I have used the Agile method starting with the Epics from which the User Stories are propogated and Task required to complete the User Stories. 
 
-A full breakdonw of the [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
+Full  [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
 
 ### EPIC | Home/Landing Page
 - As a App Designer I require a Home/Landing Page so that the User can be introduced to the Recipes App and have a Definite place to Navigate and start using the app from.
@@ -73,6 +74,25 @@ A full breakdonw of the [Kanban Board](https://github.com/TaraHelberg/Ambrosia-G
     * [USER STORY: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/47)
         * [Tasks: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/48)
 
+### Design
+
+The App has a very clean and simplistic design which was purposely chosen in order to keep the App looking and feeling Authenticaly Greek and Easy to Navigate.
+
+#### Colour Scheme
+Colour from BootStrap
+
+Going with an Authentica Greek Themed App and choosing to stick to the colours most assosciated with Greece Blue and White this Developer was fortunate to choose Boostrap for many applications in this App a benifit of this been that Boostrap by default provided the Colour scheeme required for this App.
+
+#### Imagery
+There are four static image's on the App .
+1. App Title Logo A Greek Urn
+2. Hero Image a Greek Salad on the Home Page
+3. BgIamge a meal-spices Image of Olive Oil and spices used as a background image for Forms
+4. Place Holder image a small glass bowl with olive oil and olives used if a user does not upload a recipe image 
+The rest of the imagery will be uploaded by users for their individual recipes. 
+
+#### Fonts
+The font 'Roboto Condensed' is used as our main Body Font for the App. The Font IS imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
 
 ## Balsamiq Wireframes
 
@@ -210,20 +230,13 @@ Update Recipe ![ Update Recipe ](assets/readme-images/Updaterecipepg.png)
 
 # Imagery for Project
 
- * Images obtained via .... 
+ * [Images obtained via Pixabay](https://pixabay.com/)
 
- ![Image Obtained]()
+ + Image 1 . [apptitleLog-greek-urn](https://pixabay.com/vectors/europe-greece-greek-pottery-vase-2028128/)
+ + Image 2 . [heroimage-greek-salad](https://pixabay.com/photos/salad-greek-salad-feta-food-plate-5904093/)
+ + Image 3 . [bgimage-meal-spices](https://pixabay.com/photos/meal-spices-laurel-salt-pepper-3191933/)
+ + Image 4 . [placeholder-olive-oil](https://pixabay.com/photos/olive-oil-olives-food-oil-natural-968657/)
  
-
- + Image 1 . 
- + Image 2 . 
- + Image 3 . 
- + Image 4 . 
- + Image 5 . 
- + Image 6 . 
- + Image 7 . 
- + Image 8 . 
-
  
  ### Note 
  
