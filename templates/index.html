@@ -7,9 +7,9 @@
 <!-- Hero Image , Welcome & Sign Up Encourgament-->
 <section>
     <div class="container-fluid img-fluid" id="hero-image">
-        <div class="row">
+        <div class="row overlay">
             <div class="col-12">
-                <div class="text-center text-primary">
+                <div class="text-center text-white">
                     <h1 class="logo-hero">Ambrosia Greek Recipe's</h1>
                     <h3>Home Of</h3>
                     <h3>The Food of The Gods</h3>
@@ -18,10 +18,11 @@
                     <!--Displays Loged In User Else Sign up Message -->
                     {% if user.is_authenticated %}
                     <!--Displays Loged In User-->
-                    <h4 class="text-black">{{ user.username }}</h4>
+                    <h4>{{ user.username }}</h4>
                     {% else %}
                     <!--Displays Sign Up Message-->                
-                    <h4 class="text-black">Sign Up Today !</h4>                            
+                    <h4>Sign Up Today !</h4>
+                    <h4>To start sharing your Greek Recipes with the World</h4>                            
                     {% endif %}
                     <form action="{% url 'account_signup' %}" method="get">
                         <!--Displays Log Out if User Loged In Else Sign Up-->
