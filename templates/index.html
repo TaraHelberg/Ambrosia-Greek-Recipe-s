@@ -13,16 +13,15 @@
                     <h1 class="logo-hero">Ambrosia Greek Recipe's</h1>
                     <h3>Home Of</h3>
                     <h3>The Food of The Gods</h3>
-                    <h4>A place to Share your most loved Greek Recipe's</h4>            
+                    <h3>A place to Share your most loved Greek Recipe's</h3>            
                     <h4>Welcome</h4>
                     <!--Displays Loged In User Else Sign up Message -->
                     {% if user.is_authenticated %}
                     <!--Displays Loged In User-->
                     <h4 class="text-black">{{ user.username }}</h4>
                     {% else %}
-                    <!--Displays Sign Up Message-->                   
-                    <h4>Sign up Today</h4>                    
-                    <h4>To start sharing your Greek Recipe's with the world!</h4>
+                    <!--Displays Sign Up Message-->                
+                    <h4 class="text-black">Sign Up Today !</h4>                            
                     {% endif %}
                     <form action="{% url 'account_signup' %}" method="get">
                         <!--Displays Log Out if User Loged In Else Sign Up-->
@@ -69,8 +68,8 @@
                                 {% else %}
                                 <img src="{{ recipe.featured_image.url }}" class="d-block w-100" alt="{{ recipe.title }}">
                                 {% endif %}
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>{{ recipe.title }}</h5>
+                                <div class="carousel-caption">
+                                    <h4>{{ recipe.title }}</h4>
                                     <p>{{ recipe.description}}</p>
                                     <p>Author: {{ recipe.author }}</p>
                                 </div>
