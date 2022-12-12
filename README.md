@@ -25,6 +25,8 @@ The site will allow a user to Register in order to add , update and delete their
    * [UserAccountPages](#user-account-pages)
    * [BrowsePage](#browse-recipes)
    * [RecipeViewPage](#recipe-view-page)
+   * [AddRecipePage](#add-recipe-page)
+   * [UpdateRecipePage](#update-recipe-page)
    
 
 ## User Experience UX
@@ -328,8 +330,31 @@ Image of Leave a Comment
 
 ![LeaveaComment](assets/readme-images/WebPages/Leave-a-Comment.png)
 
+# Add Recipe Page
 
+<details><summary>Full Add Recipe Page Image :</summary>
 
+![AddRecipePage](assets/readme-images/WebPages/AddRecipe-Page.jpeg)
+
+</details> 
+
+The Add Recipe Page is only available to Logged In Users.
+On this page a simple form is provided to Add the recipe providing all the necessary input fields.
+Title, Description, Serves, Prep Time, Cooking Time, Ingredients , Method and a Image section that allows the user to upload an Image of the Recipe by Choose File Button.
+A sumbit button and a Cancel button are provided to the user. 
+
+# Update Recipe Page
+
+<details><summary>Full Update Recipe Page Image :</summary>
+
+![UpdateRecipePage](assets/readme-images/WebPages/Update-Recipe-Page.jpeg)
+
+</details> 
+
+The Update Recipe Page can only be reached if the User is that Recipes Author.
+The Update Recipe Page Provides a form with the information already inputed by the User/Author on that particular recipe here the User/Author can update any details on the recipe that they should choose.
+
+At the end of the form are two buttons Update and Cancel for the User/Auhtor use.
 
 # 404 Error Page Not found
 
