@@ -27,6 +27,7 @@ The site will allow a user to Register in order to add , update and delete their
    * [RecipeViewPage](#recipe-view-page)
    * [AddRecipePage](#add-recipe-page)
    * [UpdateRecipePage](#update-recipe-page)
+   * [DeleteRecipePage]()
    
 
 ## User Experience UX
@@ -355,6 +356,16 @@ The Update Recipe Page can only be reached if the User is that Recipes Author.
 The Update Recipe Page Provides a form with the information already inputed by the User/Author on that particular recipe here the User/Author can update any details on the recipe that they should choose.
 
 At the end of the form are two buttons Update and Cancel for the User/Auhtor use.
+
+# Delete Recipe Page
+
+<details><summary>Full Delete Recipe Page Image :</summary>
+
+![DeleteRecipePage](assets/readme-images/WebPages/Update-Recipe-Page.jpeg)
+
+</details> 
+
+
 
 # 404 Error Page Not found
 
