@@ -20,6 +20,9 @@ The site will allow a user to Register in order to add , update and delete their
       * [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
       * [Data Modle](#data-model)
 
+- [Features](#features)
+   * [HomePage](#home-page)
+
 ## User Experience UX
 
 As a App Developer and Designer I have tried to incorporate the Needs of the User along with a User Friendly navigation and astheticly pleasing App. 
@@ -82,7 +85,7 @@ I have used the Agile method starting with the Epics from which the User Stories
 
 Github projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
 
-Not all User stories have made it into the projecy using the MSCW Mrthod you will find on the Kandban Must have's,Should Have's,Could Have's and Wont have. The wont have labeled sections are those that did not make it into the App due to time constraint or due to design decision as in the case of the About Page.
+Not all Epics have made it into the projecy using the MSCW Method you will find on the Kandban Must have's,Should Have's,Could Have's and Wont have labels. The wont have labeled sections are those that did not make it into the App due to time constraint or due to design decision as in the case of the About Page.
 
 ### Design
 
@@ -103,13 +106,15 @@ The rest of the imagery will be uploaded by users for their individual recipes.
 
 #### Images Credit for Project
 
- * [Images obtained via Pixabay](https://pixabay.com/)
+ <details><summary>Pixabay</summary>
+    
+* [Images obtained via Pixabay](https://pixabay.com/)
+     + Image 1 . [apptitleLog-greek-urn](https://pixabay.com/vectors/europe-greece-greek-pottery-vase-2028128/)
+    + Image 2 . [heroimage-greek-salad](https://pixabay.com/photos/salad-greek-salad-feta-food-plate-5904093/)
+    + Image 3 . [bgimage-meal-spices](https://pixabay.com/photos/meal-spices-laurel-salt-pepper-3191933/)
+    + Image 4 . [placeholder-olive-oil](https://pixabay.com/photos/olive-oil-olives-food-oil-natural-968657/)
+ </details>
 
- + Image 1 . [apptitleLog-greek-urn](https://pixabay.com/vectors/europe-greece-greek-pottery-vase-2028128/)
- + Image 2 . [heroimage-greek-salad](https://pixabay.com/photos/salad-greek-salad-feta-food-plate-5904093/)
- + Image 3 . [bgimage-meal-spices](https://pixabay.com/photos/meal-spices-laurel-salt-pepper-3191933/)
- + Image 4 . [placeholder-olive-oil](https://pixabay.com/photos/olive-oil-olives-food-oil-natural-968657/)
- 
 
 #### Fonts
 The font 'Roboto Condensed' is used as our main Body Font for the App. The Font IS imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
@@ -121,22 +126,21 @@ Wireframes where used as boiler plates to start the app design many updates and 
 
 <details><summary>Balsamiq Wireframes</summary>
 
-Home Page ![ Home Page ](assets/readme-images/Homepg.png)
+Home Page ![ Home Page ](assets/readme-images/Wireframes/Homepg.png)
 
-Register ![ Register ](assets/readme-images/RegisterFrompg.png)
+Register ![ Register ](assets/readme-images/Wireframes/RegisterFrompg.png)
 
-Login ![ Login ](assets/readme-images/LogInformpg.png)
+Login ![ Login ](assets/readme-images/Wireframes/LogInformpg.png)
 
-LogOut ![ LogOut ](assets/readme-images/LogoutFrompg.png)
+LogOut ![ LogOut ](assets/readme-images/Wireframes/LogoutFrompg.png)
 
-Browse ![ Browse ](assets/readme-images/BrowsePg.png)
+Browse ![ Browse ](assets/readme-images/Wireframes/BrowsePg.png)
 
-Recipe Details ![ Recipe Details ](assets/readme-images/Recipedetailspg.png)
+Recipe Details ![ Recipe Details ](assets/readme-images/Wireframes/Recipedetailspg.png)
 
-Add Recipe ![ Add Recipe ](assets/readme-images/Addrecipepg.png)
+Add Recipe ![ Add Recipe ](assets/readme-images/Wireframes/Addrecipepg.png)
 
-Update Recipe ![ Update Recipe ](assets/readme-images/Updaterecipepg.png)
-
+Update Recipe ![ Update Recipe ](assets/readme-images/Wireframes/Updaterecipepg.png)
 
 </details>
 
@@ -151,20 +155,65 @@ In order for the users to create recipes a custom recipe model was required. The
 
 The Comment model allows users to comment on individual recipes and the Recipe_id is a foreign key in the comment model given a comment can only be linked to one recipe. 
 
-The diagram below details the <details><summary>Database Flow Chart.</summary>
+The diagram below details the <details><summary>Database Flow Chart:</summary>
 ![Database Flow Chart ](assets/readme-images/Database%20Flow%20Chart.png)
 </details>
 
+
 # Features
 
-* Navigation 
+## Home Page 
 
-     
+<details><summary>Full Home Page Image :</summary>
 
-# Home Page   
+![HomePage](assets/readme-images/WebPages/HomePage.jpeg)
 
-![Home Page]()
+</details> 
 
+
+The Home Page of the App incorporates the Following :
+
+Header with App Title & Logo as well as Page Navigation included in is User Sign Up, Loging and Log out.
+
+There is also included a spotify play list for the users enjoyment
+
+Image of Header and Navigation when User is not Logged In
+![AppTitle,Logo& Navigation](assets/readme-images/WebPages/App%20Title-Logo-Navigation.png)
+
+Image of Header and Nacigation when User is Logged In
+![Naviagtion Logged In](assets/readme-images/WebPages/Navigation-Logged-In.png)
+
+
+The Main Body of the page has a animated Hero image which encourages signup a call to action and once signed up and logged in shows when a User is Logged in and welcomes them to the App.
+
+
+Hero Image Call to Action - SignUp
+![HeroImageCalltoAction](assets/readme-images/WebPages/Hero-Image-Call-to-Action.png)
+
+
+Hero Image Welcomes User and provides easy logout should user wish
+![HeroImageWekcomeUser](assets/readme-images/WebPages/Hero-Image-Welcome-User.png)
+ 
+
+Following this we have 2 sections below : 
+
+The Recently Added section ona Bootsrap Carousel showing the 4 most recently added Recipes if a User clicks on any of the recipes in the Carousel they are taken to a Detailed view of the recipe.
+
+Recently Added Image
+
+![RecentlyAdded](assets/readme-images/WebPages/Recently-Added.png)
+
+The What we Do section which gives the user the overall information on what the App is about and its useful features . If a User clicks on the Browse Icon the user is taken to the browes section of the App.
+
+What we Do Image
+
+![WhatWeDo](assets/readme-images/WebPages/What-We-Do.png)
+
+At the bottom of the App is the Footer section with social media links all of which open on a seperate tab outside of the App when Clicked on.
+
+Footer Iamge
+
+![Footer](assets/readme-images/WebPages/Footer.png)
 
 # Browse Recipe's
 
