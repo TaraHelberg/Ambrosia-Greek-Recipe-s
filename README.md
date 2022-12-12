@@ -25,6 +25,9 @@ The site will allow a user to Register in order to add , update and delete their
    * [UserAccountPages](#user-account-pages)
    * [BrowsePage](#browse-recipes)
    * [RecipeViewPage](#recipe-view-page)
+        * [LeaveAComment](#leave-a-comment)
+   * [UpdateAComment](#update-a-comment-page)
+   * [DeleteAComment](#delete-a-comment-page)     
    * [AddRecipePage](#add-recipe-page)
    * [UpdateRecipePage](#update-recipe-page)
    * [DeleteRecipePage](#delete-recipe-page)
@@ -323,6 +326,7 @@ Comments User Logged In Image
 
 ![CommentsLoggedIn](assets/readme-images/WebPages/RecipeView/Comments-User-Logged-In.png)
 
+### Leave a Comment
 
 Next to this is the Leave a Comments section which is only accessable and visable to a Logged in User .
 This shows the Author name under Posting as : .... & has a section for the User to Post the comment in the Body * section a submit button is supplied at the bottom.
@@ -330,6 +334,31 @@ This shows the Author name under Posting as : .... & has a section for the User 
 Image of Leave a Comment 
 
 ![LeaveaComment](assets/readme-images/WebPages/RecipeView/Leave-a-Comment.png)
+
+# Update A Comment Page
+
+<details><summary>Full Update A Comment Page Image :</summary>
+
+![UpdateACommentPage](assets/readme-images/WebPages/UpdateComment/UpdateComment-Page.png)
+
+</details> 
+
+The Update A Comment Page is only accessable to a Logged In User who is the User/Author of that Comment.
+A Update Comment form is provided with the original comment present for the User/Author to update.
+Two link buttons are supplied for the User/Author Choice to either Update the Comment or Cancel to leave the current Update Page which will return / Redirect the User/Author tot he Browsse Page.
+
+# Delete A Comment Page
+
+<details><summary>Full Delete A Comment Page Image :</summary>
+
+![DeleteACommentPage](assets/readme-images/WebPages/DeleteComment/DeleteComment-Page.png)
+
+</details> 
+
+The Delete A Comment Page is only accessable to a Logged In User who is the User/Author of that Comment.
+A Delete Comment page provides the User/Author with a Message in Red asking if they are sure they wish to Delete the Comment.
+Two link buttons are supplied for the User/Author Choice to either Delete the Comment or Cancel to leave the current Delete Page which will return / Redirect the User/Author tot he Browsse Page.
+
 
 # Add Recipe Page
 
