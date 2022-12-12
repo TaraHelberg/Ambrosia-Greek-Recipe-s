@@ -11,20 +11,23 @@ The site will allow a user to Register in order to add , update and delete their
 # Contents
 
 - [User Experience(UX)](#user-experience-ux)
-   * [User Stories](#user-stories) 
+   * [User Stories](#user-stories)
+        * [Agile Method](#agile-method-git-projects) 
    * [Design](#design)
-
-- [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
+      * [Color Scheme](#colour-scheme)
+      * [Images](#images)
+      * [Font](#fonts)
+      * [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
+      * [Data Modle](#data-model)
 
 ## User Experience UX
 
 As a App Developer and Designer I have tried to incorporate the Needs of the User along with a User Friendly navigation and astheticly pleasing App. 
+The App is designed for use for anyone who wishes to enjoy Greek Food and has a love of cooking.
 
 ## User Stories
 
 I have used the Agile method starting with the Epics from which the User Stories are propogated and Task required to complete the User Stories. 
-
-Full  [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
 
 ### EPIC | Home/Landing Page
 - As a App Designer I require a Home/Landing Page so that the User can be introduced to the Recipes App and have a Definite place to Navigate and start using the app from.
@@ -74,6 +77,13 @@ Full  [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issu
     * [USER STORY: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/47)
         * [Tasks: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/48)
 
+
+### Agile Method Git Projects
+
+Github projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
+
+Not all User stories have made it into the projecy using the MSCW Mrthod you will find on the Kandban Must have's,Should Have's,Could Have's and Wont have. The wont have labeled sections are those that did not make it into the App due to time constraint or due to design decision as in the case of the About Page.
+
 ### Design
 
 The App has a very clean and simplistic design which was purposely chosen in order to keep the App looking and feeling Authenticaly Greek and Easy to Navigate.
@@ -83,13 +93,23 @@ Colour from BootStrap
 
 Going with an Authentica Greek Themed App and choosing to stick to the colours most assosciated with Greece Blue and White this Developer was fortunate to choose Boostrap for many applications in this App a benifit of this been that Boostrap by default provided the Colour scheeme required for this App.
 
-#### Imagery
+#### Images
 There are four static image's on the App .
 1. App Title Logo A Greek Urn
 2. Hero Image a Greek Salad on the Home Page
 3. BgIamge a meal-spices Image of Olive Oil and spices used as a background image for Forms
 4. Place Holder image a small glass bowl with olive oil and olives used if a user does not upload a recipe image 
 The rest of the imagery will be uploaded by users for their individual recipes. 
+
+#### Images Credit for Project
+
+ * [Images obtained via Pixabay](https://pixabay.com/)
+
+ + Image 1 . [apptitleLog-greek-urn](https://pixabay.com/vectors/europe-greece-greek-pottery-vase-2028128/)
+ + Image 2 . [heroimage-greek-salad](https://pixabay.com/photos/salad-greek-salad-feta-food-plate-5904093/)
+ + Image 3 . [bgimage-meal-spices](https://pixabay.com/photos/meal-spices-laurel-salt-pepper-3191933/)
+ + Image 4 . [placeholder-olive-oil](https://pixabay.com/photos/olive-oil-olives-food-oil-natural-968657/)
+ 
 
 #### Fonts
 The font 'Roboto Condensed' is used as our main Body Font for the App. The Font IS imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
@@ -120,6 +140,20 @@ Update Recipe ![ Update Recipe ](assets/readme-images/Updaterecipepg.png)
 
 </details>
 
+## Data Model
+
+I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.  
+
+Django AllAuth was used for the user authentication system.
+User Modal with the User_Id as the Primary Key
+
+In order for the users to create recipes a custom recipe model was required. The recipe_id as the Primary Key and author as the foreign key to the User model given a recipe so that only one author can be connected to one recipe.
+
+The Comment model allows users to comment on individual recipes and the Recipe_id is a foreign key in the comment model given a comment can only be linked to one recipe. 
+
+The diagram below details the <details><summary>Database Flow Chart.</summary>
+![Database Flow Chart ](assets/readme-images/Database%20Flow%20Chart.png)
+</details>
 
 # Features
 
@@ -228,15 +262,7 @@ Update Recipe ![ Update Recipe ](assets/readme-images/Updaterecipepg.png)
 
 * Copied Code / Code assistance  
 
-# Imagery for Project
 
- * [Images obtained via Pixabay](https://pixabay.com/)
-
- + Image 1 . [apptitleLog-greek-urn](https://pixabay.com/vectors/europe-greece-greek-pottery-vase-2028128/)
- + Image 2 . [heroimage-greek-salad](https://pixabay.com/photos/salad-greek-salad-feta-food-plate-5904093/)
- + Image 3 . [bgimage-meal-spices](https://pixabay.com/photos/meal-spices-laurel-salt-pepper-3191933/)
- + Image 4 . [placeholder-olive-oil](https://pixabay.com/photos/olive-oil-olives-food-oil-natural-968657/)
- 
  
  ### Note 
  
