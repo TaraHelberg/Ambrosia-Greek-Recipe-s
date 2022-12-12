@@ -285,7 +285,7 @@ Image of Card Date and Likes Heart with Counter
 
 <details><summary>Full Recipe View Page Image :</summary>
 
-![RecipeDetailPage](assets/readme-images/WebPages/Recipe-Detail-Page.jpeg)
+![RecipeDetailPage](assets/readme-images/WebPages/RecipeView/Recipe-View-Page.png)
 
 </details> 
 
@@ -296,7 +296,7 @@ Under the Full Recipe are 3 Button Links. Update & Delete only be accesable to t
 
 Recipe View Deail Image
 
-![RecipeViewDetail](assets/readme-images/WebPages/Recipe-View-Details.png)
+![RecipeViewDetail](assets/readme-images/WebPages/RecipeView/Recipe-View-Details.png)
 
 
 Under this section is the Like Heart which is only viable and accessable to a Logged In User to Like/Unlike the Recipe .
@@ -304,24 +304,24 @@ Next to the Like Heart is the Comments Count Icon which is visable to All users 
 
 Likes & Comments Logged In Image
 
-![Likes&CommentsLoggedIn](assets/readme-images/WebPages/Likes-%26-Comments-Logged-In.png)
+![Likes&CommentsLoggedIn](assets/readme-images/WebPages/RecipeView/Likes-%26-Comments-Logged-In.png)
 
 Likes & Commemnts Logged Out Image
 
-![Likes&CommentsLoggedOut](assets/readme-images/WebPages/Likes-%26-Comments-Logged-Out.png)
+![Likes&CommentsLoggedOut](assets/readme-images/WebPages/RecipeView/Likes-%26-Comments-Logged-Out.png)
 
 This is followed by the Comments section showing the comments on the Recipe and can be views by all users.
 Each comment has the Authors name and date with the Authors comment under it .
 
 Comments User Logged Out Image
 
-![CommentsLoggedOut](assets/readme-images/WebPages/Comments-User-Logged-Out.png)
+![CommentsLoggedOut](assets/readme-images/WebPages/RecipeView/Comments-User-Logged-Out.png)
 
 When a User is Logged In the option to Update or Delete the comment via Button links is available however an error 403 Forbbiden message will be generated should the User not be the Author of that comment and tries to update or Delete a comment that is not allocated to them.
 
 Comments User Logged In Image
 
-![CommentsLoggedIn](assets/readme-images/WebPages/Comments-User-Logged-In.png)
+![CommentsLoggedIn](assets/readme-images/WebPages/RecipeView/Comments-User-Logged-In.png)
 
 
 Next to this is the Leave a Comments section which is only accessable and visable to a Logged in User .
@@ -329,7 +329,7 @@ This shows the Author name under Posting as : .... & has a section for the User 
 
 Image of Leave a Comment 
 
-![LeaveaComment](assets/readme-images/WebPages/Leave-a-Comment.png)
+![LeaveaComment](assets/readme-images/WebPages/RecipeView/Leave-a-Comment.png)
 
 # Add Recipe Page
 
