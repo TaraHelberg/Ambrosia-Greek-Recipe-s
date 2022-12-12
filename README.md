@@ -22,8 +22,10 @@ The site will allow a user to Register in order to add , update and delete their
 
 - [Features](#features)
    * [HomePage](#home-page)
+   * [UserAccountPages](#user-account-pages)
    * [BrowsePage](#browse-recipes)
    * [RecipeViewPage](#recipe-view-page)
+   
 
 ## User Experience UX
 
@@ -217,6 +219,35 @@ Footer Iamge
 
 ![Footer](assets/readme-images/WebPages/Footer.png)
 
+# User Account Pages
+
+<details><summary>Full Sign Up Page Image :</summary>
+
+![SignUpPage](assets/readme-images/WebPages/SignUp-Page.jpeg)
+
+</details> 
+
+The Sign Up page provides a Sign Up Form requesting the Username , Email and a Password that must be validated by inputting hte password a second time .
+A Sign Up button is provided & Below these are two redirect buttons one for Login should the user already have an account and another to continue to Browse page should the user choose so .
+
+<details><summary>Full Sign In Page Image :</summary>
+
+![SignInPage](assets/readme-images/WebPages/SignIn-Page.jpeg)
+
+</details> 
+
+The Log In page provides the user with a Form requesting the Username & Password and a Sign In button.
+Below these are two redirect buttons one for Sign Up should the user not have an account and another to continue to Browse page should the user choose so .
+
+<details><summary>Full Sign Out Page Image :</summary>
+
+![SignOutPage](assets/readme-images/WebPages/SignOut-Page.jpeg)
+
+</details>
+
+The Sign Out page provides the user with a Thank You message and a Sign Out button.
+Below these are one redirect button to continue to Browse page should the user choose so .
+
 # Browse Recipe's
 
 <details><summary>Full Browse Page Image :</summary>
@@ -297,13 +328,6 @@ Image of Leave a Comment
 
 ![LeaveaComment](assets/readme-images/WebPages/Leave-a-Comment.png)
 
-
-
-
-
-# Register
-
-![Register]()
 
 
 
