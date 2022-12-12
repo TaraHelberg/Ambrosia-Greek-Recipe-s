@@ -22,6 +22,8 @@ The site will allow a user to Register in order to add , update and delete their
 
 - [Features](#features)
    * [HomePage](#home-page)
+   * [BrowsePage](#browse-recipes)
+   * [RecipeViewPage](#recipe-view-page)
 
 ## User Experience UX
 
@@ -243,6 +245,61 @@ Below this is a Date which shows when last the Recipe was Updated and a number o
 Image of Card Date and Likes Heart with Counter
 
 ![RecipeDateLikeHeart&Count](assets/readme-images/WebPages/Recipe-Date-Like-Heart-%26-Count.png)
+
+
+# Recipe View Page
+
+<details><summary>Full Recipe View Page Image :</summary>
+
+![RecipeDetailPage](assets/readme-images/WebPages/Recipe-Detail-Page.jpeg)
+
+</details> 
+
+The View Page is a full detailed page view of the Recipe . Cosisting of an Iamge of the Recipe or a Recipe place holder Image should the user not upload a recipe, under the Recipe Image is the Author name and Latest date of recipe upload or Update.
+The Recipe , Tilte and dexription is next to the image under this is the number of People serves , Prep Time and cooking time.
+Followed by two section under this of Ingredients and the Method.
+Under the Full Recipe are 3 Button Links. Update & Delete only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error. The Browse button will take any user to the Browse Page.
+
+Recipe View Deail Image
+
+![RecipeViewDetail](assets/readme-images/WebPages/Recipe-View-Details.png)
+
+
+Under this section is the Like Heart which is only viable and accessable to a Logged In User to Like/Unlike the Recipe .
+Next to the Like Heart is the Comments Count Icon which is visable to All users to show number comments on the recipe.
+
+Likes & Comments Logged In Image
+
+![Likes&CommentsLoggedIn](assets/readme-images/WebPages/Likes-%26-Comments-Logged-In.png)
+
+Likes & Commemnts Logged Out Image
+
+![Likes&CommentsLoggedOut](assets/readme-images/WebPages/Likes-%26-Comments-Logged-Out.png)
+
+This is followed by the Comments section showing the comments on the Recipe and can be views by all users.
+Each comment has the Authors name and date with the Authors comment under it .
+
+Comments User Logged Out Image
+
+![CommentsLoggedOut](assets/readme-images/WebPages/Comments-User-Logged-Out.png)
+
+When a User is Logged In the option to Update or Delete the comment via Button links is available however an error 403 Forbbiden message will be generated should the User not be the Author of that comment and tries to update or Delete a comment that is not allocated to them.
+
+Comments User Logged In Image
+
+![CommentsLoggedIn](assets/readme-images/WebPages/Comments-User-Logged-In.png)
+
+
+Next to this is the Leave a Comments section which is only accessable and visable to a Logged in User .
+This shows the Author name under Posting as : .... & has a section for the User to Post the comment in the Body * section a submit button is supplied at the bottom.
+
+Image of Leave a Comment 
+
+![LeaveaComment](assets/readme-images/WebPages/Leave-a-Comment.png)
+
+
+
+
 
 # Register
 
