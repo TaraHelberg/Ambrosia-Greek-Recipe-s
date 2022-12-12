@@ -255,7 +255,7 @@ Below these are one redirect button to continue to Browse page should the user c
 
 <details><summary>Full Browse Page Image :</summary>
 
-![BrowsePage](assets/readme-images/WebPages/Browe%20Page.jpeg)
+![BrowsePage](assets/readme-images/WebPages/Browse/Browse-Page.png)
 
 </details> 
 
@@ -263,22 +263,22 @@ The Browse Page is set up to browse Recipes on Recipe cards set up with Paginati
 
 Image of Paginate Next Button
 
-![PaginateNextButton](assets/readme-images/WebPages/Paginate-Next-Button.png)
+![PaginateNextButton](assets/readme-images/WebPages/Browse/Paginate-Next-Button.png)
 
 Image of Paginate Prev Button
 
-![PaginatePrevButton](assets/readme-images/WebPages/Paginate-Prev-Button.png)
+![PaginatePrevButton](assets/readme-images/WebPages/Browse/Paginate-Prev-Button.png)
 
 Each card has the Basic information of the Recipe on the card consisting of Recipe Title, the Author of the Recipe ,Number of people it Serves, Prep Time and Cooking Time .Each Recipe Card has  3 usable link buttons View to go to the Recipe Details View which any User can access to see the entire Recipe in Detail.A button to Update the Recipe and one to Delete the Recipe these two buttons will only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error.
 
 Image of Recipe Card
-![RecipeCard](assets/readme-images/WebPages/Recipe-Card.png)
+![RecipeCard](assets/readme-images/WebPages/Browse/Recipe-Card.png)
 
 Below this is a Date which shows when last the Recipe was Updated and a number of Likes Heart that has a counter next to it to show number of likes.
 
 Image of Card Date and Likes Heart with Counter
 
-![RecipeDateLikeHeart&Count](assets/readme-images/WebPages/Recipe-Date-Like-Heart-%26-Count.png)
+![RecipeDateLikeHeart&Count](assets/readme-images/WebPages/Browse/Recipe-Date-Like-Heart-%26-Count.png)
 
 
 # Recipe View Page
