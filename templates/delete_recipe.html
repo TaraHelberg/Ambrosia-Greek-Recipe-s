@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+{% load static %}
+
 <div class="container">
     <!--Title-->
     <h1 class="text-primary text-center">Delete Recipe</h1>    
@@ -12,13 +15,13 @@
                 {% csrf_token %}
                 <!--Recipe Card with Image and main card body showing recipe preview Basics--> 
                 <div class="card shadow p-3 mb-5 bg-white rounded" id="browse">
-                    <!--Card image place holder -->
+                    <!--Card Recipe placeholder image -->                           
                     {% if "placeholder" in recipe.featured_image.url %}
                     <img src="{% static 'image/placeholder-olive-oil.jpg' %}" class="img-fluid rounded-start" alt="olive's & Olive Oil">
                     {% else %}
-                    <!--Card image uploaded by user -->
-                    <img class="card-img-top img-responsive" src=" {{ recipe.featured_image.url }}" height="300" alt="{{ recipe.title }}">
-                    {% endif %}
+                    <!--Card Recipe image uploaded by user -->
+                    <img src=" {{ recipe.featured_image.url }}" class="img-fluid rounded-start" alt="{{ recipe.title }}">
+                    {% endif %}                   
                     <br>
                     <!--Card Body -->                               
                     <div class="card-block">

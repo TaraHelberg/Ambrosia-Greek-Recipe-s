@@ -335,7 +335,7 @@ Image of Leave a Comment
 
 <details><summary>Full Add Recipe Page Image :</summary>
 
-![AddRecipePage](assets/readme-images/WebPages/AddRecipe-Page.jpeg)
+![AddRecipePage](assets/readme-images/WebPages/AddRecipe/AddRecipe-Page.png)
 
 </details> 
 
@@ -348,7 +348,7 @@ A sumbit button and a Cancel button are provided to the user.
 
 <details><summary>Full Update Recipe Page Image :</summary>
 
-![UpdateRecipePage](assets/readme-images/WebPages/Update-Recipe-Page.jpeg)
+![UpdateRecipePage](assets/readme-images/WebPages/AddRecipe/AddRecipe-Page.png))
 
 </details> 
 
@@ -361,7 +361,7 @@ At the end of the form are two buttons Update and Cancel for the User/Auhtor use
 
 <details><summary>Full Delete Recipe Page Image :</summary>
 
-![DeleteRecipePage](assets/readme-images/WebPages/Update-Recipe-Page.jpeg)
+![DeleteRecipePage]()
 
 </details> 
 
