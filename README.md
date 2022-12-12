@@ -173,7 +173,7 @@ The diagram below details the <details><summary>Database Flow Chart:</summary>
 
 <details><summary>Full Home Page Image :</summary>
 
-![HomePage](assets/readme-images/WebPages/HomePage.jpeg)
+![HomePage](assets/readme-images/WebPages/Home/Home-Page.png)
 
 </details> 
 
@@ -185,21 +185,21 @@ Header with App Title & Logo as well as Page Navigation included in is User Sign
 There is also included a spotify play list for the users enjoyment
 
 Image of Header and Navigation when User is not Logged In
-![AppTitle,Logo& Navigation](assets/readme-images/WebPages/App%20Title-Logo-Navigation.png)
+![AppTitle,Logo& Navigation](assets/readme-images/WebPages/Home/App%20Title%20%2CLogo%20%26%20Navigation.png)
 
 Image of Header and Nacigation when User is Logged In
-![Naviagtion Logged In](assets/readme-images/WebPages/Navigation-Logged-In.png)
+![Naviagtion Logged In](assets/readme-images/WebPages/Home/Navigation%20Logged%20In.png)
 
 
 The Main Body of the page has a animated Hero image which encourages signup a call to action and once signed up and logged in shows when a User is Logged in and welcomes them to the App.
 
 
 Hero Image Call to Action - SignUp
-![HeroImageCalltoAction](assets/readme-images/WebPages/Hero-Image-Call-to-Action.png)
+![HeroImageCalltoAction](assets/readme-images/WebPages/Home/Hero-Image-Call-to-Action.png)
 
 
 Hero Image Welcomes User and provides easy logout should user wish
-![HeroImageWekcomeUser](assets/readme-images/WebPages/Hero-Image-Welcome-User.png)
+![HeroImageWekcomeUser](assets/readme-images/WebPages/Home/Hero-Image-Welcome-User.png)
  
 
 Following this we have 2 sections below : 
@@ -208,25 +208,25 @@ The Recently Added section ona Bootsrap Carousel showing the 4 most recently add
 
 Recently Added Image
 
-![RecentlyAdded](assets/readme-images/WebPages/Recently-Added.png)
+![RecentlyAdded](assets/readme-images/WebPages/Home/Recently-Added.png)
 
 The What we Do section which gives the user the overall information on what the App is about and its useful features . If a User clicks on the Browse Icon the user is taken to the browes section of the App.
 
 What we Do Image
 
-![WhatWeDo](assets/readme-images/WebPages/What-We-Do.png)
+![WhatWeDo](assets/readme-images/WebPages/Home/What-We-Do.png)
 
 At the bottom of the App is the Footer section with social media links all of which open on a seperate tab outside of the App when Clicked on.
 
 Footer Iamge
 
-![Footer](assets/readme-images/WebPages/Footer.png)
+![Footer](assets/readme-images/WebPages/Home/Footer.png)
 
 # User Account Pages
 
 <details><summary>Full Sign Up Page Image :</summary>
 
-![SignUpPage](assets/readme-images/WebPages/SignUp-Page.jpeg)
+![SignUpPage](assets/readme-images/WebPages/UserAccount/SignUp-Page.png)
 
 </details> 
 
@@ -235,7 +235,7 @@ A Sign Up button is provided & Below these are two redirect buttons one for Logi
 
 <details><summary>Full Sign In Page Image :</summary>
 
-![SignInPage](assets/readme-images/WebPages/SignIn-Page.jpeg)
+![SignInPage](assets/readme-images/WebPages/UserAccount/SignIn-Page.png)
 
 </details> 
 
@@ -244,7 +244,7 @@ Below these are two redirect buttons one for Sign Up should the user not have an
 
 <details><summary>Full Sign Out Page Image :</summary>
 
-![SignOutPage](assets/readme-images/WebPages/SignOut-Page.jpeg)
+![SignOutPage](assets/readme-images/WebPages/UserAccount/SignOut-Page.png)
 
 </details>
 
