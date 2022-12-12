@@ -1,6 +1,6 @@
 # Ambrosia Greek Recipe’s 
 
-![amiresponsive](assets/readme-images/iamresponsive.png)
+![amiresponsive](assets/readme-images/amiresponsive.png)
 
 Live App link : [Ambrosia Greek Recipe's](https://ambrosia-greek-recipes.herokuapp.com/)
 
