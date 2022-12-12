@@ -28,7 +28,7 @@
                         <!--Displays Log Out if User Loged In Else Sign Up-->
                         {% if user.is_authenticated %}
                         <!--Displays Log Out for Loged In User-->   
-        	            <p><a class="btn btn-primary" href="{% url 'account_logout' %}">Logout</a></p>
+        	            <p><a class="btn btn-primary" href="{% url 'account_logout' %}">Sign Out</a></p>
                         {% else %}
                         <!--Displays Sign Up to New User or User not Loged in-->                       
                         <button class="btn btn-primary">Sign up!</button>
