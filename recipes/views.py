@@ -103,7 +103,7 @@ class RecipeLike(View):
         return HttpResponseRedirect(reverse('recipe_detail', args=[slug]))
 
 
-class AddRecipe(CreateView):
+class AddRecipe(LoginRequiredMixin, CreateView):
     """
     Recipe Add View
     """

@@ -52,7 +52,7 @@ The site will allow a user to Register in order to add , update and delete their
    * [Support Programs & Libraries](#support-programs--libraries)
 
 
--[Deployment](#deployment)
+- [Deployment](#deployment)
    * [Github](#github)
    * [Django and Heroku](#django-and-heroku)
    * [Forking](#forking)
@@ -255,15 +255,15 @@ The diagram below details the <details><summary>Database Flow Chart:</summary>
 
   </details> 
    
-    
-   ### 403 Error - Access Forbidden
+   ### 403 Error - Access Forbidden Image 
+   
+   <details><summary>403 Error - Access Forbidden Image :</summary>
 
-  <details><summary>403 Error - Access Forbidden Image :</summary>
-
-    ![403 Error](assets/readme-images/WebPages/CustomErrors/403Error-Page.png)
-
-  </details> 
-
+   ![403 Error](assets/readme-images/WebPages/CustomErrors/403Error-Page.png)
+   
+   </details>
+   
+     
    ### 404 Error - Page Not Found
    
    <details><summary>404 Error - Page Not Found Image :</summary>
@@ -663,7 +663,7 @@ The option to use filters to find Comments is also available .
 
   * Testing During development of the pages was done through the project to see how the project looked and felt
 
-  * Manual Testing
+  * Manual Testing 
 
  
 # Bugs
@@ -673,10 +673,12 @@ The option to use filters to find Comments is also available .
 # Validator Testing
 
 * Test Validators
-    + HTML - W3C Html Validator - No errors returned when pass through .
-    + CSS - W3C CSS Validator - No errors returned when pass through .
-    + RESPONSIVENESS - Am I Responsive for different divices media queries.
-    + LIGHTHOUSE - Website tested for Performance, Accessibility, Best Practice and SEO as seen below.
+    + HTML - W3C Html Validator - 
+    + CSS - W3C CSS Validator - 
+    + Pep8ci - 
+    + Jshint -
+    + Responsiveness - 
+    + Lighthouse - Website tested for Performance, Accessibility, Best Practice and SEO as seen below.
 
 # Deployment
 
