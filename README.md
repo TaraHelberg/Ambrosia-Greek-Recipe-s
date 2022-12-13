@@ -12,7 +12,8 @@ The site will allow a user to Register in order to add , update and delete their
 
 - [User Experience(UX)](#user-experience-ux)
    * [User Stories](#user-stories)
-        * [Agile Method](#agile-method-git-projects) 
+        * [Agile Method](#agile-method-git-projects)
+        * [Future Features](#future-features) 
    * [Design](#design)
       * [Color Scheme](#colour-scheme)
       * [Images](#images)
@@ -104,6 +105,30 @@ I have used the Agile method starting with the Epics from which the User Stories
 Github projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
 
 Not all Epics have made it into the projecy using the MSCW Method you will find on the Kandban Must have's,Should Have's,Could Have's and Wont have labels. The wont have labeled sections are those that did not make it into the App due to time constraint or due to design decision as in the case of the About Page.
+
+## Future Features
+
+Future Feature Link : [Won'tHaveKanbanBaord](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed+label%3A%22Won%27t+Have%22)
+
+### EPIC | Favourite Recipe's
+[Link Here](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/10)
+
+
+### EPIC | Recipe's Pantry
+[Link Here](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/11)
+
+
+### EPIC | Measurements Table
+[Link Here](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/12)
+
+
+### EPIC | Search Recipes 
+[Link Here](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/53)
+
+
+### EPIC | Recipe Categories 
+[Link Here](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/54)
+
 
 [Back to top ⇧](#contents)
 
