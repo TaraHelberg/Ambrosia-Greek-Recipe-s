@@ -25,6 +25,7 @@
                             <!--Card body showing Recipe Preview Basics-->                            
                             <h4 class="card-title text-primary text-center">{{ recipe.title }}</h4>
                             <h6 class="text-muted">Author: {{ recipe.author }}</h6>
+                            <p class="card-text text-muted">{{ recipe.created_on}} <i class="far fa-heart"></i>{{ recipe.amount_of_likes }}</p>
                             <p><i class="fa-solid fa-utensils text-primary"></i> Serves: {{ recipe.serves }}</p>
                             <p><i class="fa-solid fa-kitchen-set text-primary"></i> Prep Time: {{ recipe.prep_time }}</p>
                             <p><i class="fa-solid fa-fire-burner text-primary"></i> Cooking Time: {{ recipe.cooking_time}}</p>
@@ -35,8 +36,7 @@
                             <a href="{% url 'update' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Update</a>
                             <a href="{% url 'delete' recipe.pk %}" class="btn btn-sm btn-outline-primary" role="button" aria-pressed="true">Delete</a> 
                         </div>
-                    </div>                    
-                    <p class="card-text h6">{{ recipe.created_on}} <i class="far fa-heart"></i>{{ recipe.amount_of_likes }}</p>
+                    </div>      
                 </div>
                 <!--Ensure that only 3 Recipes in a Row-->
                 {% if forloop.counter|divisibleby:3 %}                                                                         
