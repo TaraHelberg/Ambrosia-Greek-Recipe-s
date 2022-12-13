@@ -20,6 +20,12 @@ The site will allow a user to Register in order to add , update and delete their
       * [Font](#fonts)
       * [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
       * [Data Modle](#data-model)
+   * [Security Features and Defensive Design](#security-features-and-defensive-design)
+      * [User Authentication](#user-authentication)
+      * [Form Validation](#form-validation)
+      * [Database Security](#database-security)
+      * [Custom error pages:](#custom-error-pages)
+
 
 - [Features](#features)
    * [HomePage](#home-page)
@@ -40,9 +46,11 @@ The site will allow a user to Register in order to add , update and delete their
    * [RecipeControl](#recipe-control-page)
    * [CommentsControl](#comments-control-page)  
 
+
 - [Technologies](#technologies)
    * [Programing Languuages](#programing-languages)
    * [Support Programs & Libraries](#support-programs--libraries)
+
 
 -[Deployment](#deployment)
    * [Github](#github)
@@ -218,6 +226,59 @@ The Comment model allows users to comment on individual recipes and the Recipe_i
 The diagram below details the <details><summary>Database Flow Chart:</summary>
 ![Database Flow Chart ](assets/readme-images/Database%20Flow%20Chart.png)
 </details>
+
+[Back to top ⇧](#contents)
+
+# Security Features and Defensive Design
+
+## User Authentication
+    Django's LoginRequiredMixin are used to make sure that any requests to access secure pages by non-authenticated users are redirected.
+    Django's UserPassesTestMixin are used to limit access based on certain permissions.
+    Eg: To ensure users can only edit/delete recipes and comments for which they are the author. If the user doesn't pass the test they are shown an HTTP 403 Forbidden error.
+
+## Form Validation
+    If incorrect or empty data is added to a Form, the Form won't submit and a warning will appear to the user informing them what field raised the error.
+
+## Database Security
+    The database url and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to Github.
+
+    Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.        
+
+## Custom error pages:
+    Custom Error Pages were created to give the user more information on the error and to provide them with redirect buttons back to appropriate area's of the App.
+
+   ### 400 Error - Bad Request
+
+  <details><summary>400 Error - Bad Request Image :</summary>
+
+    ![400 Error]()
+
+  </details> 
+   
+    
+   ### 403 Error - Access Forbidden
+
+  <details><summary>403 Error - Access Forbidden Image :</summary>
+
+    ![403 Error](assets/readme-images/WebPages/CustomErrors/403Error-Page.png)
+
+  </details> 
+
+   ### 404 Error - Page Not Found
+   
+   <details><summary>404 Error - Page Not Found Image :</summary>
+
+    ![404 Error]()
+
+   </details> 
+
+   ### 500 Error - Server Error
+
+   <details><summary>500 Error - Server Error Image :</summary>
+
+    ![500 Error]()
+
+   </details> 
 
 [Back to top ⇧](#contents)
 
@@ -536,12 +597,6 @@ The option to use filters to find Comments is also available .
 
 [Back to top ⇧](#contents)
 
-# 404 Error Page Not found
-
-![404.html Page Not Found]()
-
-* 404.html Section
-    
 
 # Technologies
 
@@ -610,29 +665,7 @@ The option to use filters to find Comments is also available .
 
   * Manual Testing
 
-| Feature           |  Expect              |  Action |  Result                 |
-|-------------------|----------------------|---------|-------------------------|
-|Header Title       |To go to Home Page    |Click On |Taken to Home Page       |
-|Menu Bar           |To go to Named page   |Click On |Taken to Named Page      |
-|Social Media Icons |To go to External Link|Click On |Taken to External Link   |
-|Image links        |To go to Named page   |Click On |Taken to Named Page      |
-|Internal links     |To go to Section      |Click On |Taken to Section of Page |
-|External Links     |To go to External Link|Click On |Taken to External Link   |
-|YouTube Video      |Play on request       |Click On |Plays on user request    |
-|Google Map         |External if requested |Click On |External on user request |
  
-* User Testing
-
-    + Expectations
-      As a user I wanted the site to 
-     
-    + Result
-      As a user I was able to  
-     
-     
-   
-![Light House Test]()
-
 # Bugs
 
 
