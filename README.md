@@ -42,7 +42,14 @@ The site will allow a user to Register in order to add , update and delete their
 
 - [Technologies](#technologies)
    * [Programing Languuages](#programing-languages)
-   * [Support Programs & Libraries](#support-programs--libraries)                                                                                    
+   * [Support Programs & Libraries](#support-programs--libraries)
+
+-[Deployment](#deployment)
+   * [Github](#github)
+   * [Django and Heroku](#django-and-heroku)
+   * [Forking](#forking)
+   * [Clone Project](#clone-project)
+
    
 
 ## User Experience UX
@@ -558,7 +565,7 @@ The option to use filters to find Comments is also available .
 - [Bootstrap](https://getbootstrap.com/)
     - For help designing the html templates.
 - [Google Fonts](https://fonts.google.com/)
-    - Used to style the website's logo.
+    - Used to add style the website's font.
 - [Font Awesome](https://fontawesome.com/)
     - Used to obtain the icons used.
 - [Favicon.io](https://favicon.io/emoji-favicons/amphora/)
@@ -571,7 +578,12 @@ The option to use filters to find Comments is also available .
     - Used when performing unit tests.
 - [PostgreSQL](https://www.postgresql.org/)
     - Database used through heroku. - until Update of Heroku when migrations and a change of Database was needed
-- [] Elephant INFORMATIOON GO AND GET IT..    
+- [ElephantSQL](https://www.elephantsql.com/)
+    - Database used after migrations and following of all instructions from Code Institute James Stone
+    - Information recieved via email.
+    - Link 1 (https://code-institute-students.github.io/deployment-docs/02-elephantsql/elephantsql-01-sign-up)
+    - Link 2 (https://code-institute-students.github.io/deployment-docs/80-migrating-databases-for-heroku/)
+    - Link 3 (https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos)
 - [Edrawmax](https://www.edrawmax.com/)
     - To draw out the database schema.
 - [Balsamiq](https://balsamiq.com/)
@@ -581,7 +593,7 @@ The option to use filters to find Comments is also available .
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
     - Used to validate CSS code.
 - [Pep8ci](https://pep8ci.herokuapp.com/) - Thank you Code Institute
-    - Used to validate Python code.
+    - Used to validate Python code found on slack #announcements
 - [JSHint](https://jshint.com/)
     - Used to validate JS code.
 - [Summernote](https://summernote.org/)
@@ -633,21 +645,47 @@ The option to use filters to find Comments is also available .
     + RESPONSIVENESS - Am I Responsive for different divices media queries.
     + LIGHTHOUSE - Website tested for Performance, Accessibility, Best Practice and SEO as seen below.
 
-# Deployment of Project
+# Deployment
 
-* 
+This project was deployed using Github and Heroku.
 
-# Clone Project 
+- ## Github 
 
-* Cloning of Project was made possible by GitHub
-    + Go to Git Hub
-    + Go to Off The Grid Living repository 
-    + Click on it to go to main repository site 
-    + Click on the Code drop down button menu next to the greeen Gippod button
-    + Click on HTTP section you will see the http of the repository click on the window next to it it will say copied
-    + Clikced on Download and Zip
-    + Clicked on Open with GitHubDesktop
+    * To create a new repository I took the following steps:
+
+        + Logged into Github.
+        + Click the ‘repositories’ section.
+        + Click the green ‘new’ button to create new repository.
+        + Choose ‘repository template’ Used the code institute template as recommended from the dropdown menu.
+        + Add repository name then clicked the green ‘create repository button’ at the bottom of the page.
+        + Open the new repository and clicked the green ‘Gitpod’ button to create a workspace in Gitpod for editing.
+
+- ## Django and Heroku
+
+    To get the Django framework installed and set up I followed the Code institutes [Django I Think Therefore I Blog cheatsheet](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit). & Revisited the Walkthrough to assist.
+
+    
+- ## Forking
+
+    * Fork of Project was made possible by GitHub
+        + Go to Git Hub
+        + Locate the Fork button at the top right of the page.
+        + Click on Fork Button. 
+        + The Fork is now in your repositories.
+
+- ## Clone Project 
+
+    * Cloning of Project was made possible by GitHub
+        + Go to Git Hub
+        + Go to Off The Grid Living repository 
+        + Click on it to go to main repository site 
+        + Click on the Code drop down button menu next to the greeen Gippod button
+        + Click on HTTP section you will see the http of the repository click on the window next to it it will say copied
+        + Clikced on Download and Zip
+        + Clicked on Open with GitHubDesktop
  
+ [Back to top ⇧](#contents)
+
 
 
 # Credits
