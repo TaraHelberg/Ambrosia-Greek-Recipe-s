@@ -31,6 +31,13 @@ The site will allow a user to Register in order to add , update and delete their
    * [AddRecipePage](#add-recipe-page)
    * [UpdateRecipePage](#update-recipe-page)
    * [DeleteRecipePage](#delete-recipe-page)
+
+
+- [AdminControl](#admin-control)
+   * [AdminControlPanel](#admin-control-panel)
+   * [AdminLogin](#admin-login)
+   * [RecipeControl](#recipe-control-page)
+   * [CommentsControl](#comments-control-page)                                                                                   
    
 
 ## User Experience UX
@@ -90,23 +97,26 @@ I have used the Agile method starting with the Epics from which the User Stories
     * [USER STORY: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/47)
         * [Tasks: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/48)
 
+[Back to top ⇧](#contents)
 
-### Agile Method Git Projects
+## Agile Method Git Projects
 
 Github projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
 
 Not all Epics have made it into the projecy using the MSCW Method you will find on the Kandban Must have's,Should Have's,Could Have's and Wont have labels. The wont have labeled sections are those that did not make it into the App due to time constraint or due to design decision as in the case of the About Page.
 
-### Design
+[Back to top ⇧](#contents)
+
+# Design
 
 The App has a very clean and simplistic design which was purposely chosen in order to keep the App looking and feeling Authenticaly Greek and Easy to Navigate.
 
-#### Colour Scheme
+## Colour Scheme
 Colour from BootStrap
 
 Going with an Authentica Greek Themed App and choosing to stick to the colours most assosciated with Greece Blue and White this Developer was fortunate to choose Boostrap for many applications in this App a benifit of this been that Boostrap by default provided the Colour scheeme required for this App.
 
-#### Images
+## Images
 There are four static image's on the App .
 1. App Title Logo A Greek Urn
 2. Hero Image a Greek Salad on the Home Page
@@ -114,7 +124,7 @@ There are four static image's on the App .
 4. Place Holder image a small glass bowl with olive oil and olives used if a user does not upload a recipe image 
 The rest of the imagery will be uploaded by users for their individual recipes. 
 
-#### Images Credit for Project
+### Images Credit for Project
 
  <details><summary>Pixabay</summary>
     
@@ -126,10 +136,12 @@ The rest of the imagery will be uploaded by users for their individual recipes.
  </details>
 
 
-#### Fonts
+## Fonts
 The font 'Roboto Condensed' is used as our main Body Font for the App. The Font IS imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
 
-## Balsamiq Wireframes
+[Back to top ⇧](#contents)
+
+# Balsamiq Wireframes
 
 Wireframe's are extreamly basic and did not incorporate all App pages. 
 Wireframes where used as boiler plates to start the app design many updates and alterations made after the basic Wireframes where used to get started on the App.
@@ -154,7 +166,9 @@ Update Recipe ![ Update Recipe ](assets/readme-images/Wireframes/Updaterecipepg.
 
 </details>
 
-## Data Model
+[Back to top ⇧](#contents)
+
+# Data Model
 
 I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.  
 
@@ -169,6 +183,7 @@ The diagram below details the <details><summary>Database Flow Chart:</summary>
 ![Database Flow Chart ](assets/readme-images/Database%20Flow%20Chart.png)
 </details>
 
+[Back to top ⇧](#contents)
 
 # Features
 
@@ -187,21 +202,21 @@ Header with App Title & Logo as well as Page Navigation included in is User Sign
 
 There is also included a spotify play list for the users enjoyment
 
-Image of Header and Navigation when User is not Logged In
+### Image of Header and Navigation when User is not Logged In
 ![AppTitle,Logo& Navigation](assets/readme-images/WebPages/Home/App%20Title%20%2CLogo%20%26%20Navigation.png)
 
-Image of Header and Nacigation when User is Logged In
+### Image of Header and Nacigation when User is Logged In
 ![Naviagtion Logged In](assets/readme-images/WebPages/Home/Navigation%20Logged%20In.png)
 
 
 The Main Body of the page has a animated Hero image which encourages signup a call to action and once signed up and logged in shows when a User is Logged in and welcomes them to the App.
 
 
-Hero Image Call to Action - SignUp
+### Hero Image Call to Action - SignUp
 ![HeroImageCalltoAction](assets/readme-images/WebPages/Home/Hero-Image-Call-to-Action.png)
 
 
-Hero Image Welcomes User and provides easy logout should user wish
+### Hero Image Welcomes User and provides easy logout should user wish
 ![HeroImageWekcomeUser](assets/readme-images/WebPages/Home/Hero-Image-Welcome-User.png)
  
 
@@ -209,21 +224,23 @@ Following this we have 2 sections below :
 
 The Recently Added section ona Bootsrap Carousel showing the 4 most recently added Recipes if a User clicks on any of the recipes in the Carousel they are taken to a Detailed view of the recipe.
 
-Recently Added Image
+### Recently Added Image
 
 ![RecentlyAdded](assets/readme-images/WebPages/Home/Recently-Added.png)
 
 The What we Do section which gives the user the overall information on what the App is about and its useful features . If a User clicks on the Browse Icon the user is taken to the browes section of the App.
 
-What we Do Image
+### What we Do Image
 
 ![WhatWeDo](assets/readme-images/WebPages/Home/What-We-Do.png)
 
 At the bottom of the App is the Footer section with social media links all of which open on a seperate tab outside of the App when Clicked on.
 
-Footer Iamge
+### Footer Iamge
 
 ![Footer](assets/readme-images/WebPages/Home/Footer.png)
+
+[Back to top ⇧](#contents)
 
 # User Account Pages
 
@@ -245,6 +262,8 @@ A Sign Up button is provided & Below these are two redirect buttons one for Logi
 The Log In page provides the user with a Form requesting the Username & Password and a Sign In button.
 Below these are two redirect buttons one for Sign Up should the user not have an account and another to continue to Browse page should the user choose so .
 
+[Back to top ⇧](#contents)
+
 <details><summary>Full Sign Out Page Image :</summary>
 
 ![SignOutPage](assets/readme-images/WebPages/UserAccount/SignOut-Page.png)
@@ -253,6 +272,8 @@ Below these are two redirect buttons one for Sign Up should the user not have an
 
 The Sign Out page provides the user with a Thank You message and a Sign Out button.
 Below these are one redirect button to continue to Browse page should the user choose so .
+
+[Back to top ⇧](#contents)
 
 # Browse Recipe's
 
@@ -264,25 +285,27 @@ Below these are one redirect button to continue to Browse page should the user c
 
 The Browse Page is set up to browse Recipes on Recipe cards set up with Pagination of 6 cards per page at the bottom of the page is the paginate Next button amd on moving to the next page is the paginate Prev button to take you back.
 
-Image of Paginate Next Button
+### Image of Paginate Next Button
 
 ![PaginateNextButton](assets/readme-images/WebPages/Browse/Paginate-Next-Button.png)
 
-Image of Paginate Prev Button
+### Image of Paginate Prev Button
 
 ![PaginatePrevButton](assets/readme-images/WebPages/Browse/Paginate-Prev-Button.png)
 
 Each card has the Basic information of the Recipe on the card consisting of Recipe Title, the Author of the Recipe ,Number of people it Serves, Prep Time and Cooking Time .Each Recipe Card has  3 usable link buttons View to go to the Recipe Details View which any User can access to see the entire Recipe in Detail.A button to Update the Recipe and one to Delete the Recipe these two buttons will only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error.
 
-Image of Recipe Card
+### Image of Recipe Card
+
 ![RecipeCard](assets/readme-images/WebPages/Browse/Recipe-Card.png)
 
 Below this is a Date which shows when last the Recipe was Updated and a number of Likes Heart that has a counter next to it to show number of likes.
 
-Image of Card Date and Likes Heart with Counter
+### Image of Card Date and Likes Heart with Counter
 
 ![RecipeDateLikeHeart&Count](assets/readme-images/WebPages/Browse/Recipe-Date-Like-Heart-%26-Count.png)
 
+[Back to top ⇧](#contents)
 
 # Recipe View Page
 
@@ -297,7 +320,7 @@ The Recipe , Tilte and dexription is next to the image under this is the number 
 Followed by two section under this of Ingredients and the Method.
 Under the Full Recipe are 3 Button Links. Update & Delete only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error. The Browse button will take any user to the Browse Page.
 
-Recipe View Deail Image
+### Recipe View Deail Image
 
 ![RecipeViewDetail](assets/readme-images/WebPages/RecipeView/Recipe-View-Details.png)
 
@@ -305,35 +328,39 @@ Recipe View Deail Image
 Under this section is the Like Heart which is only viable and accessable to a Logged In User to Like/Unlike the Recipe .
 Next to the Like Heart is the Comments Count Icon which is visable to All users to show number comments on the recipe.
 
-Likes & Comments Logged In Image
+### Likes & Comments Logged In Image
 
 ![Likes&CommentsLoggedIn](assets/readme-images/WebPages/RecipeView/Likes-%26-Comments-Logged-In.png)
 
-Likes & Commemnts Logged Out Image
+### Likes & Commemnts Logged Out Image
 
 ![Likes&CommentsLoggedOut](assets/readme-images/WebPages/RecipeView/Likes-%26-Comments-Logged-Out.png)
 
 This is followed by the Comments section showing the comments on the Recipe and can be views by all users.
 Each comment has the Authors name and date with the Authors comment under it .
 
-Comments User Logged Out Image
+### Comments User Logged Out Image
 
 ![CommentsLoggedOut](assets/readme-images/WebPages/RecipeView/Comments-User-Logged-Out.png)
 
 When a User is Logged In the option to Update or Delete the comment via Button links is available however an error 403 Forbbiden message will be generated should the User not be the Author of that comment and tries to update or Delete a comment that is not allocated to them.
 
-Comments User Logged In Image
+### Comments User Logged In Image
 
 ![CommentsLoggedIn](assets/readme-images/WebPages/RecipeView/Comments-User-Logged-In.png)
 
-### Leave a Comment
+[Back to top ⇧](#contents)
+
+## Leave a Comment
 
 Next to this is the Leave a Comments section which is only accessable and visable to a Logged in User .
 This shows the Author name under Posting as : .... & has a section for the User to Post the comment in the Body * section a submit button is supplied at the bottom.
 
-Image of Leave a Comment 
+### Image of Leave a Comment 
 
 ![LeaveaComment](assets/readme-images/WebPages/RecipeView/Leave-a-Comment.png)
+
+[Back to top ⇧](#contents)
 
 # Update A Comment Page
 
@@ -347,6 +374,8 @@ The Update A Comment Page is only accessable to a Logged In User who is the User
 A Update Comment form is provided with the original comment present for the User/Author to update.
 Two link buttons are supplied for the User/Author Choice to either Update the Comment or Cancel to leave the current Update Page which will return / Redirect the User/Author tot he Browsse Page.
 
+[Back to top ⇧](#contents)
+
 # Delete A Comment Page
 
 <details><summary>Full Delete A Comment Page Image :</summary>
@@ -359,6 +388,7 @@ The Delete A Comment Page is only accessable to a Logged In User who is the User
 A Delete Comment page provides the User/Author with a Message in Red asking if they are sure they wish to Delete the Comment.
 Two link buttons are supplied for the User/Author Choice to either Delete the Comment or Cancel to leave the current Delete Page which will return / Redirect the User/Author tot he Browsse Page.
 
+[Back to top ⇧](#contents)
 
 # Add Recipe Page
 
@@ -373,6 +403,8 @@ On this page a simple form is provided to Add the recipe providing all the neces
 Title, Description, Serves, Prep Time, Cooking Time, Ingredients , Method and a Image section that allows the user to upload an Image of the Recipe by Choose File Button.
 A sumbit button and a Cancel button are provided to the user. 
 
+[Back to top ⇧](#contents)
+
 # Update Recipe Page
 
 <details><summary>Full Update Recipe Page Image :</summary>
@@ -385,6 +417,8 @@ The Update Recipe Page can only be reached if the User is that Recipes Author.
 The Update Recipe Page Provides a form with the information already inputed by the User/Author on that particular recipe here the User/Author can update any details on the recipe that they should choose.
 
 At the end of the form are two buttons Update and Cancel for the User/Auhtor use.
+
+[Back to top ⇧](#contents)
 
 # Delete Recipe Page
 
@@ -399,6 +433,72 @@ A View Button and a Update Button are both supplied on the Recipe Card so that i
 
 Under the Card is a Message in Red asking if the User is Sure they wish to Delete the Recipe and to link buttons are provided Delete and Cancel which takes the User back to the Browse page for the User/Authors Choice.
 
+[Back to top ⇧](#contents)
+
+# Admin Control 
+
+As the Admin of Greek Ambrosia Recipe's a area of Admin control was required .
+Using Django's already set up system of Admin control a section was created for the Admin to login and be able to Approve Recipe's and Comments in order for the Admin to have Control over the App Content.
+
+## Admin Control Panel
+
+<details><summary>Full Admin Control Panel Page Image :</summary>
+
+![AdminControlPanel](assets/readme-images/WebPages/AdminControl/AdminControl-Page.png)
+
+</details> 
+
+The Admin Control Panel is part of the Django Framework and assists the Admin in Controling the COntent of the App.
+The Control panel welcomes the Admin with options to View Site / CHange Password and Logouot of the COntrol Panel.
+From this area you are able to see Accounts , Authentication & Authorization , The setups you have used for you sight such as Django Summernote as well as haivng access to in the Case of our App ,Recipes section for Approval of Comments & Recipes that the User has uploaded to the App.
+
+## Admin Login
+
+As the Admin a Login Page was required in order to access the Admin Control Panel Area.
+This is part of the Django Framework and supplies a simple form area requesting the Admin Username and Passowrd with a Log In button.
+
+[Admin Login link](https://ambrosia-greek-recipes.herokuapp.com/admin/login/?next=/admin/)
+
+### Image of Admin Login 
+
+![AdminLogin](assets/readme-images/WebPages/AdminControl/AdminLogin-Page.png)
+
+
+## Recipe Control Page
+
+<details><summary>Full Recipe Control Page Image :</summary>
+
+![RecipeControlPage](assets/readme-images/WebPages/AdminControl/RecipeControl-Page.png)
+
+</details> 
+
+In our Recipes Control Page in Django Administration we are able to Add, Approve , Delete and Update Recipes via the Controls Supplied.
+
+Highlighting the Recipe you wish to selcted and using hte drop down arrow by the Action bar will give you the option to Delete or Approve.
+
+Clicking on the Recipe will open the Recipe up for you to view the entire contents and either approve or make updates to the Recipe as you need.
+
+The option to use filters to find Recipes is also available .
+
+
+## Comments Control Page
+
+<details><summary>Full Comments Control Page Image :</summary>
+
+![CommentsControlPage](assets/readme-images/WebPages/AdminControl/CommentsControl-Page.png)
+
+</details> 
+
+In our Comments Control Page in Django Administration we are able to Add, Approve , Delete and Update Comments via the Controls Supplied.
+
+Highlighting the Comment you wish to selcted and using hte drop down arrow by the Action bar will give you the option to Delete or Approve.
+
+Clicking on the Comment will open the Comment up for you to view the entire contents and either approve or make updates to the Comments as you need.
+
+The option to use filters to find Comments is also available .
+
+
+[Back to top ⇧](#contents)
 
 # 404 Error Page Not found
 
