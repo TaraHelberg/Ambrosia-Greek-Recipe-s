@@ -38,7 +38,11 @@ The site will allow a user to Register in order to add , update and delete their
    * [AdminControlPanel](#admin-control-panel)
    * [AdminLogin](#admin-login)
    * [RecipeControl](#recipe-control-page)
-   * [CommentsControl](#comments-control-page)                                                                                   
+   * [CommentsControl](#comments-control-page)  
+
+- [Technologies](#technologies)
+   * [Programing Languuages](#programing-languages)
+   * [Support Programs & Libraries](#support-programs--libraries)                                                                                    
    
 
 ## User Experience UX
@@ -139,7 +143,7 @@ The App has a very clean and simplistic design which was purposely chosen in ord
 ## Colour Scheme
 Colour from BootStrap
 
-Going with an Authentica Greek Themed App and choosing to stick to the colours most assosciated with Greece Blue and White this Developer was fortunate to choose Boostrap for many applications in this App a benifit of this been that Boostrap by default provided the Colour scheeme required for this App.
+Going with an Authentica Greek Themed App and choosing to stick to the colours most assosciated with Greece Blue and White this Developer was fortunate to choose Boostrap for many applications in this App a benifit of this been that Boostrap by default provided the Colour scheme required for this App.
 
 ## Images
 There are four static image's on the App .
@@ -532,11 +536,61 @@ The option to use filters to find Comments is also available .
 * 404.html Section
     
 
-# Technologies / Support Used
+# Technologies
 
-* Below is a list of Technologies / Support I have used to build my site.
- 
+## Programing Languages 
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://www.python.org/)
    
+## Support Programs & Libraries
+
+- [Git](https://git-scm.com/)
+    - Version control.
+- [GitHub](https://github.com/)
+    - For storing code and deploying the site.
+- [Gitpod](https://www.gitpod.io/)
+    - Used for building and editing my code.
+- [Django](https://www.djangoproject.com/)
+    - A python based framework that was used to develop the site.
+- [Bootstrap](https://getbootstrap.com/)
+    - For help designing the html templates.
+- [Google Fonts](https://fonts.google.com/)
+    - Used to style the website's logo.
+- [Font Awesome](https://fontawesome.com/)
+    - Used to obtain the icons used.
+- [Favicon.io](https://favicon.io/emoji-favicons/amphora/)
+    - Used to generate the site's favicon.   
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Used to help fix problem areas and identify bugs.
+- [Cloudinary](https://cloudinary.com/)
+    - Used to store static files and images.
+- [SQlite](https://www.sqlite.org/index.html)
+    - Used when performing unit tests.
+- [PostgreSQL](https://www.postgresql.org/)
+    - Database used through heroku. - until Update of Heroku when migrations and a change of Database was needed
+- [] Elephant INFORMATIOON GO AND GET IT..    
+- [Edrawmax](https://www.edrawmax.com/)
+    - To draw out the database schema.
+- [Balsamiq](https://balsamiq.com/)
+    - To create the wireframes.
+- [W3C Markup Validation Service](https://validator.w3.org/) 
+    - Used to validate HTML code.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - Used to validate CSS code.
+- [Pep8ci](https://pep8ci.herokuapp.com/) - Thank you Code Institute
+    - Used to validate Python code.
+- [JSHint](https://jshint.com/)
+    - Used to validate JS code.
+- [Summernote](https://summernote.org/)
+    - Used to add a WYSIWYG text box to the add recipe page.
+- [Heroku](https://www.heroku.com/)
+    - To deploy the project.
+
+
+[Back to top ⇧](#contents)
 
 # Testing
 
