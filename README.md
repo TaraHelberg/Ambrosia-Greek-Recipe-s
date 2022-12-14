@@ -233,57 +233,41 @@ The diagram below details the <details><summary>Database Flow Chart:</summary>
 
 ## User Authentication
 
-    Django's LoginRequiredMixin are used to make sure that any requests to access secure pages by non-authenticated users are redirected.
-    Django's UserPassesTestMixin are used to limit access based on certain permissions.
-    Eg: To ensure users can only edit/delete recipes and comments for which they are the author. If the user doesn't pass the test they are shown an HTTP 403 Forbidden error.
+Django's LoginRequiredMixin have been used to make sure that any requests to access secure pages by non-authenticated users / Authors are redirected.
+Django's UserPassesTestMixin have been used to limit access based on permissions.
+Eg: To ensure users can only Update / Delete Recipes or Comments for which they are the User / Author. 
+    If the User /Author doesn't pass the test they are shown to the 403 Forbidden Error.
 
+    
 ## Form Validation
     
-    If incorrect or empty data is added to a Form, the Form won't submit and a warning will appear to the user informing them what field raised the error.
+If incorrect or empty information / data is added to a From, the Form won't submit and a warning will appear to the User / AUthor informing them what field raised the error.
 
 ## Database Security
+
+The Database Url and secret key are stored in the env.py file to prevent unwanted connections to the Database and this was done at the beginning of the App set up and pushed to GItHub.
+
+Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App.
     
-    The database url and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to Github.
-
-    Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.        
-
 ## Custom error pages:
-    
-    Custom Error Pages were created to give the user more information on the error and to provide them with redirect buttons back to appropriate area's of the App.
+
+Custom Error Pages have been created to give the User / Author more information and help redirect them when aor should an Error occur. These pages are provided with Redirect Buttons to appropriate area's of the App.
+403 Error page shown as an Example of what the Error pages present to the User / Author.
+<details><summary>Error Page Example Imagery</summary>
+
+![403](assets/readme-images/WebPages/CustomErrors/403Error-Page.png)
+
+</details>
+
 
    ### 400 Error - Bad Request
-
-  <details><summary>400 Error - Bad Request Image :</summary>
-
-    ![400 Error]()
-
-  </details> 
    
    ### 403 Error - Access Forbidden Image 
-   
-   <details><summary>403 Error - Access Forbidden Image :</summary>
-
-   ![403 Error](assets/readme-images/WebPages/CustomErrors/403Error-Page.png)
-   
-   </details>
-   
-     
+        
    ### 404 Error - Page Not Found
    
-   <details><summary>404 Error - Page Not Found Image :</summary>
-
-    ![404 Error]()
-
-   </details> 
-
    ### 500 Error - Server Error
-
-   <details><summary>500 Error - Server Error Image :</summary>
-
-    ![500 Error]()
-
-   </details> 
-
+   
 [Back to top ⇧](#contents)
 
 # Features
