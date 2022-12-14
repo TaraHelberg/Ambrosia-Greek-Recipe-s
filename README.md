@@ -58,7 +58,23 @@ The site will allow a user to Register in order to add , update and delete their
         * [NaviagationFooter](#navigation-footer)
       * [HomePageManualTesting](#home-page-maual-testing)
         * [HeroImage](#hero-image-manual-test)
-        * [RecentlyAddedManualTest](#recently-added-manual-test)    
+        * [RecentlyAddedManualTest](#recently-added-manual-test)
+        * [WhatWeDoManualTest](#what-we-do-manual-test)
+      * [BrowsePageManualTesting](#)
+        * [RecipeCardManualTest]()
+        * [PaginateManualTest]()
+      * [SignUpManualTesting]()
+      * [SignInManualTesting]()
+      * [SignOutManualTesting]()
+      * [AddRecipeManualTesting]()
+      * [ViewRecipeManualTesting]()
+         * [CommentsManaulTest]()
+         * [LeaveaCommentManualTest]()
+      * [UpdateRecipeManualTesting]()
+      * [DeleteRecipeManualTesting]()
+      * [UpdateCommentManualTesting]()
+      * [DeleteCommentManualTesting]()
+      * [AdminControlManualTesting]()               
    * [Validation](#validator-testing)
 
 - [Deployment](#deployment)
@@ -768,6 +784,14 @@ Find below a few images of errors encountered and solved through the making of t
 |  4 Image Carousel   | Moves through Recently Added Recipes        | N/A      |   ✔       |
 |  Arrow Controls     | Manual Moves through Recently Added Recipes | Click On |   ✔       |
 |  View Detail Recipe | Views Detailed Recipe                       | Click On |   ✔       |
+
+
+#### What We Do Manual Test 
+
+
+| Feature             |  Expect                    | Action   | Result    |
+| --------------------| -------------------------- | -------- | ----------|
+|  Browse             | Navigation Link            | Click On |   ✔       |
 
 
 
