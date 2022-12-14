@@ -58,7 +58,10 @@ The site will allow a user to Register in order to add , update and delete their
    * [Forking](#forking)
    * [Clone Project](#clone-project)
 
-   
+- [Acknowledgments](#acknowledgments)
+    * [Credits](#credits)
+    * [CopiedCode&CodeAssistance](#copied-code--code-assistance)
+    * [Note](#note)
 
 ## User Experience UX
 
@@ -705,22 +708,35 @@ This project was deployed using Github and Heroku.
  
  [Back to top ⇧](#contents)
 
+# Acknowledgments
 
+I would like to take the time to Acknowledge & give credit to all the main assistances that I used whilst making my App.
 
-# Credits
+## Credits
 
    * Code Institute without who I would have had no base to begin a project & Readme.md Template .https://codeinstitute.net/ie/
    * GitHub for my workspace and saving all my work as well as my deployed project . https://github.com/
+   * Heroku for hosting my App . https://www.heroku.com/ 
    * Reuben Ferrante my mentor without all his great guidance I would be lost. A Huge Thanks. https://github.com/arex18
    * The Slack community - for someone always been there no matter the time and with advice or direction. https://slack.com
    * Balsamiq used to build the wireframes for my project. https://balsamiq.com   
    * StackOverflow for all the information to assit with my project .https://stackoverflow.com
+   * Django Documentation for all the invaluable information on how to use the features .https://docs.djangoproject.com/en/4.1/
    * I am Responsive for a fantastic spot to see a visual of responsiveness. https://ui.dev/amiresponsive?msclkid=400b1adabe5b11ecbc48938198bb87b4
    * Lighthouse testing system whom I can't find a webpage link for but am grateful for been able to use.
 
-* Copied Code / Code assistance  
+
+## Copied Code / Code assistance  
+
+Code Institutes walkthough: I think therefore I Blog paid a big part in the stucture of my App as well as certain parts that are directly used and refered to in the code via commnets. In particular the Pagination , Comments & Likes of the App.
 
 
- 
- ### Note 
+ ### Note
+
+Recipes shown on this App have all been obtain from BBC Greek Cuisines https://www.bbc.co.uk/food/cuisines/greek .
+All Recipes and information in this App are for Education perpouse only.
+
+[Back to top ⇧](#contents)
+
+  
  
