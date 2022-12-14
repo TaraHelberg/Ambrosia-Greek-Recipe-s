@@ -54,6 +54,10 @@ The site will allow a user to Register in order to add , update and delete their
 - [Testing](#testing)
    * [Bugs](#bugs)
    * [ManualTesting](#manual-testing)
+        * [NaviagtionHeader](#navigation-header)
+        * [NaviagationFooter](#navigation-footer)
+      * [HomePageManualTesting](#home-page-maual-testing)
+        * [HeroImage](#hero-image-manual-test)    
    * [Validation](#validator-testing)
 
 - [Deployment](#deployment)
@@ -691,15 +695,7 @@ Find below a few images of errors encountered and solved through the making of t
 </details>
 
 
-## Manual Testing 
-
-* Navigation Header
-
-| Feature            |  Expect                       | Action   | Result    |
-| ------------------ | ----------------------------- | -------- | ----------|
-|  App Title & Logo  | Navigation Link               | Click On |   ✔       | 
-|  Home              | Navigation Link               | Click On |   ✔       |
-|  Browse Recipe's   | Navigation Link               | Click On |   ✔       |
+## Manual Testing
 
 * User Testing
 
@@ -720,7 +716,52 @@ Find below a few images of errors encountered and solved through the making of t
     4. Information is clear and I could make choices as to what I wished to do on each page 
     5. I was able to Add,Read,Update & Delete my Recipes & Comments and Like other Recipes with Ease
     6. When I made an error or did something wrong I was told and given directions on what I needed to do or options to help me move on.       
-     
+
+
+### Navigation Header
+
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  App Title & Logo  | Navigation Link               | Click On |   ✔       | 
+|  Home              | Navigation Link               | Click On |   ✔       |
+|  Browse Recipe's   | Navigation Link               | Click On |   ✔       |
+|  Sign Up           | Navigation Link               | Click On |   ✔       |
+|  Sign In           | Navigation Link               | Click On |   ✔       |
+|  Sign Out          | Navigation Link               | Click On |   ✔       |
+|  Add Recipe        | Navigation Link               | Click On |   ✔       |
+
+
+### Navigation Footer
+
+
+| Feature           |  Expect                       | Action   | Result    |
+| ------------------| ----------------------------- | -------- | ----------|
+|  Icon Facebook    | Navigation Link - external Tab| Click On |   ✔       |
+|  Icon Twitter     | Navigation Link - external Tab| Click On |   ✔       | 
+|  Icon YouTube     | Navigation Link - external Tab| Click On |   ✔       |
+|  Icon  Instagram  | Navigation Link - external Tab| Click On |   ✔       |
+|  Icon  Linkedin   | Navigation Link - external Tab| Click On |   ✔       |
+|  Icon  GitHub     | Navigation Link - external Tab| Click On |   ✔       |
+
+
+### Home Page Maual Testing
+
+#### Hero Image Manual Test 
+
+
+| Feature           |  Expect                           | Action   | Result    |
+| ------------------| --------------------------------- | -------- | ----------|
+|  Animation        | Hero Imange Zoom In/Out           | N/A      |   ✔       |
+|  Sign Up Button   | Navigation Link                   | Click On |   ✔       |
+|  Call to Action   | Visable when Not Signed In        | N/A      |   ✔       |
+|  User Name        | Visable when Signed In            | N/A      |   ✔       |
+|  Sign Out Button  | Navigation Link                   | Click On |   ✔       | 
+
+
+
+
+
 
 ## Validator Testing
 
