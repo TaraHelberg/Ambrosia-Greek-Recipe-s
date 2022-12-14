@@ -65,7 +65,7 @@
                         <div class="carousel-item {% if forloop.first %}active{% endif %}">
                             <a href="{% url 'recipe_detail' recipe.slug %}">
                                 {% if "placeholder" in recipe.featured_image.url %}
-                                <img src="{% static 'image/placeholder-olive-oil.jpg '%}" class="d-block w-100" alt="...">
+                                <img src="{% static 'image/placeholder-olive-oil.jpg '%}" class="d-block w-100" alt="olive's & Olive Oil">
                                 {% else %}
                                 <img src="{{ recipe.featured_image.url }}" class="d-block w-100" alt="{{ recipe.title }}">
                                 {% endif %}

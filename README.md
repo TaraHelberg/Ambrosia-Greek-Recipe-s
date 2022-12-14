@@ -51,6 +51,10 @@ The site will allow a user to Register in order to add , update and delete their
    * [Programing Languuages](#programing-languages)
    * [Support Programs & Libraries](#support-programs--libraries)
 
+- [Testing](#testing)
+   * [Bugs](#bugs)
+   * [ManualTesting](#manual-testing)
+   * [Validation](#validator-testing)
 
 - [Deployment](#deployment)
    * [Github](#github)
@@ -646,26 +650,65 @@ The option to use filters to find Comments is also available .
 
 [Back to top ⇧](#contents)
 
-# Testing
+# Testing 
 
-  * Testing During development of the pages was done through the project to see how the project looked and felt
+* Testing During development of the App was done through the project in order to Test for Bugs, Maunal Testing was constantly done on all asspects of the App and Constant testing was done for the Responsiveness of the app via Dev Tools. Keeping an eye on the Look and Feel of the App.
+  
+## Bugs
 
-  * Manual Testing 
+Debug was kept on True in order to make use of Django's error page which came in use more often than not as a new Django Developer.
 
- 
-# Bugs
+## Manual Testing 
 
+## Validator Testing
 
+   ### HTML - W3C Html Validator 
+   <details><summary>No Errors Found Html</summary>
 
-# Validator Testing
+   ![W3CHtml](assets/readme-images/Validation/W3CHtml-Validator.png)
+    
+   </details>
 
-* Test Validators
-    + HTML - W3C Html Validator - 
-    + CSS - W3C CSS Validator - 
-    + Pep8ci - 
-    + Jshint -
-    + Responsiveness - 
-    + Lighthouse - Website tested for Performance, Accessibility, Best Practice and SEO as seen below.
+   ### CSS - W3C CSS Validator
+
+   <details><summary>No Errors Found Css</summary>
+
+   ![W3Ccss](assets/readme-images/Validation/W3Ccss-Validator.png)
+    
+   </details>
+
+   ### Python - Pep8ci CI Python Linter
+   
+   * One example of the Pep8ci supplied but all .py files have been Validated & No Errors Found.  
+   
+   <details><summary>No Errors Found Python Example Image</summary>
+
+   ![Python](assets/readme-images/Validation/PEP8CI-PythonLinter.png)
+    
+   </details> 
+    
+   ### Javascript - Jshint Validator
+   
+   <details><summary>No Errors Found JavaScript</summary>
+
+   ![Jshint](assets/readme-images/Validation/Jshint.png)
+    
+   </details> 
+    
+   ### Responsiveness 
+
+   * Responsivesness tested via Google Dev Tools & Imagery checked Via Am I Responsive
+
+   <details><summary>Responsiveness</summary>
+
+   ![amiresponsive](assets/readme-images/amiresponsive.png)
+    
+   </details> 
+
+    
+   ### Lighthouse - Website tested for Performance, Accessibility, Best Practice and SEO as seen below.
+
+[Back to top ⇧](#contents)
 
 # Deployment
 
@@ -719,6 +762,7 @@ I would like to take the time to Acknowledge & give credit to all the main assis
    * Heroku for hosting my App . https://www.heroku.com/ 
    * Reuben Ferrante my mentor without all his great guidance I would be lost. A Huge Thanks. https://github.com/arex18
    * The Slack community - for someone always been there no matter the time and with advice or direction. https://slack.com
+   * Code Institute Tutoring for assisting when I was trully stuck in particular John Traas who assisted with a Bug / Error and took the time to be understanding and helpful to a New Developer student. To be fare he was not the only one from the Turoring and my thanks to those I have not named.
    * Balsamiq used to build the wireframes for my project. https://balsamiq.com   
    * StackOverflow for all the information to assit with my project .https://stackoverflow.com
    * Django Documentation for all the invaluable information on how to use the features .https://docs.djangoproject.com/en/4.1/
