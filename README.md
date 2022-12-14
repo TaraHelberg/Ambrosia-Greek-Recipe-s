@@ -663,7 +663,9 @@ Solving them through many different means.
 
 The Bugs where generated from a lot of different errors I made from syntax errors to url errors as well as putting my url patterns in the wrong place one of which was puttting my paths below the slug that I used in the Url as this made the error of not reading the other path patterns.
 Other errors included incorrect use of *args & *kwargs .
-The incorrect use of Forgine Key vs Primary Key.
+The incorrect use of Foreign Key vs Primary Key.
+
+I appologies for the Lack of Bug / Error images . At the time of the Bugs I did get a bit busy trying to resolve them and forgot to take images of all the Bug's / Errors I managed to generate.
 
 Solving of the Bug Error's was done via great deal of Research on different Dev sights but mostly via the methods below. 
 
@@ -686,13 +688,39 @@ Find below a few images of errors encountered and solved through the making of t
 ![4](assets/readme-images/Bugs/Screenshot4.png)
 
 ![5](assets/readme-images/Bugs/Screenshot5.png)
-
-![6](assets/readme-images/Bugs/Screenshot6.png)
-
-![7](assets/readme-images/Bugs/Screenshot7.png)
 </details>
 
+
 ## Manual Testing 
+
+* Navigation Header
+
+| Feature            |  Expect                       | Action   | Result    |
+| ------------------ | ----------------------------- | -------- | ----------|
+|  App Title & Logo  | Navigation Link               | Click On |   ✔       | 
+|  Home              | Navigation Link               | Click On |   ✔       |
+|  Browse Recipe's   | Navigation Link               | Click On |   ✔       |
+
+* User Testing
+
+  * Expectations
+     As a user I wanted the App to 
+    1. A Appropriate Landing / Home Page 
+    2. Home Page Welcomes , Engages and Informs of the Apps purpouse & Features 
+    3. Easy to Follow Navigation
+    4. Clear information to make choices on Each Page
+    5. I expected to be able to Add,Read,Update & Delete my Recipes & Comments and Like other Recipes
+    6. If i did something wrong I expected to be told and given directions       
+
+  * Result
+     As a user I was able to  
+    1. The landing /Home page was Appropriate to the App
+    2. Th Home page Welcomed , Engaged and Informed me of the Apps Purpouse & Features
+    3. Navigation is easy to Follow & Understand
+    4. Information is clear and I could make choices as to what I wished to do on each page 
+    5. I was able to Add,Read,Update & Delete my Recipes & Comments and Like other Recipes with Ease
+    6. When I made an error or did something wrong I was told and given directions on what I needed to do or options to help me move on.       
+     
 
 ## Validator Testing
 
