@@ -57,7 +57,8 @@ The site will allow a user to Register in order to add , update and delete their
         * [NaviagtionHeader](#navigation-header)
         * [NaviagationFooter](#navigation-footer)
       * [HomePageManualTesting](#home-page-maual-testing)
-        * [HeroImage](#hero-image-manual-test)    
+        * [HeroImage](#hero-image-manual-test)
+        * [RecentlyAddedManualTest](#recently-added-manual-test)    
    * [Validation](#validator-testing)
 
 - [Deployment](#deployment)
@@ -759,6 +760,14 @@ Find below a few images of errors encountered and solved through the making of t
 |  Sign Out Button  | Navigation Link                   | Click On |   ✔       | 
 
 
+#### Recently Added Manual Test 
+
+
+| Feature             |  Expect                                     | Action   | Result    |
+| --------------------| ------------------------------------------- | -------- | ----------|
+|  4 Image Carousel   | Moves through Recently Added Recipes        | N/A      |   ✔       |
+|  Arrow Controls     | Manual Moves through Recently Added Recipes | Click On |   ✔       |
+|  View Detail Recipe | Views Detailed Recipe                       | Click On |   ✔       |
 
 
 
