@@ -232,19 +232,23 @@ The diagram below details the <details><summary>Database Flow Chart:</summary>
 # Security Features and Defensive Design
 
 ## User Authentication
+
     Django's LoginRequiredMixin are used to make sure that any requests to access secure pages by non-authenticated users are redirected.
     Django's UserPassesTestMixin are used to limit access based on certain permissions.
     Eg: To ensure users can only edit/delete recipes and comments for which they are the author. If the user doesn't pass the test they are shown an HTTP 403 Forbidden error.
 
 ## Form Validation
+    
     If incorrect or empty data is added to a Form, the Form won't submit and a warning will appear to the user informing them what field raised the error.
 
 ## Database Security
+    
     The database url and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to Github.
 
     Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.        
 
 ## Custom error pages:
+    
     Custom Error Pages were created to give the user more information on the error and to provide them with redirect buttons back to appropriate area's of the App.
 
    ### 400 Error - Bad Request
@@ -297,13 +301,12 @@ The Home Page of the App incorporates the Following :
 
 Header with App Title & Logo as well as Page Navigation included in is User Sign Up, Loging and Log out.
 
-There is also included a spotify play list for the users enjoyment
 
 ### Image of Header and Navigation when User is not Logged In
-![AppTitle,Logo& Navigation](assets/readme-images/WebPages/Home/App%20Title%20%2CLogo%20%26%20Navigation.png)
+![AppTitle,Logo& Navigation](assets/readme-images/WebPages/Home/AppTitleLogo-Navigation.png)
 
 ### Image of Header and Nacigation when User is Logged In
-![Naviagtion Logged In](assets/readme-images/WebPages/Home/Navigation%20Logged%20In.png)
+![Naviagtion Logged In](assets/readme-images/WebPages/Home/Navigation-Logged-In.png)
 
 
 The Main Body of the page has a animated Hero image which encourages signup a call to action and once signed up and logged in shows when a User is Logged in and welcomes them to the App.
@@ -356,10 +359,9 @@ A Sign Up button is provided & Below these are two redirect buttons one for Logi
 
 </details> 
 
-The Log In page provides the user with a Form requesting the Username & Password and a Sign In button.
+The Sign In page provides the user with a Form requesting the Username & Password and a Sign In button.
 Below these are two redirect buttons one for Sign Up should the user not have an account and another to continue to Browse page should the user choose so .
 
-[Back to top ⇧](#contents)
 
 <details><summary>Full Sign Out Page Image :</summary>
 
@@ -390,17 +392,12 @@ The Browse Page is set up to browse Recipes on Recipe cards set up with Paginati
 
 ![PaginatePrevButton](assets/readme-images/WebPages/Browse/Paginate-Prev-Button.png)
 
-Each card has the Basic information of the Recipe on the card consisting of Recipe Title, the Author of the Recipe ,Number of people it Serves, Prep Time and Cooking Time .Each Recipe Card has  3 usable link buttons View to go to the Recipe Details View which any User can access to see the entire Recipe in Detail.A button to Update the Recipe and one to Delete the Recipe these two buttons will only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error.
+Each card has the Basic information of the Recipe on the card consisting of Recipe Title, the Author of the Recipe ,a Date which shows when last the Recipe was Updated and a number of Likes Heart that has a counter next to it to show number of likes ,Number of people it Serves, Prep Time and Cooking Time .Each Recipe Card has  3 usable link buttons View to go to the Recipe Details View which any User can access to see the entire Recipe in Detail.A button to Update the Recipe and one to Delete the Recipe these two buttons will only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error.
 
 ### Image of Recipe Card
 
 ![RecipeCard](assets/readme-images/WebPages/Browse/Recipe-Card.png)
 
-Below this is a Date which shows when last the Recipe was Updated and a number of Likes Heart that has a counter next to it to show number of likes.
-
-### Image of Card Date and Likes Heart with Counter
-
-![RecipeDateLikeHeart&Count](assets/readme-images/WebPages/Browse/Recipe-Date-Like-Heart-%26-Count.png)
 
 [Back to top ⇧](#contents)
 
@@ -412,9 +409,10 @@ Below this is a Date which shows when last the Recipe was Updated and a number o
 
 </details> 
 
-The View Page is a full detailed page view of the Recipe . Cosisting of an Iamge of the Recipe or a Recipe place holder Image should the user not upload a recipe, under the Recipe Image is the Author name and Latest date of recipe upload or Update.
+The View Page is a full detailed page view of the Recipe . Consisting of an Iamge of the Recipe or a Recipe place holder Image should the user not upload a recipe, under the Recipe Image is the Author name and Latest date of recipe upload or Update.
 The Recipe , Tilte and dexription is next to the image under this is the number of People serves , Prep Time and cooking time.
 Followed by two section under this of Ingredients and the Method.
+The Ingredients and the Method section have a fantastic range of Rich Text.
 Under the Full Recipe are 3 Button Links. Update & Delete only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error. The Browse button will take any user to the Browse Page.
 
 ### Recipe View Deail Image
@@ -498,6 +496,7 @@ Two link buttons are supplied for the User/Author Choice to either Delete the Co
 The Add Recipe Page is only available to Logged In Users.
 On this page a simple form is provided to Add the recipe providing all the necessary input fields.
 Title, Description, Serves, Prep Time, Cooking Time, Ingredients , Method and a Image section that allows the user to upload an Image of the Recipe by Choose File Button.
+Within the Ingredients & Method Section the ability to create Rich Text is supplied giving the user / Author the ability to be a bit more creative should they so choose.
 A sumbit button and a Cancel button are provided to the user. 
 
 [Back to top ⇧](#contents)
@@ -512,6 +511,7 @@ A sumbit button and a Cancel button are provided to the user.
 
 The Update Recipe Page can only be reached if the User is that Recipes Author.
 The Update Recipe Page Provides a form with the information already inputed by the User/Author on that particular recipe here the User/Author can update any details on the recipe that they should choose.
+Within the Ingredients & Method Section the ability to create Rich Text is supplied giving the user / Author the ability to be a bit more creative should they so choose.
 
 At the end of the form are two buttons Update and Cancel for the User/Auhtor use.
 
