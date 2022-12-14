@@ -658,11 +658,46 @@ The option to use filters to find Comments is also available .
 
 Debug was kept on True in order to make use of Django's error page which came in use more often than not as a new Django Developer.
 
+I as a new Django User & Developer encountered a great many Bug's .
+Solving them through many different means.
+
+The Bugs where generated from a lot of different errors I made from syntax errors to url errors as well as putting my url patterns in the wrong place one of which was puttting my paths below the slug that I used in the Url as this made the error of not reading the other path patterns.
+Other errors included incorrect use of *args & *kwargs .
+The incorrect use of Forgine Key vs Primary Key.
+
+Solving of the Bug Error's was done via great deal of Research on different Dev sights but mostly via the methods below. 
+
+Bug Erros solved via :
+1 : Trial & Error - Trying the solutions all varied depending on the source 
+2 : Stack Overflow 
+3 : Djano Documentation
+4 : CI Tutor support
+
+Find below a few images of errors encountered and solved through the making of this App.
+
+<details><summary>Images of Bugs / Errors</summary>
+
+![1](assets/readme-images/Bugs/Screenshot1.png)
+
+![2](assets/readme-images/Bugs/Screenshot2.png)
+
+![3](assets/readme-images/Bugs/Screenshot3.png)
+
+![4](assets/readme-images/Bugs/Screenshot4.png)
+
+![5](assets/readme-images/Bugs/Screenshot5.png)
+
+![6](assets/readme-images/Bugs/Screenshot6.png)
+
+![7](assets/readme-images/Bugs/Screenshot7.png)
+</details>
+
 ## Manual Testing 
 
 ## Validator Testing
 
    ### HTML - W3C Html Validator 
+   
    <details><summary>No Errors Found Html</summary>
 
    ![W3CHtml](assets/readme-images/Validation/W3CHtml-Validator.png)
