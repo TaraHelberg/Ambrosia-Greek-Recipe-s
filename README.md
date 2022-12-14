@@ -699,14 +699,18 @@ Debug was kept on True in order to make use of Django's error page which came in
 
    * Responsivesness tested via Google Dev Tools & Imagery checked Via Am I Responsive
 
-   <details><summary>Responsiveness</summary>
+   <details><summary>Responsiveness Image</summary>
 
    ![amiresponsive](assets/readme-images/amiresponsive.png)
     
    </details> 
-
     
    ### Lighthouse - Website tested for Performance, Accessibility, Best Practice and SEO as seen below.
+   <details><summary>LightHouse Test Results</summary>
+
+   ![Lighthouse](assets/readme-images/Validation/Lighthouse.png)
+    
+   </details> 
 
 [Back to top ⇧](#contents)
 
@@ -728,6 +732,16 @@ This project was deployed using Github and Heroku.
 - ## Django and Heroku
 
     To get the Django framework installed and set up I followed the Code institutes [Django I Think Therefore I Blog cheatsheet](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit). & Revisited the Walkthrough to assist.
+    However due to changes made by Heroku changes where made when this occured & information recieved from Code Institute.
+    The Steps then taken are below in the three links :
+    - [PostgreSQL](https://www.postgresql.org/)
+        * Database used through heroku. - until Update of Heroku when migrations and a change of Database was needed
+    - [ElephantSQL](https://www.elephantsql.com/)
+        * Database used after migrations and following of all instructions from Code Institute James Stone
+        * Information recieved via email.
+            + Link 1 (https://code-institute-students.github.io/deployment-docs/02-elephantsql/elephantsql-01-sign-up)
+            + Link 2 (https://code-institute-students.github.io/deployment-docs/80-migrating-databases-for-heroku/)
+            + Link 3 (https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos)
 
     
 - ## Forking
