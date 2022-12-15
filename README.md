@@ -60,16 +60,17 @@ The site will allow a user to Register in order to add , update and delete their
         * [HeroImage](#hero-image-manual-test)
         * [RecentlyAddedManualTest](#recently-added-manual-test)
         * [WhatWeDoManualTest](#what-we-do-manual-test)
-      * [BrowsePageManualTesting](#browse-page-maual-testing)
-        * [RecipeCardManualTest](#recipe-card-manual-test)
-        * [PaginateManualTest](#paginate-manual-test)
       * [SignUpManualTesting](#sign-up-manual-testing)
       * [SignInManualTesting](#sign-in-manual-testing)
-      * [SignOutManualTesting](#sign-out-manual-testing)
-      * [AddRecipeManualTesting]()
+      * [SignOutManualTesting](#sign-out-manual-testing)  
+      * [BrowsePageManualTesting](#browse-page-maual-testing)
+        * [RecipeCardManualTest](#recipe-card-manual-test)
+        * [PaginateManualTest](#paginate-manual-test)      
+      * [AddRecipeManualTesting](#add-recipe-manual-testing)
       * [ViewRecipeManualTesting]()
          * [CommentsManaulTest]()
          * [LeaveaCommentManualTest]()
+         * [Like/UnlikeManualTest]()
       * [UpdateRecipeManualTesting]()
       * [DeleteRecipeManualTesting]()
       * [UpdateCommentManualTesting]()
@@ -794,29 +795,6 @@ Find below a few images of errors encountered and solved through the making of t
 |  Browse             | Navigation Link            | Click On |   ✔       |
 
 
-### Browse Page Maual Testing
-
-
-#### Recipe Card Manual Test
-
-
-| Feature             |  Expect                    | Action        | Result    |
-| --------------------| -------------------------- | ------------- | ----------|
-|  Recipe Card Hover  | Card to Hover              | On Mouse Over |   ✔       |
-|  View Button        | Navigation Link to View    | Click On      |   ✔       |
-|  Update Button      | Navigation Link to Update  | Click On      |   ✔       |
-|  Delete Button      | Navigation Link to Delete  | Click On      |   ✔       |
-
-
-#### Paginate Manual Test
-
-
-| Feature             |  Expect                      | Action    | Result    |
-| --------------------| ---------------------------- | --------- | ----------|
-|  Paginate Stnd Pc   | 3 Cards Per Row , 6 Per Page |   N/A     |   ✔       |
-|  Next Button        | To Next Page                 | Click On  |   ✔       |
-|  Prev Button        | To Prev Page                 | Click On  |   ✔       |
-
 
 ### Sign Up Manual Testing
 
@@ -848,6 +826,42 @@ Find below a few images of errors encountered and solved through the making of t
 |  Sign Out Button    | Sign Out                     | Click On  |   ✔       |
 |  Browse Button      | Navigation Link - Browse     | Click On  |   ✔       |
 
+
+### Browse Page Maual Testing
+
+
+#### Recipe Card Manual Test
+
+
+| Feature             |  Expect                    | Action        | Result    |
+| --------------------| -------------------------- | ------------- | ----------|
+|  Recipe Card Hover  | Card to Hover              | On Mouse Over |   ✔       |
+|  View Button        | Navigation Link to View    | Click On      |   ✔       |
+|  Update Button      | Navigation Link to Update  | Click On      |   ✔       |
+|  Delete Button      | Navigation Link to Delete  | Click On      |   ✔       |
+
+
+#### Paginate Manual Test
+
+
+| Feature             |  Expect                      | Action    | Result    |
+| --------------------| ---------------------------- | --------- | ----------|
+|  Paginate Stnd Pc   | 3 Cards Per Row , 6 Per Page |   N/A     |   ✔       |
+|  Next Button        | To Next Page                 | Click On  |   ✔       |
+|  Prev Button        | To Prev Page                 | Click On  |   ✔       |
+
+
+### Add Recipe Manual Testing
+
+
+| Feature                        |  Expect                       | Action    | Result    |
+| -------------------------------| ----------------------------- | --------- | ----------|
+|  Input Fields                  | Able to input                 |  Type     |   ✔       |
+|  Input Field Ingredients       | Rich Text Options             | Click On  |   ✔       |
+|  Input Field Method            | Rich Text Options             | Click On  |   ✔       |
+|  Image Choose File Button      | Able to choose file           | Click On  |   ✔       |
+|  Submit Button                 | Submits Recipe Form           | Click On  |   ✔       |
+|  Cancel Button                 | Cancels & Redirects to Browse | Click On  |   ✔       |
 
 
 ## Validator Testing
