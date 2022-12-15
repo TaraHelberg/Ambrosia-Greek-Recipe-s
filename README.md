@@ -71,8 +71,8 @@ The site will allow a user to Register in order to add , update and delete their
          * [Likes&CommentsMaualTesting](#likes--comments-maual-testing)
          * [CommentsManualTesting](#comments-manual-testing)     
          * [LeaveACommentsManaulTest](#leave-a-comments-manual-testing)         
-      * [UpdateRecipeManualTesting]()
-      * [DeleteRecipeManualTesting]()
+      * [UpdateRecipeManualTesting](#update-recipe-manual-testing)
+      * [DeleteRecipeManualTesting](#delete-recipe-manual-testing)
       * [UpdateCommentManualTesting]()
       * [DeleteCommentManualTesting]()
       * [AdminControlManualTesting]()               
@@ -914,9 +914,22 @@ Find below a few images of errors encountered and solved through the making of t
 |  Input Field Method            | Rich Text Options              | Click On  |   ✔       |
 |  Image Current Iamge indicated | See current image              |   N/A     |   ✔       |
 |  Image Choose File Button      | Able to choose file            | Click On  |   ✔       |
-|  Submit Button                 | Submits Recipe Form            | Click On  |   ✔       |
+|  Update Button                 | Update Recipe Form             | Click On  |   ✔       |
 |  Cancel Button                 | Cancels & Redirects to Browse  | Click On  |   ✔       |
 
+
+
+### Delete Recipe Manual Testing
+
+
+| Feature                        |  Expect                        | Action    | Result    |
+| -------------------------------| ------------------------------ | --------- | ----------|
+|  Recipe Card                   | Able to see Recipe Card        |  N/A      |   ✔       |
+|  View   Button                 | Navigation Link - View         | Click On  |   ✔       |
+|  Update Button                 | Navigation Link - Update       | Click On  |   ✔       |
+|  Warning Message Red           | See warning Message            |   N/A     |   ✔       |
+|  Delete Button                 | Delete Recipe                  | Click On  |   ✔       |
+|  Cancel Button                 | Cancels & Redirects to Browse  | Click On  |   ✔       |
 
 
 ## Validator Testing
