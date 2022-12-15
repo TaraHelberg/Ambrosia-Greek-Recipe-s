@@ -4,6 +4,8 @@
 
 Live App link : [Ambrosia Greek Recipe's](https://ambrosia-greek-recipes.herokuapp.com/)
 
+Git Hub Respository : [Ambrosia Greek Recipe's Repsoitory](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s#github)
+
 Ambrosia Greek Recipe’s is a user-friendly app that is base on the Greek Food and culture but is open to everyone who enjoys cooking and wishes to explore Greek Food and add their own recipes.
 The site’s objective is to allow users to browse / view recipes weather they are a Registered user or not .
 The site will allow a user to Register in order to add , update and delete their won recipes on the app and leave comments that the user can update or delete should they wish . Registered users can also like/unlike recipes.
@@ -75,8 +77,12 @@ The site will allow a user to Register in order to add , update and delete their
       * [DeleteRecipeManualTesting](#delete-recipe-manual-testing)
       * [UpdateCommentManualTesting](#update-comment-manual-testing)
       * [DeleteCommentManualTesting](#delete-comment-manual-testing)
-      * [AdminControlManualTesting]()               
-   * [Validation](#validator-testing)
+      * [AdminControlMaualTesting](#admin-control-maual-testing)          
+          * [AdminLoginMaualTest](#admin-login-maual-test)
+          * [AdminControlPanelMaualTesting](#admin-control-panel-maual-testing)
+               * [RecipeControlManualTest](#recipe-control-manual-test)
+               * [CommentsControlManualTest](#comments-control-manual-test)              
+    * [Validation](#validator-testing)
 
 - [Deployment](#deployment)
    * [Github](#github)
@@ -951,6 +957,45 @@ Find below a few images of errors encountered and solved through the making of t
 |  Warning message in Red         |  See warning Message in Red     |  N/A      |   ✔       |
 |  Delete Button                  |  Delete Comment                 | Click On  |   ✔       |
 |  Cancel Button                  |  Cancels & Redirects to Browse  | Click On  |   ✔       |
+
+
+## Admin Control Maual Testing
+
+
+### Admin Login Maual Test
+
+
+| Feature                        |  Expect                        | Action    | Result    |
+| -------------------------------| ------------------------------ | --------- | ----------|
+|  Input Fields                  | Access to & Fill In            |  Type     |   ✔       |
+|  Log In Button                 | Log Into Django Admin          | Click On  |   ✔       |
+
+
+### Admin Control Panel Maual Testing
+
+
+| Feature                        |  Expect                        | Action    | Result    |
+| -------------------------------| ------------------------------ | --------- | ----------|
+|  Django Administration Panel   | Access to full Panel           |  N/A      |   ✔       |
+
+* From this panel the Admin has full C R U D functionality .
+
+
+####  Recipe Control Manual Test
+
+* All access is via On Click
+* Admin is able to Create , view, update and delete Recipes
+* Admin is able to Approve Recipes 
+* Adming is able to use filter to search for Recipes
+
+
+####  Comments Control Manual Test
+
+* All access is via On Click
+* Admin is able to Create , view, update and delete Comments
+* Admin is able to Approve Comments 
+* Adming is able to use filter to search for Comments
+
 
 ## Validator Testing
 
