@@ -1079,7 +1079,16 @@ This project was deployed using Github and Heroku.
             + Link 2 (https://code-institute-students.github.io/deployment-docs/80-migrating-databases-for-heroku/)
             + Link 3 (https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos)
 
+    #### Final Deployment 
+    DEBUG = False
 
+    X_FRAME_OPTIONS = 'SAMEORIGIN' 
+
+    In Heroku go to Reveal Congfig Vars  
+    Remove Disbable_Collectstatic
+
+    Go to Deploy Tab & Deploy Branch
+   
 - ## Clone Project 
 
     * Cloning of Project was made possible by GitHub
