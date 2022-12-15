@@ -31,7 +31,7 @@ The site will allow a user to Register in order to add , update and delete their
    * [HomePage](#home-page)
    * [UserAccountPages](#user-account-pages)
    * [BrowsePage](#browse-recipes)
-   * [RecipeViewPage](#recipe-view-page)
+   * [RecipeViewPage](#recipe-view-page)          
         * [LeaveAComment](#leave-a-comment)
    * [UpdateAComment](#update-a-comment-page)
    * [DeleteAComment](#delete-a-comment-page)     
@@ -67,10 +67,10 @@ The site will allow a user to Register in order to add , update and delete their
         * [RecipeCardManualTest](#recipe-card-manual-test)
         * [PaginateManualTest](#paginate-manual-test)      
       * [AddRecipeManualTesting](#add-recipe-manual-testing)
-      * [ViewRecipeManualTesting]()
-         * [CommentsManaulTest]()
-         * [LeaveaCommentManualTest]()
-         * [Like/UnlikeManualTest]()
+      * [ViewRecipeManualTesting](#view-recipe-manual-testing)
+         * [Likes&CommentsMaualTesting](#likes--comments-maual-testing)
+         * [CommentsManualTesting](#comments-manual-testing)     
+         * [LeaveACommentsManaulTest](#leave-a-comments-manual-testing)         
       * [UpdateRecipeManualTesting]()
       * [DeleteRecipeManualTesting]()
       * [UpdateCommentManualTesting]()
@@ -862,6 +862,61 @@ Find below a few images of errors encountered and solved through the making of t
 |  Image Choose File Button      | Able to choose file           | Click On  |   ✔       |
 |  Submit Button                 | Submits Recipe Form           | Click On  |   ✔       |
 |  Cancel Button                 | Cancels & Redirects to Browse | Click On  |   ✔       |
+
+
+### View Recipe Manual Testing
+
+
+| Feature                        |  Expect                        | Action    | Result    |
+| -------------------------------| ------------------------------ | --------- | ----------|
+|  View Full Recipe              | View Full Recipe               |  N/A      |   ✔       |
+|  Update Button                 | Navigation Link - Only if User | Click On  |   ✔       |
+|  Delete Button                 | Navigation Link - Only if User | Click On  |   ✔       |
+|  Browse Button                 | Navigation Link - Browse       | Click On  |   ✔       |
+
+
+#### Likes & Comments Maual Testing
+
+
+| Feature                        |  Expect                         | Action    | Result    |
+| -------------------------------| ------------------------------- | --------- | ----------|
+|  Like / Unlike                 | Only if logged In Like / Unlike | Click On  |   ✔       |
+|  Number Of Comments Shown      | See Number of Comments          | N/A       |   ✔       |
+
+
+#### Comments Manual Testing
+
+
+| Feature                        |  Expect                        | Action    | Result    |
+| -------------------------------| ------------------------------ | --------- | ----------|
+|  Comments View                 | To be able to view comments    | N/A       |   ✔       |
+|  Update Button - If Logged In  | Navigation Link - Only if User | Click On  |   ✔       |
+|  Delete Button - If Logged In  | Navigation Link - Only if User | Click On  |   ✔       |
+
+
+#### Leave A Comments Manual Testing
+
+
+| Feature                         |  Expect                        | Action    | Result    |
+| --------------------------------| ------------------------------ | --------- | ----------|
+|  Leave A Comment - If Logged In | Have access to Leave a Comment | N/A       |   ✔       |
+|  Submit Button                  | Submit Comment                 | Click On  |   ✔       |
+
+
+### Update Recipe Manual Testing
+
+
+| Feature                        |  Expect                        | Action    | Result    |
+| -------------------------------| ------------------------------ | --------- | ----------|
+|  Input Fields - Filled in      | Able to see all previous input |  N/A      |   ✔       |
+|  Input Fields - Update         | Able Update input              |  Type     |   ✔       |
+|  Input Field Ingredients       | Rich Text Options              | Click On  |   ✔       |
+|  Input Field Method            | Rich Text Options              | Click On  |   ✔       |
+|  Image Current Iamge indicated | See current image              |   N/A     |   ✔       |
+|  Image Choose File Button      | Able to choose file            | Click On  |   ✔       |
+|  Submit Button                 | Submits Recipe Form            | Click On  |   ✔       |
+|  Cancel Button                 | Cancels & Redirects to Browse  | Click On  |   ✔       |
+
 
 
 ## Validator Testing
