@@ -60,9 +60,9 @@ The site will allow a user to Register in order to add , update and delete their
         * [HeroImage](#hero-image-manual-test)
         * [RecentlyAddedManualTest](#recently-added-manual-test)
         * [WhatWeDoManualTest](#what-we-do-manual-test)
-      * [BrowsePageManualTesting](#)
-        * [RecipeCardManualTest]()
-        * [PaginateManualTest]()
+      * [BrowsePageManualTesting](#browse-page-maual-testing)
+        * [RecipeCardManualTest](#recipe-card-manual-test)
+        * [PaginateManualTest](#paginate-manual-test)
       * [SignUpManualTesting]()
       * [SignInManualTesting]()
       * [SignOutManualTesting]()
@@ -794,7 +794,28 @@ Find below a few images of errors encountered and solved through the making of t
 |  Browse             | Navigation Link            | Click On |   ✔       |
 
 
+### Browse Page Maual Testing
 
+
+#### Recipe Card Manual Test
+
+
+| Feature             |  Expect                    | Action        | Result    |
+| --------------------| -------------------------- | ------------- | ----------|
+|  Recipe Card Hover  | Card to Hover              | On Mouse Over |   ✔       |
+|  View Button        | Navigation Link to View    | Click On      |   ✔       |
+|  Update Button      | Navigation Link to Update  | Click On      |   ✔       |
+|  Delete Button      | Navigation Link to Delete  | Click On      |   ✔       |
+
+
+#### Paginate Manual Test
+
+
+| Feature             |  Expect                      | Action    | Result    |
+| --------------------| ---------------------------- | --------- | ----------|
+|  Paginate Stnd Pc   | 3 Cards Per Row , 6 Per Page |   N/A     |   ✔       |
+|  Next Button        | To Next Page                 | Click On  |   ✔       |
+|  Prev Button        | To Prev Page                 | Click On  |   ✔       |
 
 ## Validator Testing
 
