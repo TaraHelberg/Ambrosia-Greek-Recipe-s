@@ -63,9 +63,9 @@ The site will allow a user to Register in order to add , update and delete their
       * [BrowsePageManualTesting](#browse-page-maual-testing)
         * [RecipeCardManualTest](#recipe-card-manual-test)
         * [PaginateManualTest](#paginate-manual-test)
-      * [SignUpManualTesting]()
-      * [SignInManualTesting]()
-      * [SignOutManualTesting]()
+      * [SignUpManualTesting](#sign-up-manual-testing)
+      * [SignInManualTesting](#sign-in-manual-testing)
+      * [SignOutManualTesting](#sign-out-manual-testing)
       * [AddRecipeManualTesting]()
       * [ViewRecipeManualTesting]()
          * [CommentsManaulTest]()
@@ -816,6 +816,39 @@ Find below a few images of errors encountered and solved through the making of t
 |  Paginate Stnd Pc   | 3 Cards Per Row , 6 Per Page |   N/A     |   ✔       |
 |  Next Button        | To Next Page                 | Click On  |   ✔       |
 |  Prev Button        | To Prev Page                 | Click On  |   ✔       |
+
+
+### Sign Up Manual Testing
+
+
+| Feature             |  Expect                      | Action    | Result    |
+| --------------------| ---------------------------- | --------- | ----------|
+|  Input Fields       | Able to input                |  Type     |   ✔       |
+|  Sign Up Button     | To Next Page                 | Click On  |   ✔       |
+|  Login Button       | Navigation Link - Login      | Click On  |   ✔       |
+|  Browse Button      | Navigation Link - Browse     | Click On  |   ✔       |
+
+
+### Sign In Manual Testing
+
+
+| Feature             |  Expect                      | Action    | Result    |
+| --------------------| ---------------------------- | --------- | ----------|
+|  Input Fields       | Able to input                |  Type     |   ✔       |
+|  Sign In Button     | To Next Page                 | Click On  |   ✔       |
+|  Sign Up Button     | Navigation Link - Sign Up    | Click On  |   ✔       |
+|  Browse Button      | Navigation Link - Browse     | Click On  |   ✔       |
+
+
+### Sign Out Manual Testing
+
+
+| Feature             |  Expect                      | Action    | Result    |
+| --------------------| ---------------------------- | --------- | ----------|
+|  Sign Out Button    | Sign Out                     | Click On  |   ✔       |
+|  Browse Button      | Navigation Link - Browse     | Click On  |   ✔       |
+
+
 
 ## Validator Testing
 
