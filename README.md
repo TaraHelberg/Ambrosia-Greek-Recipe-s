@@ -195,11 +195,11 @@ Colour from BootStrap
 Going with an Authentic Greek Themed App and choosing to stick to the colours most associated with Greece Blue and White this Developer was fortunate to choose Bootstrap for many applications in this App a benefit of this been that Bootstrap by default provided the Colour scheme required for this App.
 
 ## Images
-There are four static images on the App .
-1. App Title Logo A Greek Urn
-2. Hero Image a Greek Salad on the Home Page
-3. BgIamge a meal-spices Image of Olive Oil and spices used as a background image for Forms
-4. Place Holder image a small glass bowl with olive oil and olives used if a user does not upload a recipe image 
+There are two static images on the App & two images used but hosted in cloudinary.
+1. App Title Logo A Greek Urn - static file
+2. Hero Image a Greek Salad on the Home Page - cloudinary
+3. BgIamge a meal-spices Image of Olive Oil and spices used as a background image for Forms - cloudinary
+4. Place Holder image a small glass bowl with olive oil and olives used if a user does not upload a recipe image - static file 
 The rest of the imagery will be uploaded by users for their individual recipes. 
 
 ### Images Credit for Project
