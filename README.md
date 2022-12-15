@@ -86,8 +86,7 @@ The site will allow a user to Register in order to add , update and delete their
 
 - [Deployment](#deployment)
    * [Github](#github)
-   * [Django and Heroku](#django-and-heroku)
-   * [Forking](#forking)
+   * [Django and Heroku](#django-and-heroku)   
    * [Clone Project](#clone-project)
 
 - [Acknowledgments](#acknowledgments)
@@ -1080,14 +1079,6 @@ This project was deployed using Github and Heroku.
             + Link 2 (https://code-institute-students.github.io/deployment-docs/80-migrating-databases-for-heroku/)
             + Link 3 (https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos)
 
-    
-- ## Forking
-
-    * Fork of Project was made possible by GitHub
-        + Go to Git Hub
-        + Locate the Fork button at the top right of the page.
-        + Click on Fork Button. 
-        + The Fork is now in your repositories.
 
 - ## Clone Project 
 
