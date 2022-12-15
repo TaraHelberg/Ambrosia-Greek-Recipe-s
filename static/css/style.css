@@ -32,7 +32,7 @@ body {
 #hero-image {
     width: 80%;
     height: 26em;
-    background: url(https://res.cloudinary.com/drf6jhefj/image/upload/v1/static/image/heroimage-greek-salad.jpg,) center center no-repeat;    
+    background: url(https://res.cloudinary.com/drf6jhefj/image/upload/v1/static/image/heroimage-greek-salad.jpg) center center no-repeat;    
     background-clip: content-box;    
     overflow: hidden;               
 
