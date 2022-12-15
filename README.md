@@ -74,7 +74,7 @@ The site will allow a user to Register in order to add , update and delete their
       * [UpdateRecipeManualTesting](#update-recipe-manual-testing)
       * [DeleteRecipeManualTesting](#delete-recipe-manual-testing)
       * [UpdateCommentManualTesting](#update-comment-manual-testing)
-      * [DeleteCommentManualTesting]()
+      * [DeleteCommentManualTesting](#delete-comment-manual-testing)
       * [AdminControlManualTesting]()               
    * [Validation](#validator-testing)
 
@@ -937,11 +937,20 @@ Find below a few images of errors encountered and solved through the making of t
 
 | Feature                         |  Expect                           | Action    | Result    |
 | --------------------------------| --------------------------------- | --------- | ----------|
-|  Commemnt Input Field           |  See Previous Comment In Input    |  N/A      |   ✔       |
-|  Commemnt Input Field - Update  |  Update Previous Comment In Input |  Type     |   ✔       |
+|  Comment Input Field           |  See Previous Comment In Input    |  N/A      |   ✔       |
+|  Comment Input Field - Update  |  Update Previous Comment In Input |  Type     |   ✔       |
 |  Update Button                  |  Update Comment                   | Click On  |   ✔       |
 |  Cancel Button                  | Cancels & Redirects to Browse     | Click On  |   ✔       |
 
+
+### Delete Comment Manual Testing
+
+
+| Feature                         |  Expect                         | Action    | Result    |
+| --------------------------------| ------------------------------- | --------- | ----------|
+|  Warning message in Red         |  See warning Message in Red     |  N/A      |   ✔       |
+|  Delete Button                  |  Delete Comment                 | Click On  |   ✔       |
+|  Cancel Button                  |  Cancels & Redirects to Browse  | Click On  |   ✔       |
 
 ## Validator Testing
 
