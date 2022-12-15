@@ -4,7 +4,7 @@
 
 Live App link : [Ambrosia Greek Recipe's](https://ambrosia-greek-recipes.herokuapp.com/)
 
-Git Hub Respository : [Ambrosia Greek Recipe's Repsoitory](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s#github)
+Git Hub Repository : [Ambrosia Greek Recipe's Repository](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s#github)
 
 Ambrosia Greek Recipe’s is a user-friendly app that is base on the Greek Food and culture but is open to everyone who enjoys cooking and wishes to explore Greek Food and add their own recipes.
 The site’s objective is to allow users to browse / view recipes weather they are a Registered user or not .
@@ -17,11 +17,11 @@ The site will allow a user to Register in order to add , update and delete their
         * [Agile Method](#agile-method-git-projects)
         * [Future Features](#future-features) 
    * [Design](#design)
-      * [Color Scheme](#colour-scheme)
+      * [Colour Scheme](#colour-scheme)
       * [Images](#images)
       * [Font](#fonts)
       * [Wireframes(Balsamiq Wireframes)](#balsamiq-wireframes)
-      * [Data Modle](#data-model)
+      * [Data Modal](#data-modal)
    * [Security Features and Defensive Design](#security-features-and-defensive-design)
       * [User Authentication](#user-authentication)
       * [Form Validation](#form-validation)
@@ -50,14 +50,14 @@ The site will allow a user to Register in order to add , update and delete their
 
 
 - [Technologies](#technologies)
-   * [Programing Languuages](#programing-languages)
+   * [Programming Languages](#programming-languages)
    * [Support Programs & Libraries](#support-programs--libraries)
 
 - [Testing](#testing)
    * [Bugs](#bugs)
    * [ManualTesting](#manual-testing)
-        * [NaviagtionHeader](#navigation-header)
-        * [NaviagationFooter](#navigation-footer)
+        * [NavigationHeader](#navigation-header)
+        * [NavigationFooter](#navigation-footer)
       * [HomePageManualTesting](#home-page-maual-testing)
         * [HeroImage](#hero-image-manual-test)
         * [RecentlyAddedManualTest](#recently-added-manual-test)
@@ -97,15 +97,14 @@ The site will allow a user to Register in order to add , update and delete their
 
 ## User Experience UX
 
-As a App Developer and Designer I have tried to incorporate the Needs of the User along with a User Friendly navigation and astheticly pleasing App. 
-The App is designed for use for anyone who wishes to enjoy Greek Food and has a love of cooking.
+As an App Developer and Designer, I have tried to incorporate the Needs of the User along with a User-Friendly navigation and aesthetically pleasing App. The App is designed for use for anyone who wishes to enjoy Greek Food and has a love of cooking.
 
 ## User Stories
 
-I have used the Agile method starting with the Epics from which the User Stories are propogated and Task required to complete the User Stories. 
+I have used the Agile method starting with the Epics from which the User Stories are propagated  and Task required to complete the User Stories. 
 
 ### EPIC | Home/Landing Page
-- As a App Designer I require a Home/Landing Page so that the User can be introduced to the Recipes App and have a Definite place to Navigate and start using the app from.
+- As an App Designer I require a Home/Landing Page so that the User can be introduced to the Recipes App and have a Definite place to Navigate and start using the app from.
   * [USER STORY: Navigation](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/18)
        * [Tasks: Header, Title & Navigation](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/22)
   * [USER STORY: Social Media App Links](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/19)
@@ -115,24 +114,24 @@ I have used the Agile method starting with the Epics from which the User Stories
        * [Tasks: Promote Registration Link](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/25)
 
 ### EPIC | Browse Recipe's Page
-- As a App Designer I require a Browse Recipe's Page so that App users can Browse the recipe's that they or others have added/posted even if the User is Registered user or not 
+- As an App Designer I require a Browse Recipe's Page so that App users can Browse the recipe's that they or others have added/posted even if the User is Registered user or not 
    * [USER STORY: Browse Recipes](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/31)
        * [Tasks: Browse Recipe ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/32)
    * [USER STORY: Open a Recipe](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/33) 
        * [Tasks: Open a Recipe to View entire recipe contents](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/34)   
 
 ### EPIC | App Admin Manager
-- As a App Designer I require an App Admin Manager so that The Admin Manager in charge of the App can oversee the Registered Users Posts & comments in order to moderate the App if needed
+- As an App Designer I require an App Admin Manager so that The Admin Manager in charge of the App can oversee the Registered Users Posts & comments in order to moderate the App if needed
     * [USER STORY: App Admin Management](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/28)
         * [Tasks: App Admin Management](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/29)
 
 ### EPIC | User Profile 
-- As a App Designer I require User Profile so that Potential users will have the ability to Register & Login to the App
+- As an App Designer I require User Profile so that Potential users will have the ability to Register & Login to the App
     * [USER STORY: Account Registration & Login](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/37)
         * [Tasks: Account Registration & Login/Log out ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/38)
 
 ### EPIC | Recipe Management
-- As a App Designer I require a Registered User to be able to Add, Update & Delete Recipe as well as Comment on Recipes so that the Registered User can share Recipes to the Browse Recipe's page and Manage their Recipes for all Users to enjoy and add value to the App for All Users along with Registered users been able to add Comments for extra interaction with the App
+- As an App Designer I require a Registered User to be able to Add, Update & Delete Recipe as well as Comment on Recipes so that the Registered User can share Recipes to the Browse Recipe's page and Manage their Recipes for all Users to enjoy and add value to the App for All Users along with Registered users been able to add Comments for extra interaction with the App
     * [USER STORY Recipe Managment](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/30)
         * [Tasks: Create a Recipe Front end ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/40)
         * [Tasks: Read Detail Recipe Front End](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/41)
@@ -143,12 +142,12 @@ I have used the Agile method starting with the Epics from which the User Stories
         * [Tasks: Update & Delete Comments](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/45)
 
 ### EPIC | Recipe Like's
-- As a App Designer I can give my Registered Users the ability to like Recipes so that they have extra interaction with the App and can show to all users which recipes are more popular adding Value to the App 
+- As an App Designer I can give my Registered Users the ability to like Recipes so that they have extra interaction with the App and can show to all users which recipes are more popular adding Value to the App 
     * [USER STORY: Likes ](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/26)
         * [Tasks: Likes](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/27)
 
 ### EPIC | Error Pages
-- As a App Designer. I would require Error Handling pages so that any Errors that may occur due to either technical issues or access issues are handled, and that the user is informed and redirected accordingly if possible
+- As an App Designer. I would require Error Handling pages so that any Errors that may occur due to either technical issues or access issues are handled, and that the user is informed and redirected accordingly if possible
     * [USER STORY: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/47)
         * [Tasks: Error Pages](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues/48)
 
@@ -156,9 +155,10 @@ I have used the Agile method starting with the Epics from which the User Stories
 
 ## Agile Method Git Projects
 
-Github projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
+GitHub projects was used to manage the development process using an agile approach. Please see link to project [Kanban Board](https://github.com/TaraHelberg/Ambrosia-Greek-Recipe-s/issues?q=is%3Aissue+is%3Aclosed)
 
-Not all Epics have made it into the projecy using the MSCW Method you will find on the Kandban Must have's,Should Have's,Could Have's and Wont have labels. The wont have labeled sections are those that did not make it into the App due to time constraint or due to design decision as in the case of the About Page.
+Not all Epics have made it into the project using the MSCW Method you will find on the Kanban Must have’s, Should Have’s, Could Have's and Won’t have labels. The won’t have labelled sections are those that did not make it into the App due to time constraint or due to design decision as in the case of the About Page.
+
 
 ## Future Features
 
@@ -188,15 +188,15 @@ Future Feature Link : [Won'tHaveKanbanBaord](https://github.com/TaraHelberg/Ambr
 
 # Design
 
-The App has a very clean and simplistic design which was purposely chosen in order to keep the App looking and feeling Authenticaly Greek and Easy to Navigate.
+The App has a very clean and simplistic design which was purposely chosen in order to keep the App looking and feeling Authentically Greek and Easy to Navigate.
 
 ## Colour Scheme
 Colour from BootStrap
 
-Going with an Authentica Greek Themed App and choosing to stick to the colours most assosciated with Greece Blue and White this Developer was fortunate to choose Boostrap for many applications in this App a benifit of this been that Boostrap by default provided the Colour scheme required for this App.
+Going with an Authentic Greek Themed App and choosing to stick to the colours most associated with Greece Blue and White this Developer was fortunate to choose Bootstrap for many applications in this App a benefit of this been that Bootstrap by default provided the Colour scheme required for this App.
 
 ## Images
-There are four static image's on the App .
+There are four static images on the App .
 1. App Title Logo A Greek Urn
 2. Hero Image a Greek Salad on the Home Page
 3. BgIamge a meal-spices Image of Olive Oil and spices used as a background image for Forms
@@ -222,8 +222,7 @@ The font 'Roboto Condensed' is used as our main Body Font for the App. The Font 
 
 # Balsamiq Wireframes
 
-Wireframe's are extreamly basic and did not incorporate all App pages. 
-Wireframes where used as boiler plates to start the app design many updates and alterations made after the basic Wireframes where used to get started on the App.
+Wireframes are extremely basic and did not incorporate all App pages. Wireframes were used as boiler plates to start the app design many updates and alterations made after the basic Wireframes were used to get started on the App.
 
 <details><summary>Balsamiq Wireframes</summary>
 
@@ -247,7 +246,7 @@ Update Recipe ![ Update Recipe ](assets/readme-images/Wireframes/Updaterecipepg.
 
 [Back to top ⇧](#contents)
 
-# Data Model
+# Data Modal
 
 I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.  
 
@@ -268,26 +267,26 @@ The diagram below details the <details><summary>Database Flow Chart:</summary>
 
 ## User Authentication
 
-Django's LoginRequiredMixin have been used to make sure that any requests to access secure pages by non-authenticated users / Authors are redirected.
-Django's UserPassesTestMixin have been used to limit access based on permissions.
-Eg: To ensure users can only Update / Delete Recipes or Comments for which they are the User / Author. 
-    If the User /Author doesn't pass the test they are shown to the 403 Forbidden Error.
+Django's LoginRequiredMixin have been used to make sure that any requests to access secure pages by non-authenticated users / Authors are redirected. Django's UserPassesTestMixin have been used to limit access based on permissions. Eg: To ensure users can only Update / Delete Recipes or Comments for which they are the User / Author.
 
+If the User /Author doesn't pass the test they are shown to the 403 Forbidden Error.
     
 ## Form Validation
     
-If incorrect or empty information / data is added to a From, the Form won't submit and a warning will appear to the User / AUthor informing them what field raised the error.
+If incorrect or empty information / data is added to a From, the Form won't submit and a warning will appear to the User / Author informing them what field raised the error
 
 ## Database Security
 
-The Database Url and secret key are stored in the env.py file to prevent unwanted connections to the Database and this was done at the beginning of the App set up and pushed to GItHub.
+The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database and this was done at the beginning of the App set up and pushed to GitHub.
 
 Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App.
     
 ## Custom error pages:
 
-Custom Error Pages have been created to give the User / Author more information and help redirect them when aor should an Error occur. These pages are provided with Redirect Buttons to appropriate area's of the App.
+Custom Error Pages have been created to give the User / Author more information and help redirect them when an should an Error occur. These pages are provided with Redirect Buttons to appropriate areas of the App.
+
 403 Error page shown as an Example of what the Error pages present to the User / Author.
+
 <details><summary>Error Page Example Imagery</summary>
 
 ![403](assets/readme-images/WebPages/CustomErrors/403Error-Page.png)
@@ -318,7 +317,7 @@ Custom Error Pages have been created to give the User / Author more information 
 
 The Home Page of the App incorporates the Following :
 
-Header with App Title & Logo as well as Page Navigation included in is User Sign Up, Loging and Log out.
+Header with App Title & Logo as well as Page Navigation included in is User Sign Up, Sign In and Sign out.
 
 
 ### Image of Header and Navigation when User is not Logged In
@@ -328,7 +327,7 @@ Header with App Title & Logo as well as Page Navigation included in is User Sign
 ![Naviagtion Logged In](assets/readme-images/WebPages/Home/Navigation-Logged-In.png)
 
 
-The Main Body of the page has a animated Hero image which encourages signup a call to action and once signed up and logged in shows when a User is Logged in and welcomes them to the App.
+The Main Body of the page has an animated Hero image which encourages signup a call to action and once Signed up and Signed in shows when a User is Logged in and welcomes them to the App.
 
 
 ### Hero Image Call to Action - SignUp
@@ -341,19 +340,19 @@ The Main Body of the page has a animated Hero image which encourages signup a ca
 
 Following this we have 2 sections below : 
 
-The Recently Added section ona Bootsrap Carousel showing the 4 most recently added Recipes if a User clicks on any of the recipes in the Carousel they are taken to a Detailed view of the recipe.
+The Recently Added section on a Bootstrap Carousel showing the 4 most recently added Recipes if a User clicks on any of the recipes in the Carousel they are taken to a Detailed view of the recipe.
 
 ### Recently Added Image
 
 ![RecentlyAdded](assets/readme-images/WebPages/Home/Recently-Added.png)
 
-The What we Do section which gives the user the overall information on what the App is about and its useful features . If a User clicks on the Browse Icon the user is taken to the browes section of the App.
+The What we Do section which gives the user the overall information on what the App is about and its useful features . If a User clicks on the Browse Icon the user is taken to the browse section of the App.
 
 ### What we Do Image
 
 ![WhatWeDo](assets/readme-images/WebPages/Home/What-We-Do.png)
 
-At the bottom of the App is the Footer section with social media links all of which open on a seperate tab outside of the App when Clicked on.
+At the bottom of the App is the Footer section with social media links all of which open on a separate tab outside of the App when Clicked on.
 
 ### Footer Iamge
 
@@ -369,8 +368,8 @@ At the bottom of the App is the Footer section with social media links all of wh
 
 </details> 
 
-The Sign Up page provides a Sign Up Form requesting the Username , Email and a Password that must be validated by inputting hte password a second time .
-A Sign Up button is provided & Below these are two redirect buttons one for Login should the user already have an account and another to continue to Browse page should the user choose so .
+The Sign Up page provides a Sign Up Form requesting the Username , Email and a Password that must be validated by inputting tHhe password a second time .
+A Sign Up button is provided & below these are two redirect buttons one for Login should the user already have an account and another to continue to Browse page should the user choose so .
 
 <details><summary>Full Sign In Page Image :</summary>
 
@@ -401,7 +400,7 @@ Below these are one redirect button to continue to Browse page should the user c
 
 </details> 
 
-The Browse Page is set up to browse Recipes on Recipe cards set up with Pagination of 6 cards per page at the bottom of the page is the paginate Next button amd on moving to the next page is the paginate Prev button to take you back.
+The Browse Page is set up to browse Recipes on Recipe cards set up with Pagination of 6 cards per page at the bottom of the page is the paginate Next button and on moving to the next page is the paginate Prev button to take you back.
 
 ### Image of Paginate Next Button
 
@@ -411,7 +410,9 @@ The Browse Page is set up to browse Recipes on Recipe cards set up with Paginati
 
 ![PaginatePrevButton](assets/readme-images/WebPages/Browse/Paginate-Prev-Button.png)
 
-Each card has the Basic information of the Recipe on the card consisting of Recipe Title, the Author of the Recipe ,a Date which shows when last the Recipe was Updated and a number of Likes Heart that has a counter next to it to show number of likes ,Number of people it Serves, Prep Time and Cooking Time .Each Recipe Card has  3 usable link buttons View to go to the Recipe Details View which any User can access to see the entire Recipe in Detail.A button to Update the Recipe and one to Delete the Recipe these two buttons will only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error.
+Each card has the Basic information of the Recipe on the card consisting of Recipe Title, the Author of the Recipe ,a Date which shows when last the Recipe was Updated and a number of Likes Heart that has a counter next to it to show number of likes ,Number of people it Serves, Prep Time and Cooking Time .Each Recipe Card has  3 usable link buttons View to go to the Recipe Details View which any User can access to see the entire Recipe in Detail.
+
+A button to Update the Recipe and one to Delete the Recipe these two buttons will only be accessible to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page Forbidden access 403 Error.
 
 ### Image of Recipe Card
 
@@ -428,19 +429,19 @@ Each card has the Basic information of the Recipe on the card consisting of Reci
 
 </details> 
 
-The View Page is a full detailed page view of the Recipe . Consisting of an Iamge of the Recipe or a Recipe place holder Image should the user not upload a recipe, under the Recipe Image is the Author name and Latest date of recipe upload or Update.
-The Recipe , Tilte and dexription is next to the image under this is the number of People serves , Prep Time and cooking time.
-Followed by two section under this of Ingredients and the Method.
+The View Page is a full detailed page view of the Recipe . Consisting of an Image of the Recipe or a Recipe place holder Image should the user not upload a recipe, under the Recipe Image is the Author name and Latest date of recipe upload or Update.
+The Recipe , Title and description is next to the image under this is the number of People serves , Prep Time and cooking time.
+Followed by two sections under this of Ingredients and the Method.
 The Ingredients and the Method section have a fantastic range of Rich Text.
-Under the Full Recipe are 3 Button Links. Update & Delete only be accesable to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page FOrbidden access 403 Error. The Browse button will take any user to the Browse Page.
+Under the Full Recipe are 3 Button Links. Update & Delete only be accessible to the Author/Owner of the Recipe and should another user try to use them they will be directed to an error page Forbidden access 403 Error. The Browse button will take any user to the Browse Page.
 
 ### Recipe View Deail Image
 
 ![RecipeViewDetail](assets/readme-images/WebPages/RecipeView/Recipe-View-Details.png)
 
 
-Under this section is the Like Heart which is only viable and accessable to a Logged In User to Like/Unlike the Recipe .
-Next to the Like Heart is the Comments Count Icon which is visable to All users to show number comments on the recipe.
+Under this section is the Like Heart which is only viable and accessible to a Logged In User to Like/Unlike the Recipe .
+Next to the Like Heart is the Comments Count Icon which is visible to All users to show number comments on the recipe.
 
 ### Likes & Comments Logged In Image
 
@@ -457,7 +458,7 @@ Each comment has the Authors name and date with the Authors comment under it .
 
 ![CommentsLoggedOut](assets/readme-images/WebPages/RecipeView/Comments-User-Logged-Out.png)
 
-When a User is Logged In the option to Update or Delete the comment via Button links is available however an error 403 Forbbiden message will be generated should the User not be the Author of that comment and tries to update or Delete a comment that is not allocated to them.
+When a User is Logged In the option to Update or Delete the comment via Button links is available however an error 403 Forbidden message will be generated should the User not be the Author of that comment and tries to update or Delete a comment that is not allocated to them.
 
 ### Comments User Logged In Image
 
@@ -467,7 +468,7 @@ When a User is Logged In the option to Update or Delete the comment via Button l
 
 ## Leave a Comment
 
-Next to this is the Leave a Comments section which is only accessable and visable to a Logged in User .
+Next to this is the Leave a Comments section which is only accessible and visible to a Logged in User .
 This shows the Author name under Posting as : .... & has a section for the User to Post the comment in the Body * section a submit button is supplied at the bottom.
 
 ### Image of Leave a Comment 
@@ -484,9 +485,9 @@ This shows the Author name under Posting as : .... & has a section for the User 
 
 </details> 
 
-The Update A Comment Page is only accessable to a Logged In User who is the User/Author of that Comment.
-A Update Comment form is provided with the original comment present for the User/Author to update.
-Two link buttons are supplied for the User/Author Choice to either Update the Comment or Cancel to leave the current Update Page which will return / Redirect the User/Author tot he Browsse Page.
+The Update A Comment Page is only accessible to a Logged In User who is the User/Author of that Comment.
+An Update Comment form is provided with the original comment present for the User/Author to update.
+Two link buttons are supplied for the User/Author Choice to either Update the Comment or Cancel to leave the current Update Page which will return / Redirect the User/Author to the Browse Page.
 
 [Back to top ⇧](#contents)
 
@@ -498,9 +499,9 @@ Two link buttons are supplied for the User/Author Choice to either Update the Co
 
 </details> 
 
-The Delete A Comment Page is only accessable to a Logged In User who is the User/Author of that Comment.
+The Delete A Comment Page is only accessible to a Logged In User who is the User/Author of that Comment.
 A Delete Comment page provides the User/Author with a Message in Red asking if they are sure they wish to Delete the Comment.
-Two link buttons are supplied for the User/Author Choice to either Delete the Comment or Cancel to leave the current Delete Page which will return / Redirect the User/Author tot he Browsse Page.
+Two link buttons are supplied for the User/Author Choice to either Delete the Comment or Cancel to leave the current Delete Page which will return / Redirect the User/Author to the Browse Page.
 
 [Back to top ⇧](#contents)
 
@@ -514,9 +515,9 @@ Two link buttons are supplied for the User/Author Choice to either Delete the Co
 
 The Add Recipe Page is only available to Logged In Users.
 On this page a simple form is provided to Add the recipe providing all the necessary input fields.
-Title, Description, Serves, Prep Time, Cooking Time, Ingredients , Method and a Image section that allows the user to upload an Image of the Recipe by Choose File Button.
+Title, Description, Serves, Prep Time, Cooking Time, Ingredients , Method and an Image section that allows the user to upload an Image of the Recipe by Choose File Button.
 Within the Ingredients & Method Section the ability to create Rich Text is supplied giving the user / Author the ability to be a bit more creative should they so choose.
-A sumbit button and a Cancel button are provided to the user. 
+A submit button and a Cancel button are provided to the user. 
 
 [Back to top ⇧](#contents)
 
@@ -529,10 +530,10 @@ A sumbit button and a Cancel button are provided to the user.
 </details> 
 
 The Update Recipe Page can only be reached if the User is that Recipes Author.
-The Update Recipe Page Provides a form with the information already inputed by the User/Author on that particular recipe here the User/Author can update any details on the recipe that they should choose.
+The Update Recipe Page Provides a form with the information already inputted by the User/Author on that particular recipe here the User/Author can update any details on the recipe that they should choose.
 Within the Ingredients & Method Section the ability to create Rich Text is supplied giving the user / Author the ability to be a bit more creative should they so choose.
 
-At the end of the form are two buttons Update and Cancel for the User/Auhtor use.
+At the end of the form are two buttons Update and Cancel for the User/Author use.
 
 [Back to top ⇧](#contents)
 
@@ -544,8 +545,8 @@ At the end of the form are two buttons Update and Cancel for the User/Auhtor use
 
 </details> 
 
-The Delete Recipe page which can not be accessed unless the Recipe belongs to the User/Author brings up the Recipe you wish to Delete on a Recipe card with Basic details of the Recipe so that the User has a reminder of which recipe they are about to Delete.
-A View Button and a Update Button are both supplied on the Recipe Card so that if the user wishes they can View the entire recipe to be sure they wish to delete it or head to the Update Recipe page instead.
+The Delete Recipe page which cannot be accessed unless the Recipe belongs to the User/Author brings up the Recipe you wish to Delete on a Recipe card with Basic details of the Recipe so that the User has a reminder of which recipe they are about to Delete.
+A View Button and an Update Button are both supplied on the Recipe Card so that if the user wishes they can View the entire recipe to be sure they wish to delete it or head to the Update Recipe page instead.
 
 Under the Card is a Message in Red asking if the User is Sure they wish to Delete the Recipe and to link buttons are provided Delete and Cancel which takes the User back to the Browse page for the User/Authors Choice.
 
@@ -553,7 +554,7 @@ Under the Card is a Message in Red asking if the User is Sure they wish to Delet
 
 # Admin Control 
 
-As the Admin of Greek Ambrosia Recipe's a area of Admin control was required .
+As the Admin of Greek Ambrosia Recipe's an area of Admin control was required .
 Using Django's already set up system of Admin control a section was created for the Admin to login and be able to Approve Recipe's and Comments in order for the Admin to have Control over the App Content.
 
 ## Admin Control Panel
@@ -564,14 +565,14 @@ Using Django's already set up system of Admin control a section was created for 
 
 </details> 
 
-The Admin Control Panel is part of the Django Framework and assists the Admin in Controling the COntent of the App.
-The Control panel welcomes the Admin with options to View Site / CHange Password and Logouot of the COntrol Panel.
-From this area you are able to see Accounts , Authentication & Authorization , The setups you have used for you sight such as Django Summernote as well as haivng access to in the Case of our App ,Recipes section for Approval of Comments & Recipes that the User has uploaded to the App.
+The Admin Control Panel is part of the Django Framework and assists the Admin in Controlling the Content of the App.
+The Control panel welcomes the Admin with options to View Site / Change Password and Logo Out of the Control Panel.
+From this area you are able to see Accounts , Authentication & Authorization , The setups you have used for you sight such as Django Summernote as well as having access to in the Case of our App ,Recipes section for Approval of Comments & Recipes that the User has uploaded to the App.
 
 ## Admin Login
 
 As the Admin a Login Page was required in order to access the Admin Control Panel Area.
-This is part of the Django Framework and supplies a simple form area requesting the Admin Username and Passowrd with a Log In button.
+This is part of the Django Framework and supplies a simple form area requesting the Admin Username and Password with a Log In button.
 
 [Admin Login link](https://ambrosia-greek-recipes.herokuapp.com/admin/login/?next=/admin/)
 
@@ -588,9 +589,9 @@ This is part of the Django Framework and supplies a simple form area requesting 
 
 </details> 
 
-In our Recipes Control Page in Django Administration we are able to Add, Approve , Delete and Update Recipes via the Controls Supplied.
+In our Recipes Control Page in Django Administration, we are able to Add, Approve , Delete and Update Recipes via the Controls Supplied.
 
-Highlighting the Recipe you wish to selcted and using hte drop down arrow by the Action bar will give you the option to Delete or Approve.
+Highlighting the Recipe, you wish to select and using the drop-down arrow by the Action bar will give you the option to Delete or Approve.
 
 Clicking on the Recipe will open the Recipe up for you to view the entire contents and either approve or make updates to the Recipe as you need.
 
@@ -605,9 +606,9 @@ The option to use filters to find Recipes is also available .
 
 </details> 
 
-In our Comments Control Page in Django Administration we are able to Add, Approve , Delete and Update Comments via the Controls Supplied.
+In our Comments Control Page in Django Administration, we are able to Add, Approve , Delete and Update Comments via the Controls Supplied.
 
-Highlighting the Comment you wish to selcted and using hte drop down arrow by the Action bar will give you the option to Delete or Approve.
+Highlighting the Comment, you wish to selected and using the drop-down arrow by the Action bar will give you the option to Delete or Approve.
 
 Clicking on the Comment will open the Comment up for you to view the entire contents and either approve or make updates to the Comments as you need.
 
@@ -619,7 +620,7 @@ The option to use filters to find Comments is also available .
 
 # Technologies
 
-## Programing Languages 
+## Programming Languages 
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
@@ -680,27 +681,24 @@ The option to use filters to find Comments is also available .
 
 # Testing 
 
-* Testing During development of the App was done through the project in order to Test for Bugs, Maunal Testing was constantly done on all asspects of the App and Constant testing was done for the Responsiveness of the app via Dev Tools. Keeping an eye on the Look and Feel of the App.
+* Testing During development of the App was done through the project in order to Test for Bugs, Manual Testing was constantly done on all aspects of the App and Constant testing was done for the Responsiveness of the app via Dev Tools. Keeping an eye on the Look and Feel of the App.
   
 ## Bugs
 
 Debug was kept on True in order to make use of Django's error page which came in use more often than not as a new Django Developer.
+I as a new Django User & Developer encountered a great many Bugs . Solving them through many different means.
+The Bugs were generated from a lot of different errors I made from syntax errors to URL errors as well as putting my URL patterns in the wrong place one of which was putting my paths below the slug that I used in the URL as this made the error of not reading the other path patterns. Other errors included incorrect use of *args & *kwargs . The incorrect use of Foreign Key vs Primary Key.
+I apologies for the Lack of Bug / Error images . At the time of the Bugs, I did get a bit busy trying to resolve them and forgot to take images of all the Bug's / Errors I managed to generate.
+Solving of the Bug Error's was done via great deal of Research on different Dev sights but mostly via the methods below.
 
-I as a new Django User & Developer encountered a great many Bug's .
-Solving them through many different means.
+Bug Errors solved via :
 
-The Bugs where generated from a lot of different errors I made from syntax errors to url errors as well as putting my url patterns in the wrong place one of which was puttting my paths below the slug that I used in the Url as this made the error of not reading the other path patterns.
-Other errors included incorrect use of *args & *kwargs .
-The incorrect use of Foreign Key vs Primary Key.
-
-I appologies for the Lack of Bug / Error images . At the time of the Bugs I did get a bit busy trying to resolve them and forgot to take images of all the Bug's / Errors I managed to generate.
-
-Solving of the Bug Error's was done via great deal of Research on different Dev sights but mostly via the methods below. 
-
-Bug Erros solved via :
 1 : Trial & Error - Trying the solutions all varied depending on the source 
+
 2 : Stack Overflow 
+
 3 : Djano Documentation
+
 4 : CI Tutor support
 
 Find below a few images of errors encountered and solved through the making of this App.
@@ -725,21 +723,21 @@ Find below a few images of errors encountered and solved through the making of t
 
   * Expectations
      As a user I wanted the App to 
-    1. A Appropriate Landing / Home Page 
-    2. Home Page Welcomes , Engages and Informs of the Apps purpouse & Features 
+    1. An Appropriate Landing / Home Page 
+    2. Home Page Welcomes , Engages and Informs of the Apps purpose & Features 
     3. Easy to Follow Navigation
     4. Clear information to make choices on Each Page
-    5. I expected to be able to Add,Read,Update & Delete my Recipes & Comments and Like other Recipes
-    6. If i did something wrong I expected to be told and given directions       
+    5. I expected to be able to Add, Read, Update & Delete my Recipes & Comments and Like other Recipes
+    6. If I did something wrong, I expected to be told and given directions       
 
   * Result
      As a user I was able to  
     1. The landing /Home page was Appropriate to the App
-    2. Th Home page Welcomed , Engaged and Informed me of the Apps Purpouse & Features
+    2. Th Home page Welcomed , Engaged and Informed me of the Apps Purpose & Features
     3. Navigation is easy to Follow & Understand
     4. Information is clear and I could make choices as to what I wished to do on each page 
-    5. I was able to Add,Read,Update & Delete my Recipes & Comments and Like other Recipes with Ease
-    6. When I made an error or did something wrong I was told and given directions on what I needed to do or options to help me move on.       
+    5. I was able to Add, Read, Update & Delete my Recipes & Comments and Like other Recipes with Ease
+    6. When I made an error or did something wrong, I was told and given directions on what I needed to do or options to help me move on.       
 
 
 ### Navigation Header
@@ -977,6 +975,7 @@ Find below a few images of errors encountered and solved through the making of t
 | Feature                        |  Expect                        | Action    | Result    |
 | -------------------------------| ------------------------------ | --------- | ----------|
 |  Django Administration Panel   | Access to full Panel           |  N/A      |   ✔       |
+|  Access via selection          | Access to Selections           |  Click On |   ✔       |
 
 * From this panel the Admin has full C R U D functionality .
 
@@ -986,7 +985,7 @@ Find below a few images of errors encountered and solved through the making of t
 * All access is via On Click
 * Admin is able to Create , view, update and delete Recipes
 * Admin is able to Approve Recipes 
-* Adming is able to use filter to search for Recipes
+* Admin is able to use filter to search for Recipes
 
 
 ####  Comments Control Manual Test
@@ -994,7 +993,7 @@ Find below a few images of errors encountered and solved through the making of t
 * All access is via On Click
 * Admin is able to Create , view, update and delete Comments
 * Admin is able to Approve Comments 
-* Adming is able to use filter to search for Comments
+* Admin is able to use filter to search for Comments
 
 
 ## Validator Testing
@@ -1035,7 +1034,7 @@ Find below a few images of errors encountered and solved through the making of t
     
    ### Responsiveness 
 
-   * Responsivesness tested via Google Dev Tools & Imagery checked Via Am I Responsive
+   * Responsiveness tested via Google Dev Tools & Imagery checked Via Am I Responsive
 
    <details><summary>Responsiveness Image</summary>
 
@@ -1058,9 +1057,9 @@ This project was deployed using Github and Heroku.
 
 - ## Github 
 
-    * To create a new repository I took the following steps:
+    * To create a new repository, I took the following steps:
 
-        + Logged into Github.
+        + Logged into GitHub.
         + Click the ‘repositories’ section.
         + Click the green ‘new’ button to create new repository.
         + Choose ‘repository template’ Used the code institute template as recommended from the dropdown menu.
@@ -1070,13 +1069,13 @@ This project was deployed using Github and Heroku.
 - ## Django and Heroku
 
     To get the Django framework installed and set up I followed the Code institutes [Django I Think Therefore I Blog cheatsheet](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit). & Revisited the Walkthrough to assist.
-    However due to changes made by Heroku changes where made when this occured & information recieved from Code Institute.
+    However due to changes made by Heroku changes were made when this occurred & information received from Code Institute.
     The Steps then taken are below in the three links :
     - [PostgreSQL](https://www.postgresql.org/)
-        * Database used through heroku. - until Update of Heroku when migrations and a change of Database was needed
+        * Database used through Heroku. - until Update of Heroku when migrations and a change of Database was needed
     - [ElephantSQL](https://www.elephantsql.com/)
         * Database used after migrations and following of all instructions from Code Institute James Stone
-        * Information recieved via email.
+        * Information received via email.
             + Link 1 (https://code-institute-students.github.io/deployment-docs/02-elephantsql/elephantsql-01-sign-up)
             + Link 2 (https://code-institute-students.github.io/deployment-docs/80-migrating-databases-for-heroku/)
             + Link 3 (https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos)
@@ -1114,9 +1113,9 @@ I would like to take the time to Acknowledge & give credit to all the main assis
    * Heroku for hosting my App . https://www.heroku.com/ 
    * Reuben Ferrante my mentor without all his great guidance I would be lost. A Huge Thanks. https://github.com/arex18
    * The Slack community - for someone always been there no matter the time and with advice or direction. https://slack.com
-   * Code Institute Tutoring for assisting when I was trully stuck in particular John Traas who assisted with a Bug / Error and took the time to be understanding and helpful to a New Developer student. To be fare he was not the only one from the Turoring and my thanks to those I have not named.
+   * Code Institute Tutoring for assisting when I was truly stuck in particular John Traas who assisted with a Bug / Error and took the time to be understanding and helpful to a New Developer student. To be fare he was not the only one from the Tutoring and my thanks to those I have not named.
    * Balsamiq used to build the wireframes for my project. https://balsamiq.com   
-   * StackOverflow for all the information to assit with my project .https://stackoverflow.com
+   * Stack Overflow  for all the information to assist with my project .https://stackoverflow.com
    * Django Documentation for all the invaluable information on how to use the features .https://docs.djangoproject.com/en/4.1/
    * I am Responsive for a fantastic spot to see a visual of responsiveness. https://ui.dev/amiresponsive?msclkid=400b1adabe5b11ecbc48938198bb87b4
    * Lighthouse testing system whom I can't find a webpage link for but am grateful for been able to use.
@@ -1124,13 +1123,13 @@ I would like to take the time to Acknowledge & give credit to all the main assis
 
 ## Copied Code / Code assistance  
 
-Code Institutes walkthough: I think therefore I Blog paid a big part in the stucture of my App as well as certain parts that are directly used and refered to in the code via commnets. In particular the Pagination , Comments & Likes of the App.
+Code Institutes walkthrough: I think therefore I Blog paid a big part in the structure of my App as well as certain parts that are directly used and referred to in the code via comments. In particular the Pagination , Comments & Likes of the App.
 
 
  ### Note
 
 Recipes shown on this App have all been obtain from BBC Greek Cuisines https://www.bbc.co.uk/food/cuisines/greek .
-All Recipes and information in this App are for Education perpouse only.
+All Recipes and information in this App are for Education purpose only.
 
 [Back to top ⇧](#contents)
 
