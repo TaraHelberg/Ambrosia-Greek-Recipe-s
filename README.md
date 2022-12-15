@@ -1093,7 +1093,7 @@ This project was deployed using Github and Heroku.
 
     * Cloning of Project was made possible by GitHub
         + Go to Git Hub
-        + Go to Off The Grid Living repository 
+        + Go to the repository 
         + Click on it to go to main repository site 
         + Click on the Code drop down button menu next to the greeen Gippod button
         + Click on HTTP section you will see the http of the repository click on the window next to it it will say copied
